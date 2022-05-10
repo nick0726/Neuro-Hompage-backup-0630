@@ -1,5 +1,5 @@
-# Rules
-## 폴더구조
+## Rules
+### 폴더구조
 각 페이지별로 js와 css파일을 포함한다.
 ex.)
 MainPage 폴더
@@ -10,6 +10,6 @@ Mainpage.css
 introduction.js
 introduction.css
 
-## File Naming
+### File Naming
 파일명은 "페이지명_파일명.확장자" 규칙을 따른다.
 
