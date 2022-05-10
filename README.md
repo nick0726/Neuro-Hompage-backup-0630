@@ -11,5 +11,5 @@ introduction.js
 introduction.css
 
 ### File Naming
-파일명은 "페이지명_파일명.확장자" 규칙을 따른다.
-
+- image파일명은 "페이지명_파일명.확장자" 규칙을 따른다.
+- js와 CSS파일명은 평이하게 작성한다.
