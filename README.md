@@ -1,6 +1,7 @@
 ## Rules
-### 폴더구조
+### Folder Structure
 각 페이지별로 js와 css파일을 포함한다.
+<br/>
 ex.)
 MainPage 폴더
 Mainpage.js
