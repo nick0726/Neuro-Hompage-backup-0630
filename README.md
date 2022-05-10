@@ -3,12 +3,18 @@
 각 페이지별로 js와 css파일을 포함한다.
 <br/>
 ex.)
-MainPage 폴더
+[MainPage 폴더]
+<br/>
 Mainpage.js
+<br/>
 Mainpage.css
+<br/>
 
-회사소개 폴더
+<br/>
+[회사소개 폴더]
+<br/>
 introduction.js
+<br/>
 introduction.css
 
 ### File Naming
