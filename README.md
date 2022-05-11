@@ -1,6 +1,4 @@
 # NeuroEars_Homepage
-Company's homepage made with react
-
 
 ## Rules
 ### Folder Structure
