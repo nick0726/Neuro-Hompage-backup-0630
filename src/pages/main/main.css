@@ -1,0 +1,14 @@
+.main {
+  border: 3px solid green;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.item {
+  border: 3px solid orange;
+  width: 100%;
+  background-size: cover;
+  /* background-position: center; */
+}
