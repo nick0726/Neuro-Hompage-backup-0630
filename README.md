@@ -1,3 +1,7 @@
+# NeuroEars_Homepage
+Company's homepage made with react
+
+
 ## Rules
 ### Folder Structure
 각 페이지별로 js와 css파일을 포함한다.
