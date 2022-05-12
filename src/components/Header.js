@@ -1,26 +1,39 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <div className='header'>
-        <h1>NeuroEars</h1>
+        <Link to='/'>
+          <h1>NeuroEars</h1>
+        </Link>
         <div className='menu-nav'>
           <ul>
             <li>
-              <p>About us</p>
+              <Link to='/about'>
+                <p>회사소개</p>
+              </Link>
             </li>
             <li>
-              <p>Solutions</p>
+              <Link to='/technology'>
+                <p>기술</p>
+              </Link>
             </li>
             <li>
-              <p>Download</p>
+              <Link to='products'>
+                <p>제품</p>
+              </Link>
             </li>
             <li>
-              <p>Contact us</p>
+              <Link to='development'>
+                <p>연구개발</p>
+              </Link>
             </li>
             <li>
-              <p>My Page</p>
+              <Link to='support'>
+                <p>지원 및 서비스</p>
+              </Link>
             </li>
           </ul>
         </div>
