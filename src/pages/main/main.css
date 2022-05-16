@@ -1,14 +1,86 @@
-.main {
-  border: 3px solid green;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
   width: 100%;
+  height: 100vh;
+}
+
+.main_container {
+  /* border: 3px solid green; */
+  width: 100%;
+  height: 100vh;
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-.item {
-  border: 3px solid orange;
-  width: 100%;
+.main_container_content {
+  width: 80%;
+  height: 100vh;
+  display: inline-block;
   background-size: cover;
+  overflow: hidden;
+  border: 3px solid blue;
+  margin: 80px 50px;
   /* background-position: center; */
+
+}
+
+.main_container_content_navigator{
+  width: 20%;
+  height: 100vh;
+  border: 8px solid rgb(0, 255, 89);
+  display: flex;
+}
+
+.mainpage_page1_title {
+  border: 3px solid pink;
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.mainpage_page1_title h1 {
+  font-size: 80px;
+  margin: 0 0 30px;
+}
+
+.mainpage_page1_title h4 {
+  border: 3px solid red;
+  line-height: 150px;
+  font-size: 85px;
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.mainpage_page1_subtitle h5 {
+  border: 5px solid orange;
+  font-size: 40px;
+  margin-top: 12px;
+}
+
+.mainpage_page1_btn button {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 30px;
+  width: 325px;
+  height: 80px;
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(194, 194, 194);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.7s ease;
+  text-decoration-line: none;
+  text-shadow: 3px 3px #212121;
+}
+
+.mainpage_page1_btn button:hover {
+  background: whitesmoke;
+  color: rgb(92, 92, 92);
+  text-shadow: 1px 1px #c5c5c5;
 }
