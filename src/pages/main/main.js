@@ -1,7 +1,5 @@
 import React from "react";
 import "./main.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 
 function Main() {
   return (
@@ -32,7 +30,6 @@ function Main() {
         <div className='main'>Page4</div>
         <div className='main'>Page5</div>
       </div>
-      <Footer />
     </>
   );
 }
