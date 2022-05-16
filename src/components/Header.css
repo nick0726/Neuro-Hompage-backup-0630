@@ -13,6 +13,7 @@
   /* color: #fff; */
   color: black;
   padding-left: 30px;
+  font-size: 43px;
 }
 
 .header .menu-nav ul li {
@@ -20,13 +21,45 @@
   margin: 0 58px;
   text-decoration: none;
   color: black;
+  font-size: 18px;
 }
 
 .header .right-top-menu {
   display: flex;
 }
 
+.header .right-top-menu .language {
+  display: block;
+  padding-top: 36px;
+}
+
 .header .right-top-menu .login-Btn {
   display: inline-block;
-  margin: 0 25px
+  margin: 0 35px 20px;
+}
+
+.header .right-top-menu .login-Btn button {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 3px;
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(194, 194, 194);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.7s ease;
+  text-decoration-line: none;
+  text-shadow: 3px 3px #212121;
+}
+
+.header .right-top-menu .login-Btn button:hover {
+  background: whitesmoke;
+  color: rgb(92, 92, 92);
+  text-shadow: 1px 1px #c5c5c5;
 }
