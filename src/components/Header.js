@@ -11,7 +11,7 @@ const Header = () => {
         <div className='menu-nav'>
           <ul>
             <li>
-              <Link to='/about'>
+              <Link to='/company'>
                 <p>회사소개</p>
               </Link>
             </li>
@@ -26,12 +26,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to='development'>
+              <Link to='R_D'>
                 <p>연구개발</p>
               </Link>
             </li>
             <li>
-              <Link to='support'>
+              <Link to='support_service'>
                 <p>지원 및 서비스</p>
               </Link>
             </li>
