@@ -1,2 +1,0 @@
-root: C:\NeuroEars\NeuroEars_Homepage\nvm
-path: C:\Program Files\nodejs
