@@ -2,11 +2,9 @@
 
 ## Rules
 ### Folder Structure
-각 페이지별로 js와 css파일을 포함한다.
+pages에 모든 컴포넌트와 페이지를 포함한다.
 <br/>
-ex.)<br/>
-[MainPage 폴더]
-<br/>
+ex.)
 Mainpage.js
 <br/>
 Mainpage.css
