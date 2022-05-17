@@ -1,6 +1,4 @@
 import './TechnologyPage.css';
-import 
-
 
 function TechnologyPage() {
   return (
