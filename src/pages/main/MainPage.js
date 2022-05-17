@@ -28,7 +28,6 @@ function MainPage() {
         <FullpageNavigation />
         <FullPageSections>
           <FullpageSection>
-            <Header />
             <div className='main_container'>
               <div className='main_container_content'>
                 <div className='mainpage_page1_title'>
@@ -85,7 +84,6 @@ function MainPage() {
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
-      <Footer />
     </>
   );
 }
