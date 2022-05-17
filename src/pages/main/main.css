@@ -40,7 +40,6 @@
 }
 
 .mainpage_page1_title {
-  /* border: 3px solid pink; */
   animation: slideUp .8s ease-in-out forwards .8s;
   width: 100%;
   height: 100%;
@@ -50,7 +49,6 @@
 .mainpage_page1_title h1 {
   font-size: 80px;
   margin: 0 0 30px;
-  /* border: 5px solid green; */
 }
 
 .mainpage_page1_title h4 {

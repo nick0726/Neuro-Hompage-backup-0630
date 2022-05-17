@@ -40,7 +40,7 @@ const Header = () => {
         <div className='right-top-menu'>
           <div className='language'>Language</div>
           <div className='login-Btn'>
-            <button>Login Btn</button>
+            <button>로그인</button>
           </div>
         </div>
       </div>

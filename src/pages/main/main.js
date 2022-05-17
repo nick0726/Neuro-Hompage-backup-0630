@@ -34,8 +34,6 @@ function Main() {
 
                 <div className='main'>페이지2</div>
                 <div className='main'>페이지3</div>
-                <div className='main'>페이지4</div>
-                <div className='main'>페이지5</div>
               </div>
             </div>
           </FullpageSection>
