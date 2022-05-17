@@ -1,3 +1,5 @@
+import './TechnologyPage.css';
+
 function TechnologyPage() {
   return (
     <>
