@@ -2,22 +2,12 @@
 
 ## Rules
 ### Folder Structure
-각 페이지별로 js와 css파일을 포함한다.
-<br/>
-ex.)<br/>
-[MainPage 폴더]
-<br/>
-Mainpage.js
-<br/>
-Mainpage.css
-<br/>
+components에는 Header와 Footer 같이 자주 쓰이는 것만 포함한다.
+
+pages에 모든 컴포넌트와 페이지를 포함한다.<br/>
+ex.) Mainpage.js , Mainpage.css
 
 <br/>
-[회사소개 폴더]
-<br/>
-introduction.js
-<br/>
-introduction.css
 
 ### File Naming
 - image파일명은 "페이지명_파일명.확장자" 규칙을 따른다.
