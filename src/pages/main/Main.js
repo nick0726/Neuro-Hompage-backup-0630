@@ -1,7 +1,5 @@
 import React from "react";
 import "./Main.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
@@ -11,7 +9,6 @@ import Fullpage, {
 function Main() {
   return (
     <>
-      <Header />
       <Fullpage>
         <FullpageNavigation />
         <FullPageSections>
@@ -45,7 +42,6 @@ function Main() {
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
-      <Footer />
     </>
   );
 }
