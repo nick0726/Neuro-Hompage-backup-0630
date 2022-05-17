@@ -11,12 +11,12 @@ const Header = () => {
         <div className='menu-nav'>
           <ul>
             <li>
-              <Link to='/company'>
+              <Link to='company'>
                 <p>회사소개</p>
               </Link>
             </li>
             <li>
-              <Link to='/technology'>
+              <Link to='technology'>
                 <p>기술</p>
               </Link>
             </li>
@@ -26,7 +26,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to='R_D'>
+              <Link to='RnD'>
                 <p>연구개발</p>
               </Link>
             </li>

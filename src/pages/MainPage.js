@@ -1,15 +1,30 @@
+import React from "react";
+import Footer from "./Footer";
 import Header from "./Header";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
   FullpageNavigation,
 } from "@ap.cx/react-fullpage";
-import "./Mainfullpage.css";
+import "./Mainpage.css";
 
-function Mainfullpage() {
+const fullPageOptions = {
+  // for mouse/wheel events
+  // represents the level of force required to generate a slide change on non-mobile, 10 is default
+  scrollSensitivity: 10,
+
+  // for touchStart/touchEnd/mobile scrolling
+  // represents the level of force required to generate a slide change on mobile, 10 is default
+  touchSensitivity: 7,
+  scrollSpeed: 500,
+  // hideScrollBars: true,
+  // enableArrowKeys: true
+};
+
+function MainPage() {
   return (
     <>
-      <Fullpage>
+      <Fullpage {...fullPageOptions}>
         <FullpageNavigation />
         <FullPageSections>
           <FullpageSection>
@@ -70,8 +85,9 @@ function Mainfullpage() {
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
+      <Footer />
     </>
   );
 }
 
-export default Mainfullpage;
+export default MainPage;

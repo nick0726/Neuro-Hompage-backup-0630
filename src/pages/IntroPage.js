@@ -1,11 +1,9 @@
-import "./company.css";
-
-const Company = () => {
+function IntroPage() {
   return (
     <>
       <div>회사소개 페이지에요</div>
     </>
   );
-};
+}
 
-export default Company;
+export default IntroPage;
