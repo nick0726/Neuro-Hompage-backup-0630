@@ -8,8 +8,11 @@
   border-bottom: 3px solid black;
 }
 
-.header h1 {
+.header a {
   text-decoration: none;
+}
+
+.header h1 {
   /* color: #fff; */
   color: black;
   padding-left: 30px;
@@ -19,7 +22,6 @@
 .header .menu-nav ul li {
   display: inline-block;
   margin: 0 58px;
-  text-decoration: none;
   color: black;
   font-size: 18px;
 }
@@ -54,7 +56,6 @@
   cursor: pointer;
   margin-top: 20px;
   transition: 0.7s ease;
-  text-decoration-line: none;
   text-shadow: 3px 3px #212121;
 }
 
