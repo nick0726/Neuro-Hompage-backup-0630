@@ -9,15 +9,15 @@ function MainPage() {
     <>
       <ReactFullpage
         //fullpage options
-        licenseKey={"SCRET"}
+        licenseKey={"F9KG8-XM0I7-7I1LI-VUO8J-TYTKM"}
         scrollingSpeed={1000} /* Options here */
         navigation={true}
         render={({ state, fullpageApi }) => {
           return (
             <>
-              <Header />
               <ReactFullpage.Wrapper>
                 <div className='section s0'>
+                  <Header />
                   <div className='main_container'>
                     <div className='main_container_content'>
                       <div className='mainpage_page1_title'>
@@ -111,9 +111,9 @@ function MainPage() {
                       </div>
                     </div>
                   </div>
+                  <Footer />
                 </div>
               </ReactFullpage.Wrapper>
-              <Footer />
             </>
           );
         }}
