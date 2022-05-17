@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
@@ -28,7 +26,6 @@ function MainPage() {
         <FullpageNavigation />
         <FullPageSections>
           <FullpageSection>
-            <Header />
             <div className='main_container'>
               <div className='main_container_content'>
                 <div className='mainpage_page1_title'>
@@ -85,7 +82,6 @@ function MainPage() {
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
-      <Footer />
     </>
   );
 }
