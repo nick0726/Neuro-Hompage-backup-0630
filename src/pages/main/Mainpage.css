@@ -225,6 +225,7 @@
   width: 100%;
   height:100vh;
   background-color: #eeee;
+  overflow: hidden;
 }
 
 .s3_main_container_content {
