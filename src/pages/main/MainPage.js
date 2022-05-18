@@ -96,17 +96,17 @@ function MainPage() {
                       </div>
                       <div className='s3_mainpage_news'>
                         <div className='s3_mainpage_news_A'>
-                          A<div className='s3_mainpage_news_A_image'></div>
+                          <div className='s3_mainpage_news_A_image'></div>
                           <div className='s3_mainpage_news_A_title'></div>
                           <div className='s3_mainpage_news_A_pharagraph'></div>
                         </div>
                         <div className='s3_mainpage_news_B'>
-                          B<div className='s3_mainpage_news_B_image'></div>
+                          <div className='s3_mainpage_news_B_image'></div>
                           <div className='s3_mainpage_news_B_title'></div>
                           <div className='s3_mainpage_news_B_pharagraph'></div>
                         </div>
                         <div className='s3_mainpage_news_C'>
-                          C<div className='s3_mainpage_news_C_image'></div>
+                          <div className='s3_mainpage_news_C_image'></div>
                           <div className='s3_mainpage_news_C_title'></div>
                           <div className='s3_mainpage_news_C_pharagraph'></div>
                         </div>
