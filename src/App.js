@@ -1,6 +1,4 @@
 import "./App.css";
-import Header from "./components/Header"
-import Footer from "./components/Footer"
 import Main from "./pages/main/MainPage";
 import IntroPage from "./pages/menu/IntroPage";
 import TechnologyPage from "./pages/menu/TechnologyPage";
@@ -12,7 +10,6 @@ import { Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <>
-      <Header />
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/company' element={<IntroPage />} />
@@ -24,7 +21,6 @@ function App() {
         <Route />
         <Route />
       </Routes>
-      <Footer />
     </>
   );
 }
