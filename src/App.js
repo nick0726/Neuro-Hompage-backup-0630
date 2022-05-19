@@ -1,5 +1,5 @@
 import "./App.css";
-import Main from "./pages/main/MainPage";
+import MainPage from "./pages/main/MainPage";
 import IntroPage from "./pages/menu/IntroPage";
 import TechnologyPage from "./pages/menu/TechnologyPage";
 import ProductsPage from "./pages/menu/ProductsPage";
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Main />} />
+        <Route path='/' element={<MainPage />} />
         <Route path='/company' element={<IntroPage />} />
         <Route path='/technology' element={<TechnologyPage />} />
         <Route path='/products' element={<ProductsPage />} />

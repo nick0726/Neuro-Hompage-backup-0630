@@ -12,9 +12,7 @@ function MainPage() {
       <ReactFullpage
         //fullpage options
         licenseKey={"F9KG8-XM0I7-7I1LI-VUO8J-TYTKM"}
-        scrollingSpeed={1000} /* Options h
-        
-        ere */
+        scrollingSpeed={1000} /* Options here */
         navigation={true}
         render={({ state, fullpageApi }) => {
           return (
@@ -180,7 +178,7 @@ function MainPage() {
             </>
           );
         }}
-      />
+      ></ReactFullpage>
     </>
   );
 }
