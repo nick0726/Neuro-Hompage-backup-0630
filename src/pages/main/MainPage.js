@@ -157,18 +157,11 @@ function MainPage() {
                 <div className='section s4'>
                   <div className='s4_main_container'>
                     <div className='s4_main_container_content'>
-                      <div className='s4_mainpage_title'>
-                        <h1>NeuroEars</h1>
-                        <h4>평형기능</h4>
-                        <h4>소프트웨어 개발</h4>
-                        <h4>전문기업</h4>
-                        <div className='s4_mainpage_subtitle'>
-                          <h5>Software as Medical Device for</h5>
-                          <h5>Vestibular function tests and rehabilitation</h5>
-                          <div className='s4_mainpage_btn'>
-                            <button>문의하기</button>
-                          </div>
-                        </div>
+                      <div className='s4_mainpage_title1'>
+                        <div className='patent'>보유기술 및 특허</div>
+                      </div>
+                      <div className='s4_mainpage_title2'>
+                        <div className='studies'>연구 및 논문자료</div>
                       </div>
                     </div>
                   </div>

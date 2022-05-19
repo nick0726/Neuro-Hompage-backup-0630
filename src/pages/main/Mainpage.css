@@ -404,9 +404,18 @@
   background-size: cover;
   overflow: hidden;
   /* border: 0.188rem solid blue; */
+  display: flex;
+  border: 3px solid red;
 }
 
-.s4_mainpage_title {
-  animation: slideUp .8s ease-in-out forwards .8s;
-  width: 100%;
+.s4_mainpage_title1 {
+  display: block;
+  width: 50vw;
+  border: 3px sold orange;
+}
+
+.s4_mainpage_title2 {
+  display: block;
+  width: 50vw;
+  border: 3px solid blue;
 }
