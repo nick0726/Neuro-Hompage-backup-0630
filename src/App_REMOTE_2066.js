@@ -7,13 +7,9 @@ import RnDPage from './pages/menu/RnDPage.js';
 import SupportPage from './pages/menu/RnDPage.js';
 import { Routes, Route, Link } from 'react-router-dom';
 
-import Header from './components/Header'
-import Footer from './components/Footer'
-
 function App() {
   return (
     <>
-      <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/company" element={<IntroPage />} />
@@ -25,7 +21,6 @@ function App() {
         <Route />
         <Route />
       </Routes>
-      <Footer />
     </>
   );
 }
