@@ -89,3 +89,9 @@
   color: rgb(92, 92, 92);
   text-shadow: 1px 1px #c5c5c5;
 }
+
+.footer {
+  width: 100%;
+  height: 30vh;
+  border-top: 3px solid black;
+}
