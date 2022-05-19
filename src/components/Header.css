@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 9.7vh;
+  height: 12.5vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -10,42 +10,42 @@
 
 .header a {
   text-decoration: none;
+  font-size: 1.1em;
 }
 
 .header h1 {
   /* color: #fff; */
   color: black;
-  padding-left: 30px;
-  font-size: 43px;
+  padding-left: 1.875em;
+  font-size: 2.68em;
 }
 
 .header .menu-nav ul li {
   display: inline-block;
-  margin: 0 58px;
+  margin: 0 3.625em;
   color: black;
-  font-size: 18px;
+  font-size: 1.18em;
 }
 
 .header .right-top-menu {
   display: flex;
+  font-size: 1.2em;
 }
 
 .header .right-top-menu .language {
   display: block;
-  padding-top: 36px;
+  padding-top: 1.55em;
 }
 
 .header .right-top-menu .login-Btn {
   display: inline-block;
-  margin: 0 35px 20px;
+  margin: 0 2.18em 1.25em;
 }
 
 .header .right-top-menu .login-Btn button {
   justify-content: center;
   align-items: center;
-  text-align: left;
-  padding-left: 27px;
-  padding-bottom: 4px;
+  text-align: center;
   width: 125px;
   height: 50px;
   font-size: 20px;

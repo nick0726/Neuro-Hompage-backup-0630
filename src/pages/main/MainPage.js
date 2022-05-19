@@ -3,6 +3,8 @@ import "./Mainpage.css";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ReactFullpage from "@fullpage/react-fullpage";
+import s1_background from "../../images/Mainpage_background_2.png";
+import report1 from "../../images/Mainpage_background_4.png";
 
 function MainPage() {
   return (
@@ -27,8 +29,8 @@ function MainPage() {
                       <div className='s0_mainpage_title'>
                         <h1>NeuroEars</h1>
                         <h4>평형기능</h4>
-                        <h4>소프트웨어 개발</h4>
-                        <h4>전문기업</h4>
+                        <h4>측정 진단 치료</h4>
+                        <h4>소프트웨어 개발 전문기업</h4>
                         <div className='s0_mainpage_btn'>
                           <button>문의하기</button>
                         </div>
@@ -62,7 +64,7 @@ function MainPage() {
                         </div>
                       </div>
                     </div>
-                    <div className='s1_mainpage_img'></div>
+                    <img className='s1_mainpage_img' src={s1_background} />
                   </div>
                 </div>
 
@@ -104,19 +106,46 @@ function MainPage() {
                       </div>
                       <div className='s3_mainpage_news'>
                         <div className='s3_mainpage_news_A'>
-                          <div className='s3_mainpage_news_A_image'></div>
-                          <div className='s3_mainpage_news_A_title'></div>
-                          <div className='s3_mainpage_news_A_pharagraph'></div>
+                          <img src={report1} />
+                          <div className='s3_mainpage_news_content_A'>
+                            <h1>
+                              뉴로이어즈, BIO KOREA 2022서
+                              <br /> 어지럼증 진단 소프트웨어 소개 나선다
+                            </h1>
+                            <p>
+                              기존 상용화된 VR 장비를 활용하여 더 저렴하게
+                              이용할 수 있는 의료 소프트웨어를 개발해 진단이
+                              가능...
+                            </p>
+                          </div>
                         </div>
                         <div className='s3_mainpage_news_B'>
-                          <div className='s3_mainpage_news_B_image'></div>
-                          <div className='s3_mainpage_news_B_title'></div>
-                          <div className='s3_mainpage_news_B_pharagraph'></div>
+                          <img src={report1} />
+                          <div className='s3_mainpage_news_content_B'>
+                            <h1>
+                              뉴로이어즈, BIO KOREA 2022서
+                              <br /> 어지럼증 진단 소프트웨어 소개 나선다
+                            </h1>
+                            <p>
+                              기존 상용화된 VR 장비를 활용하여 더 저렴하게
+                              이용할 수 있는 의료 소프트웨어를 개발해 진단이
+                              가능...
+                            </p>
+                          </div>
                         </div>
                         <div className='s3_mainpage_news_C'>
-                          <div className='s3_mainpage_news_C_image'></div>
-                          <div className='s3_mainpage_news_C_title'></div>
-                          <div className='s3_mainpage_news_C_pharagraph'></div>
+                          <img src={report1} />
+                          <div className='s3_mainpage_news_content_C'>
+                            <h1>
+                              뉴로이어즈, BIO KOREA 2022서
+                              <br /> 어지럼증 진단 소프트웨어 소개 나선다
+                            </h1>
+                            <p>
+                              기존 상용화된 VR 장비를 활용하여 더 저렴하게
+                              이용할 수 있는 의료 소프트웨어를 개발해 진단이
+                              가능...
+                            </p>
+                          </div>
                         </div>
                       </div>
                       <div className='s3_mainpage_btn'>
