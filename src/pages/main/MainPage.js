@@ -23,10 +23,9 @@ function MainPage() {
               <ReactFullpage.Wrapper>
                 {/* 첫번쨰 화면: NeuroEars */}
                 <div className='section s0'>
-                  <Header />
-                  <div className='s0_main_container'>
-                    <div className='s0_main_container_content'>
-                      <div className='s0_mainpage_title'>
+                  <div className='main_container'>
+                    <div className='main_container_content'>
+                      <div className='mainpage_page1_title'>
                         <h1>NeuroEars</h1>
                         <h4>평형기능</h4>
                         <h4>측정 진단 치료</h4>
@@ -174,7 +173,6 @@ function MainPage() {
                       </div>
                     </div>
                   </div>
-                  <Footer />
                 </div>
               </ReactFullpage.Wrapper>
             </>
