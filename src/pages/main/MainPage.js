@@ -17,7 +17,9 @@ function MainPage() {
         render={({ state, fullpageApi }) => {
           return (
             <>
+              {/* FullPage 작동 구현을 위한 ReactFullpage.Wrapper */}
               <ReactFullpage.Wrapper>
+                {/* 첫번쨰 화면: NeuroEars */}
                 <div className='section s0'>
                   <Header />
                   <div className='s0_main_container'>
@@ -34,6 +36,8 @@ function MainPage() {
                     </div>
                   </div>
                 </div>
+
+                {/* 두번쨰 화면 Company 페이지 */}
                 <div className='section s1'>
                   <div className='s1_main_container'>
                     <div className='s1_main_container_content'>
@@ -61,6 +65,8 @@ function MainPage() {
                     <div className='s1_mainpage_img'></div>
                   </div>
                 </div>
+
+                {/* 세번째 화면: Technology 페이지 */}
                 <div className='section s2'>
                   <div className='s2_main_container'>
                     <div className='s2_main_container_content'>
@@ -88,6 +94,8 @@ function MainPage() {
                     </div>
                   </div>
                 </div>
+
+                {/* 네번쨰 화면: 보도자료 페이지 */}
                 <div className='section s3'>
                   <div className='s3_main_container'>
                     <div className='s3_main_container_content'>
@@ -117,6 +125,8 @@ function MainPage() {
                     </div>
                   </div>
                 </div>
+
+                {/* 마지막 화면: 특허 및 기술페이지 & Footer */}
                 <div className='section s4'>
                   <div className='s4_main_container'>
                     <div className='s4_main_container_content'>

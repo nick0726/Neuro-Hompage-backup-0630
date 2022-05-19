@@ -268,8 +268,9 @@
 }
 
 .s3_mainpage_news_A_image {
-  height: 1rem;
-  border: 3px solid orange;
+  height: 10vh;
+  display: flex;
+  border: 3px solid green;
 }
 
 .s3_mainpage_news_B {
