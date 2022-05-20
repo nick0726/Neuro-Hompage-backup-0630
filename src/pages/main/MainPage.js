@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Mainpage.css";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import ReactFullpage from "@fullpage/react-fullpage";
+import mouse from "../../images/mouse.png";
 import s1_background from "../../images/Mainpage_background_2.png";
 import report1 from "../../images/Mainpage_background_4.png";
+import Footer from "../../components/Footer";
+import contactus from "../../images/contactus.jpg";
 
-function MainPage() {
+function MainPage(props) {
   return (
     <>
       <ReactFullpage
         //fullpage options
         licenseKey={"F9KG8-XM0I7-7I1LI-VUO8J-TYTKM"}
-        scrollingSpeed={1000} /* Options here */
+        scrollingSpeed={800} /* Options here */
         navigation={true}
         render={({ state, fullpageApi }) => {
           return (
@@ -21,7 +22,6 @@ function MainPage() {
               <ReactFullpage.Wrapper>
                 {/* 첫번쨰 화면: NeuroEars */}
                 <div className='section s0'>
-                  <Header />
                   <div className='s0_main_container'>
                     <div className='s0_main_container_content'>
                       <div className='s0_mainpage_title'>
@@ -31,6 +31,9 @@ function MainPage() {
                         <h4>소프트웨어 개발 전문기업</h4>
                         <div className='s0_mainpage_btn'>
                           <button>문의하기</button>
+                        </div>
+                        <div className='s0_mainpage_mouse'>
+                          <img src={mouse} alt={mouse} />
                         </div>
                       </div>
                     </div>
@@ -62,7 +65,11 @@ function MainPage() {
                         </div>
                       </div>
                     </div>
-                    <img className='s1_mainpage_img' src={s1_background} />
+                    <img
+                      className='s1_mainpage_img'
+                      src={s1_background}
+                      alt={s1_background}
+                    />
                   </div>
                 </div>
 
@@ -104,7 +111,7 @@ function MainPage() {
                       </div>
                       <div className='s3_mainpage_news'>
                         <div className='s3_mainpage_news_A'>
-                          <img src={report1} />
+                          <img src={report1} alt={report1} />
                           <div className='s3_mainpage_news_content_A'>
                             <h1>
                               뉴로이어즈, BIO KOREA 2022서
@@ -158,12 +165,19 @@ function MainPage() {
                   <div className='s4_main_container'>
                     <div className='s4_main_container_content'>
                       <div className='s4_mainpage_title1'>
-                        <div className='patent'>보유기술 및 특허</div>
+                        <div className='s4_mainpage_patent'>
+                          <h2>보유기술 및 특허</h2>
+                          <div className='s4_mainpage_patent_1'></div>
+                          <div className='s4_mainpage_patent_2'></div>
+                        </div>
                       </div>
                       <div className='s4_mainpage_title2'>
-                        <div className='studies'>연구 및 논문자료</div>
+                        <div className='studies'>
+                          <h2>연구 및 논문자료</h2>
+                        </div>
                       </div>
                     </div>
+                    <img src={contactus} className='s4_mainpage_contactus' />
                   </div>
                   <Footer />
                 </div>

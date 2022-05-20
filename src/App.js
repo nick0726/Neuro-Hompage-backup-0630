@@ -6,10 +6,13 @@ import ProductsPage from "./pages/menu/ProductsPage";
 import RnDPage from "./pages/menu/RnDPage.js";
 import SupportPage from "./pages/menu/RnDPage.js";
 import { Routes, Route, Link } from "react-router-dom";
+import Header from "../src/components/Header";
+import Footer from "../src/components/Footer";
 
 function App() {
   return (
     <>
+      <Header />
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/company' element={<IntroPage />} />
@@ -21,6 +24,7 @@ function App() {
         <Route />
         <Route />
       </Routes>
+      <Footer />
     </>
   );
 }
