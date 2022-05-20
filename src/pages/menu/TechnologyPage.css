@@ -1,18 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sub_header {
+
+}
+
 .sub_menu {
+    position: sticky;
+    top: 12.5vh;
+}
+
+.content {
+    width: 100%;
+    margin: 0
+    padding 0;
+    display: flex;
 }
 
 .eye_tracking {
+    width: 75%;
     height: 500px;
+    position: center;
 }
 
 .vr {
+    width: 80%;
     height: 500px;
+    justify-content: center;
 }
 
 .ai {
+    width: 80%;
     height: 500px;
+    justify-content: center;
 }
 
 .brain_stimulation {
+    width: 80%;
     height: 500px;
+    justify-content: center;
+}
+
+.title {
+    width: 300px;
+}
+
+.right {
+    width: 500px;
+}
+
+.bottom {
+    
 }
