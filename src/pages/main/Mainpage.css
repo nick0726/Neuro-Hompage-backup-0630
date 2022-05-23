@@ -1,25 +1,14 @@
 @font-face {
-  font-family: "MinSans-Medium";
-  src: url('../../fonts/MinSans-Medium.otf')
+  font-family: "HallymM.otf";
+  src: url('../../fonts/Hallym-OTF/HallymM.otf')
 }
-
-/* @font-face {
-  font-family: "MinSans-Light";
-  src: url('../../fonts/MinSans-Light.otf')
-} */
-
-/* @font-face {
-  font-family: "MinSans-Regular";
-  src: url('../../fonts/MinSans-Regular.otf')
-} */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "MinSans-Medium";
+  font-family: 'HallymM.ttf';
 }
-
 .body {
   width: 100%;
   height: 100%;
@@ -47,7 +36,7 @@
   animation: slideUp .8s ease-in-out forwards .8s;
   width: 100%;
   height: 100%;
-  padding: 12em 0 0 11em;
+  padding: 10em 0 0 11em;
 }
 
 .s0_mainpage_title h1 {
@@ -169,7 +158,7 @@
 .s1_mainpage_img {
   background: cover;
   width: 62vw;
-  height: 100vh;
+  height: 90vh;
   /* border: 5px solid red; */
 }
 
@@ -247,7 +236,7 @@
   /* border: 0.188rem solid green; */
   width: 100%;
   height:100vh;
-  background-color: #eeee;
+  /* background-color: #eeee; */
   overflow: hidden;
 }
 

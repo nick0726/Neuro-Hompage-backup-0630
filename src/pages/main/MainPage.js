@@ -5,7 +5,7 @@ import mouse from "../../images/mouse.png";
 import s1_background from "../../images/Mainpage_background_2.png";
 import report1 from "../../images/Mainpage_background_4.png";
 import Footer from "../../components/Footer";
-// import contactus from "../../images/contactus.jpg";
+import contactus from "../../images/contactus.jpg";
 import rightArrow from "../../images/right-arrow.png";
 import leftArrow from "../../images/left-arrow.png";
 
@@ -67,6 +67,7 @@ function MainPage(props) {
                         </div>
                       </div>
                     </div>
+                    {/* <div className='s1_mainpage_img'></div> */}
                     <img
                       className='s1_mainpage_img'
                       src={s1_background}
