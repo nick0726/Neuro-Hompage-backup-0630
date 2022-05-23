@@ -3,8 +3,22 @@
     padding: 0;
 }
 
-.sub_header {
 
+
+.body {
+    position: relative;
+}
+
+.sub_header {
+    height: 200px;
+    position: relative;
+}
+
+.sub_title {
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    transform: translate(0%, -50%);
 }
 
 .sub_menu {
@@ -14,33 +28,40 @@
 
 .content {
     width: 100%;
-    margin: 0
-    padding 0;
-    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .eye_tracking {
     width: 75%;
     height: 500px;
-    position: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .vr {
-    width: 80%;
+    width: 75%;
     height: 500px;
-    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .ai {
-    width: 80%;
+    width: 75%;
     height: 500px;
-    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .brain_stimulation {
-    width: 80%;
+    width: 75%;
     height: 500px;
-    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .title {

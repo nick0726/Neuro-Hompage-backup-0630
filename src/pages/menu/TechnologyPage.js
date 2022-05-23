@@ -7,8 +7,10 @@ function TechnologyPage() {
       <Header />
       <div className='body'>
         <div className='sub_header'>
-          <h2>기술</h2>
-          <h6>Technology</h6>
+          <div className='sub_title'>
+            <h2>기술</h2>
+            <h6>Technology</h6>
+          </div>
           <div className='sub_menu'>
             
           </div>
