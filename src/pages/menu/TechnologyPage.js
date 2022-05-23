@@ -1,11 +1,10 @@
 import './TechnologyPage.css';
-import Header from '../../components/Header'
 
 function TechnologyPage() {
   return (
     <>
-      <Header />
       <div className='body'>
+        <button className='top_btn'>Top</button>
         <div className='sub_header'>
           <div className='sub_title'>
             <h2>기술</h2>
