@@ -1,18 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.body {
+    position: relative;
+}
+
+.sub_header {
+    height: 200px;
+    position: relative;
+}
+
+.sub_title {
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    transform: translate(0%, -50%);
+}
+
 .sub_menu {
+    position: sticky;
+    top: 12.5vh;
+}
+
+.content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .eye_tracking {
+    width: 75%;
     height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .vr {
+    width: 75%;
     height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .ai {
+    width: 75%;
     height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .brain_stimulation {
+    width: 75%;
     height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.title {
+    width: 300px;
+}
+
+.right {
+    width: 500px;
+}
+
+.bottom {
+    
 }
