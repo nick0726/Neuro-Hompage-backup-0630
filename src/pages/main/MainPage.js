@@ -5,7 +5,9 @@ import mouse from "../../images/mouse.png";
 import s1_background from "../../images/Mainpage_background_2.png";
 import report1 from "../../images/Mainpage_background_4.png";
 import Footer from "../../components/Footer";
-import contactus from "../../images/contactus.jpg";
+// import contactus from "../../images/contactus.jpg";
+import rightArrow from "../../images/right-arrow.png";
+import leftArrow from "../../images/left-arrow.png";
 
 function MainPage(props) {
   return (
@@ -164,20 +166,79 @@ function MainPage(props) {
                 <div className='section s4'>
                   <div className='s4_main_container'>
                     <div className='s4_main_container_content'>
-                      <div className='s4_mainpage_title1'>
-                        <div className='s4_mainpage_patent'>
-                          <h2>보유기술 및 특허</h2>
-                          <div className='s4_mainpage_patent_1'></div>
-                          <div className='s4_mainpage_patent_2'></div>
+                      <div className='s4_mainpage_patent'>
+                        <h1>
+                          보유기술 및 특허
+                          <span>
+                            <img src={leftArrow} />
+                            <img src={rightArrow} />
+                          </span>
+                        </h1>
+                        <div className='s4_mainpage_patent_container'>
+                          <div className='s4_mainpage_patent_container_box1'>
+                            <h4>
+                              Measurement method for eye movement and fully
+                              automated Deep-Learning base...
+                            </h4>
+                            <p>
+                              갈바닉 전극을 이용한 머리 장착형 전정기능 측정자치
+                              및 그 방법
+                            </p>
+                            <p>2022.09.20</p>
+                          </div>
+                          <div className='s4_mainpage_patent_container_box2'>
+                            <h4>
+                              Measurement method for eye movement and fully
+                              automated Deep-Learning base...
+                            </h4>
+                            <p>
+                              갈바닉 전극을 이용한 머리 장착형 전정기능 측정자치
+                              및 그 방법
+                            </p>
+                            <p>2022.09.20</p>
+                          </div>
                         </div>
                       </div>
-                      <div className='s4_mainpage_title2'>
-                        <div className='studies'>
-                          <h2>연구 및 논문자료</h2>
+                      <div className='s4_mainpage_patent'>
+                        <h1>
+                          연구 및 논문자료
+                          <span>
+                            <img src={leftArrow} />
+                            <img src={rightArrow} />
+                          </span>
+                        </h1>
+                        <div className='s4_mainpage_patent_container'>
+                          <div className='s4_mainpage_patent_container_box1'>
+                            <h4>
+                              Measurement method for eye movement and fully
+                              automated Deep-Learning base...
+                            </h4>
+                            <p>
+                              갈바닉 전극을 이용한 머리 장착형 전정기능 측정자치
+                              및 그 방법
+                            </p>
+                            <p>2022.09.20</p>
+                          </div>
+                          <div className='s4_mainpage_patent_container_box2'>
+                            <h4>
+                              Measurement method for eye movement and fully
+                              automated Deep-Learning base...
+                            </h4>
+                            <p>
+                              갈바닉 전극을 이용한 머리 장착형 전정기능 측정자치
+                              및 그 방법
+                            </p>
+                            <p>2022.09.20</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <img src={contactus} className='s4_mainpage_contactus' />
+                    <div className='s4_mainpage_contactus'>
+                      <h1>Contact Us</h1>
+                      <div className='s4_mainpage_btn'>
+                        <button>문의하기</button>
+                      </div>
+                    </div>
                   </div>
                   <Footer />
                 </div>

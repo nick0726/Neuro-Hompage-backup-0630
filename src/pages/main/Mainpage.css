@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "MinSans-Medium";
 }
 
 .body {
@@ -398,6 +399,8 @@
   text-shadow: 0.063rem 0.063rem #c5c5c5;
 }
 
+
+/* 보유기술 및 특허 컨테이너 */
 .s4_main_container {
   /* border: 0.188rem solid green; */
   width: 100%;
@@ -416,38 +419,134 @@
   /* border: 3px solid red; */
 }
 
-.s4_mainpage_patent h2 {
-  display: block;
-  /* border: 3px sold orange; */
-}
-
-.s4_mainpage_patent {
-  display: block;
-  border: 3px solid red;
-}
-
-.s4_mainpage_patent_1 {
-  display: flex;
-  border: 3px solid blue;
-  width: 50vw;
-  height: 25vh;
-}
-
-.s4_mainpage_patent_2 {
-  display: flex;
-  border: 3px solid orange;
-  width: 50vw;
-  height: 25vh;
-}
-
+/* 보유기술 & 연구 및 논문자료 */
 .s4_mainpage_title2 {
-  display: block;
+  display: flex;
   width: 50vw;
   /* border: 3px solid blue; */
 }
 
+.s4_mainpage_patent {
+  display: block;
+  /* border: 3px solid red; */
+  padding-top: 3rem;
+}
+
+.s4_mainpage_patent h1 {
+  display: flex;
+  margin-left: 1.1em;
+  padding-top: 1.3em;
+  /* border: 3px sold orange; */
+}
+
+.s4_mainpage_patent h1 span {
+  
+  /* 화살표 위치조절 */
+  margin-left: 19em;
+  /* border: 3px solid green; */
+}
+
+.s4_mainpage_patent h1 span img {
+  /* border: 3px solid red; */
+  width: 1.8vw;
+  /* 화살표 내부 조절 */
+  margin-left: 2.3em; 
+}
+
+.s4_mainpage_patent_container {
+  display: flex;
+  /* border: 3px solid blue; */
+  width: 50vw;
+  padding-left: 1.2em;
+  /* height: 28vh; */
+}
+
+.s4_mainpage_patent_container_box1 {
+  display: block;
+  /* border: 3px solid orange; */
+  width: 50vw;
+  height: 25vh;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.s4_mainpage_patent_container_box1 h4 {
+  margin-top: 1em;
+  line-height: 1.6rem;
+}
+
+.s4_mainpage_patent_container_box1 p {
+  margin-top: 1em;
+  line-height: 1.6rem;
+}
+
+.s4_mainpage_patent_container_box2 {
+  display: block;
+  /* border: 3px solid orange; */
+  width: 50vw;
+  height: 25vh;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.s4_mainpage_patent_container_box2 h4 {
+  margin-top: 1em;
+  line-height: 1.6rem;
+}
+
+.s4_mainpage_patent_container_box2 p {
+  margin-top: 1em;
+  line-height: 1.6rem;
+}
+
+
+
+
+
 .s4_mainpage_contactus {
+  background-image: url('../../images/contactus.jpg');
   background-size: cover;
-  height: 30vh;
-  width: 100vw;
+  /* position: relative; */
+  height: 31vh;
+  /* width: 100vw; */
+}
+
+.s4_mainpage_contactus h1 {
+  /* border: 3px solid white; */
+  padding: 1.5em 0 0 1.2em;
+  color: white;
+  font-size: 2.8em;
+  text-shadow: 0.1rem 0.1rem #212121;
+}
+
+.s4_mainpage_btn {
+  /* border: 3px solid gold; */
+  /* margin-bottom: 16rem; */
+  align-items: center;
+  padding: 3.2em 0 0 3em;
+}
+
+.s4_mainpage_btn button {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 1.25rem;
+  padding-bottom: 0.16rem;
+  width: 280px;
+  height: 6.9vh;
+  font-size: 1.45em;
+  background-color: transparent;
+  color: white;
+  border: 0.2rem solid rgb(300, 300, 300);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  text-decoration-line: none;
+  text-shadow: 0.1rem 0.1rem #212121;
+}
+
+.s4_mainpage_btn button:hover {
+  background: whitesmoke;
+  color: rgb(92, 92, 92);
+  text-shadow: 0.063rem 0.063rem #c5c5c5;
 }
