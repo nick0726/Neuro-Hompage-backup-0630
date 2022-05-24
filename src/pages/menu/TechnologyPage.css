@@ -30,19 +30,29 @@
 
 .sub_header {
     height: 200px;
-    position: relative;
 }
 
 .sub_title {
     height: 50px;
-    position: absolute;
-    top: 40%;
-    transform: translate(0%, -50%);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .sub_menu {
-    position: sticky;
-    top: 12.5vh;
+
+}
+
+.menu_list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sub_menu ul li {
+    display: inline-block;
+    color: black;
 }
 
 .content {

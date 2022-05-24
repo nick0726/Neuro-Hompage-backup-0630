@@ -10,7 +10,12 @@ function TechnologyPage() {
             <h6>Technology</h6>
           </div>
           <div className='sub_menu'>
-            
+            <ul className='menu_list'>
+              <li>소프트웨어 기반 안구추적 알고리즘</li>
+              <li>가상현실(VR)</li>
+              <li>인공지능(AI)</li>
+              <li>개별 주파수 동조 뇌자극 알고리즘</li>
+            </ul>
           </div>
         </div>
 
