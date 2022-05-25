@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "HallymM.otf";
+  src: url('../../fonts/Hallym-OTF/HallymM.otf')
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'HallymM.ttf';
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.login_container {
+  border: 3px solid red;
+  display: block;
+  text-align: center;
+  justify-content: center; 
+  height: 70vh;
+  width: 100vw;
+}
+
+.login_container .login_title {
+  line-height: 4em;
+  padding-top: 4.5em;
+  padding-bottom: 3em;
+}
+
+.login_box {
+  width: 60vw;
+  height: 40vh;
+  border-top: 3px solid blue;
+  background-color: #F5F5F5;
+  display: flex;
+  padding-top: 3.5em;
+  margin-left: 20%;
+}
+
+.login_box .login_box_left {
+  width: 30vw;
+  height: 30vh;
+  border: 3px solid black;
+  display: flex;
+}
+
+.login_box .login_box_left .account_box {
+  width: 20vw;
+  height: 15vh;
+  border: 3px solid red;
+  display: block;
+}
+
+.login_box .login_box_left .login_btn {
+  width: 12vw;
+  height: 10vh;
+  border: 3px solid blue;
+  display: block;
+}
+
+.login_box .login_box_left .social_login {
+  width: 10vw;
+  height: 5vh;
+  border: 3px solid greenyellow;
+  display: block;
+}
+
+.login_box .login_box_right {
+  width: 30vw;
+  height: 30vh;
+  border: 3px solid yellowgreen;
+  display: flex;
+}

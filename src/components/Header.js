@@ -39,9 +39,11 @@ const Header = () => {
         </div>
         <div className='right-top-menu'>
           <div className='language'>Language</div>
-          <div className='login-Btn'>
-            <button>로그인</button>
-          </div>
+          <Link to='login'>
+            <div className='login-Btn'>
+              <button>로그인</button>
+            </div>
+          </Link>
         </div>
       </div>
     </>

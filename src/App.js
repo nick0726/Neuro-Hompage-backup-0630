@@ -10,6 +10,7 @@ import RnDPage from "./pages/menu/RnDPage.js";
 import SupportPage from "./pages/menu/RnDPage.js";
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
+import LoginPage from "./pages/login/LoginPage";
 
 function App() {
   const [header, headerUpdate] = useState(true);
@@ -22,8 +23,8 @@ function App() {
         <Route path='/technology' element={<TechnologyPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/RnD' element={<RnDPage />} />
-        <Route path='/support' e lement={<SupportPage />} />
-        <Route />
+        <Route path='/support' element={<SupportPage />} />
+        <Route path='/login' element={<LoginPage />} />
         <Route />
         <Route />
       </Routes>
