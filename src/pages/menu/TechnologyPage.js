@@ -1,26 +1,34 @@
 import './TechnologyPage.css';
 
+
 function TechnologyPage() {
   return (
     <>
-      <div className='body'>
+      <body data-spy="scroll" data-target=".sub_nav">
         <div className='sub_header'>
           <div className='sub_title'>
             <h2>기술</h2>
             <h6>Technology</h6>
           </div>
+          
+          {/* sub nav */}
           <div className='sub_menu'>
-            <ul className='menu_list'>
-              <li>소프트웨어 기반 안구추적 알고리즘</li>
-              <li>가상현실(VR)</li>
-              <li>인공지능(AI)</li>
-              <li>개별 주파수 동조 뇌자극 알고리즘</li>
-            </ul>
+            <nav className='sub_nav'>
+              <ul className='sub_nav_list'>
+                <li><a href="#section1">소프트웨어 기반 안구추적 알고리즘</a></li>
+                <li><a href="#section2">가상현실(VR)</a></li>
+                <li><a href="#section3">인공지능(AI)</a></li>
+                <li><a href="#section4">개별 주파수 동조 뇌자극 알고리즘</a></li>
+              </ul> 
+            </nav>
           </div>
-        </div>
+      </div>
 
+        {/* 본문 내용 */}
         <div className='content'>
-          <div className='eye_tracking'>
+
+          {/* 소프트웨어 기반 안구추적 알고리즘 */}
+          <div className='section1'>
             <div className='title'>
               <h2>소프트웨어 기반 안구추적 알고리즘</h2>
             </div>
@@ -46,7 +54,7 @@ function TechnologyPage() {
             </div>
           </div>
           
-          <div className='vr'>
+          <div className='section2'>
             <div className='title'>
               <h2>가상현실(VR)</h2>
             </div>
@@ -64,7 +72,7 @@ function TechnologyPage() {
             </div>
           </div>
 
-          <div className='ai'>
+          <div className='section3'>
             <div className='title'>
               <h2>인공지능(AI)</h2>
             </div>
@@ -82,7 +90,7 @@ function TechnologyPage() {
             </div>
           </div>
 
-          <div className='brain_stimulation'>
+          <div className='section4'>
             <div className='title'>
               <h2>개별주파수 동조 뇌자극 알고리즘</h2>
             </div>
@@ -104,7 +112,7 @@ function TechnologyPage() {
           </div>
         </div>
 
-      </div>
+      </body>
     </>
   );
 }
