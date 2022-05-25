@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
 import "./Mainpage.css";
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -8,6 +9,8 @@ import Footer from "../../components/Footer";
 import contactus from "../../images/contactus.jpg";
 import rightArrow from "../../images/right-arrow.png";
 import leftArrow from "../../images/left-arrow.png";
+import mainpage from "../../images/mainpage.svg";
+import sphere from "../../images/sphere.jpg";
 import news from "../../data/news";
 import Barcode from "../../components/Barcode";
 
@@ -98,6 +101,9 @@ function MainPage(props) {
                             <br />
                             니다.
                           </p>
+                          <div className='s2_mainpage_sphere'>
+                            <img src={sphere} alt={sphere} />
+                          </div>
                           <div className='s2_mainpage_btn'>
                             <button>View More</button>
                           </div>
