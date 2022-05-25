@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Mainpage.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import mouse from "../../images/mouse.png";
@@ -9,6 +9,7 @@ import contactus from "../../images/contactus.jpg";
 import rightArrow from "../../images/right-arrow.png";
 import leftArrow from "../../images/left-arrow.png";
 import news from "../../data/news";
+import Barcode from "../../components/Barcode";
 
 function MainPage(props) {
   return (
@@ -133,6 +134,9 @@ function MainPage(props) {
                           <div className='s3_mainpage_news_content_C'>
                             <h1>{news[2].title}</h1>
                             <p>{news[2].content}</p>
+                            <p>
+                              <Barcode />
+                            </p>
                           </div>
                         </div>
                       </div>
