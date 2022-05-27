@@ -11,6 +11,9 @@ import rightArrow from "../../images/right-arrow.png";
 import leftArrow from "../../images/left-arrow.png";
 import mainpage from "../../images/mainpage.svg";
 import sphere from "../../images/sphere.jpg";
+import sphere2 from "../../images/sphere2.png";
+import sphere3 from "../../images/sphere3.svg";
+
 import news from "../../data/news";
 import Barcode from "../../components/Barcode";
 
@@ -102,7 +105,8 @@ function MainPage(props) {
                             니다.
                           </p>
                           <div className='s2_mainpage_sphere'>
-                            <img src={sphere} alt={sphere} />
+                            <video src={sphere2} alt={sphere} loop={true} />
+                            <img src={sphere2} alt={sphere} loop={true} />
                           </div>
                           <div className='s2_mainpage_btn'>
                             <button>View More</button>
