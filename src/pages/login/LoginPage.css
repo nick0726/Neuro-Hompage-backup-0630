@@ -35,6 +35,7 @@
   line-height: 48px;
   padding-top: 96px;
   padding-bottom: 57.6px;
+  font-size: 0.9em;
 }
 
 .login_box {
@@ -95,7 +96,7 @@
   background-color: #3A7BBF;
   color: #FFFFFF;
   /* font-size: 1.1em; */
-  font-size: 17.6px;
+  font-size: 1em;
   font-weight: 700;
   border-radius: 2px;
   border: none;
@@ -122,18 +123,23 @@
   display: block;
 }
 
+.login_box .login_box_left .auto_login {
+  font-size: 0.8em;
+}
+
 .login_box .login_box_left .auto_login input {
-  transform: scale(1.8);
-  margin: 0.6em 0.45em 0 0.5em;
+  transform: scale(1.5);
+  margin: 0.4em 0.45em 0 0.5em;
 }
 
 .login_box .login_box_left .save_login {
   margin-top: 0.3em;
   padding-bottom: 0.3em;
+  font-size: 0.8em;
 }
 
 .login_box .login_box_left .save_login input {
-  transform: scale(1.8);
+  transform: scale(1.5);
   margin: 0.45em 0.45em 0 0.5em;
 }
 
@@ -158,7 +164,7 @@
 .login_box .login_box_right .signup_box h1 {
   margin-top: 0.5em;
   line-height: 1.3em;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: 1200;
 }
 
@@ -182,7 +188,7 @@
 .login_box .login_box_right .signup_btn button {
   background-color: #3E3E3E;
   color: #FFFFFF;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 700;
   border-radius: 2px;
   border: none;
@@ -197,13 +203,13 @@
 
 .login_box .login_box_right .signup_guide p {
   margin-top: 1.5em;
-  font-size: 0.9em;
+  font-size: 14px;
   font-weight: 500;
   /* padding-right: 2em; */
 }
 
 .signup_guide_p2 {
   margin-top: 1.5em;
-  font-size: 0.90em;
+  font-size: 14px;
   padding-left: 0.2em;
 }
