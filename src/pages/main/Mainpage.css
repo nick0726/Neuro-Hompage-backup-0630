@@ -45,10 +45,12 @@
 .s0_mainpage_title h1 {
   font-size: 3.6em;
   padding: 0 0 1.5rem;
+  color: #FFFFFF;
 }
 
 .s0_mainpage_title h4 {
   /* border: 0.188rem solid red; */
+  color: #FFFFFF;
   line-height: 6.8rem;
   font-size: 4rem;
   animation: slideUp .8s ease-in-out forwards .8s;
@@ -62,8 +64,9 @@
   width: 280px;
   height: 6.9vh;
   font-size: 1.2em;
-  background-color: transparent;
-  color: white;
+  /* background-color: transparent; */
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #FFFFFF;
   border: 0.125rem solid rgb(255, 255, 255, 0.07);
   border-radius: 5px;
   cursor: pointer;
@@ -83,6 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border-color: #FFFFFF; */
 }
 
 .s0_mainpage_mouse img {
