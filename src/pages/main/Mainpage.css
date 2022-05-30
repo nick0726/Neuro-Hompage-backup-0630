@@ -43,14 +43,14 @@
 }
 
 .s0_mainpage_title h1 {
-  font-size: 4em;
+  font-size: 3.6em;
   padding: 0 0 1.5rem;
 }
 
 .s0_mainpage_title h4 {
   /* border: 0.188rem solid red; */
   line-height: 6.8rem;
-  font-size: 4.313rem;
+  font-size: 4rem;
   animation: slideUp .8s ease-in-out forwards .8s;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .s1_mainpage_title h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   padding: 0 0 2rem;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .s1_mainpage_content p {
-  font-size: 1.2rem;
+  font-size: 1em;
   line-height: 3rem;
 }
 
@@ -138,9 +138,9 @@
   text-align: left;
   padding-left: 1.25rem;
   padding-bottom: 0.16rem;
-  width: 280px;
-  height: 6.9vh;
-  font-size: 1.2em;
+  width: 210px;
+  height: 6.2vh;
+  font-size: 1em;
   background-color: #3E3535;
   color: white;
   border: 0.125rem solid rgb(194, 194, 194);
@@ -189,7 +189,7 @@
 }
 
 .s2_mainpage_title h1 {
-  font-size: 4em;
+  font-size: 3.6em;
   padding: 0 0 1.2rem;
 }
 
@@ -200,12 +200,12 @@
 }
 
 .s2_mainpage_title h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding: 0 0 1.2rem;
 }
 
 .s2_mainpage_content p {
-  font-size: 1.2rem;
+  font-size: 1em;
   line-height: 3rem;
 }
 
@@ -230,9 +230,9 @@
   text-align: left;
   padding-left: 1.25rem;
   padding-bottom: 0.16rem;
-  width: 280px;
-  height: 6.9vh;
-  font-size: 1.2em;
+  width: 210px;
+  height: 6.2vh;
+  font-size: 1em;
   background-color: transparent;
   color: white;
   border: 0.125rem solid rgb(194, 194, 194);
