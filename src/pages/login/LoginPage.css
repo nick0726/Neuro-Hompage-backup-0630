@@ -18,40 +18,45 @@
 
 .login_container {
   /* border: 3px solid red; */
-  /* text-align: center; */
-  display: block;
+  display: flex;
+  position: relative;
+  flex-direction: column;
   align-items: center;
   height: 70vh;
-  width: 60%;
-  margin-left: 19%;
+  width: 55%;
+  margin: 0 auto;
 }
 
 .login_container .login_title {
   text-align: center;
-  align-items: center;
-  line-height: 3em;
+  /* line-height: 3em;
   padding-top: 6em;
-  padding-bottom: 3.6em;
+  padding-bottom: 3.6em; */
+  line-height: 48px;
+  padding-top: 96px;
+  padding-bottom: 57.6px;
 }
 
 .login_box {
   display: flex;
-  justify-content: center;
+  position: relative;
+  margin: 0 auto;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 32vh;
   border-top: 3.2px solid #024ABD;
   background-color: #F5F5F5;
-  padding-top: 2.5em;
-  justify-content: center;
+  /* padding-top: 2em; */
+  /* padding-top: 40px; */
   /* margin-left: 23em; */
 }
 
 .login_box .login_box_left {
-  border: 3px solid blue;
-
-  width: 30vw;
-  height: 28vh;
+  /* border: 3px solid blue; */
+  width: 570px;
+  /* width: 30vw; */
+  /* height: 28vh; */
   /* border: 3px solid black; */
   display: grid;
   grid-template-columns: 19em 9em;
@@ -70,17 +75,18 @@
 
 /* ID PW 입력칸 */
 .login_box .login_box_left .account_box input {
-  margin: 0em 0 2em 2.4em;
+  margin: 0 0 2em 2.4em;
   padding-bottom: 2.2em;
   border: 1px #DCE1E5;
   background-color: #FFFFFF;
   border-radius: 2px;
-  align-self: stretch;
 }
 
 .login_box .login_box_left .login_btn {
-  width: 8.7vw;
-  height: 11vh;
+  /* width: 8.7vw; */
+  /* height: 11vh; */
+  width: 155px;
+  height: 126px;
   margin-top: 3em;
   display: grid;
 }
@@ -88,58 +94,53 @@
 .login_box .login_box_left .login_btn button {
   background-color: #3A7BBF;
   color: #FFFFFF;
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
+  font-size: 17.6px;
   font-weight: 700;
   border-radius: 2px;
   border: none;
   cursor: pointer;
-
 }
 
 .login_box .login_box_left .social_login {
   /* width: 15vw; */
   /* height: 5vh; */
-  margin: 0 0 0 2.2em;
+  margin: 1em 0 0 2.2em;
   /* border: 3px solid greenyellow; */
    /*소셜로그인 아이콘 컬럼, 세로 배치 */
   display: flex;
 }
 
 .login_box .login_box_left .social_login img {
-  width: 2.6vw;
+  /* width: 2.6vw;
+  height: 2.8em; */
+  width: 49px;
+  /* width: 2.6vw; */
   height: 2.8em;
   margin-right: 0.8em;
   cursor: pointer;
   display: block;
 }
 
-.login_box .login_box_left .auto_login {
-  display: flex;
-  /* border: 3px solid orange; */
-  margin: 0 0.5em 0 0;
+.login_box .login_box_left .auto_login input {
+  transform: scale(1.8);
+  margin: 0.6em 0.45em 0 0.5em;
 }
 
-.login_box .login_box_left .auto_login input {
+.login_box .login_box_left .save_login {
+  margin-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.login_box .login_box_left .save_login input {
   transform: scale(1.8);
   margin: 0.45em 0.45em 0 0.5em;
 }
 
-.login_box .login_box_left .auto_login p {
-  margin-left: 0.3em;
-  margin-top: 0.1em;
-  font-size: 0.9em;
-}
-
 /*로그인 페이지 우측 박스*/
 .login_box .login_box_right {
-  width: 30vw;
-  height: 28vh;
-  /* border: 3px solid black; */
-}
-
-.login_box .login_box_right {
-  width: 30vw;
-  height: 28vh;
+  width: 570px;
+  /* height: 28vh; */
   /* border: 3px solid black; */
   display: grid;
   grid-template-columns: 19em 9em;
@@ -169,8 +170,10 @@
 
 /* 회원가입칸 */
 .login_box .login_box_right .signup_btn {
-  width: 8.7vw;
-  height: 11.3vh;
+  /* width: 8.7vw; */
+  /* height: 11.3vh; */
+  width: 155px;
+  height: 130px;
   margin-top: 3em;
   margin-right: 0.5em;
   display: grid;

@@ -26,9 +26,15 @@ function LoginPage() {
               <img src={facebook} alt={facebook} />
               <img src={email} alt={email} />
             </div>
-            <div className='auto_login'>
-              <input type='checkbox'></input>
-              <p>자동로그인</p>
+            <div className='login_option'>
+              <div className='auto_login'>
+                <input type='checkbox'></input>
+                자동로그인
+              </div>
+              <div className='save_login'>
+                <input type='checkbox'></input>
+                ID 저장
+              </div>
             </div>
           </div>
           <div className='login_box_right'>

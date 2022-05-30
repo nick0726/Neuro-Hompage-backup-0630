@@ -104,10 +104,6 @@ function MainPage(props) {
                             <br />
                             니다.
                           </p>
-                          <div className='s2_mainpage_sphere'>
-                            <video src={sphere2} alt={sphere} loop={true} />
-                            <img src={sphere2} alt={sphere} loop={true} />
-                          </div>
                           <div className='s2_mainpage_btn'>
                             <button>View More</button>
                           </div>
