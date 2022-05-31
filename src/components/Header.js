@@ -1,10 +1,15 @@
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  let [header, headerUpdate] = useState(0);
+  // header = fullpage_api.getScrollY();
+  console.log(header);
+
   return (
     <>
-      <div className='header'>
+      <div className={"landing header"}>
         <Link to='/'>
           <h1>NeuroEars</h1>
         </Link>

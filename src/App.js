@@ -11,6 +11,7 @@ import SupportPage from "./pages/menu/RnDPage.js";
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import LoginPage from "./pages/login/LoginPage";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [header, headerUpdate] = useState(true);
