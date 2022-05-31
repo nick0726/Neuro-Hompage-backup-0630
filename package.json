@@ -9,11 +9,8 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
-<<<<<<< HEAD
-    "bwip-js": "^3.0.5",
-=======
     "bootstrap": "^5.1.3",
->>>>>>> 82fda093714596839ad8c23a49bbc9668e857ee5
+    "bwip-js": "^3.0.5",
     "connected-react-router": "^6.9.2",
     "immutable": "^4.0.0",
     "open-color": "^1.9.1",
