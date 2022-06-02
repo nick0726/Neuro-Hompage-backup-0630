@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "./Header.css";
+import "./LandingHeader.css";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const LandingHeader = () => {
   return (
     <>
-      <header className='header'>
+      <div className='Landing header'>
         <Link to='/'>
           <h1>NeuroEars</h1>
         </Link>
@@ -48,9 +48,9 @@ const Header = () => {
             </div>
           </Link>
         </div>
-      </header>
+      </div>
     </>
   );
 };
 
-export default Header;
+export default LandingHeader;

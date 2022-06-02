@@ -24,6 +24,7 @@
   scrollbar-width: none;
   background-image: url('../../images/mainpage.svg');
   background: cover;
+  scroll-snap-align: start;
 }
 
 .s0_main_container_content {
@@ -31,7 +32,6 @@
   height: 100%;
   background-size: cover;
   overflow: hidden;
-  scroll-snap-align: start;
   /* border: 0.188rem solid blue; */
 }
 

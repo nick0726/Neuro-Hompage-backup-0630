@@ -5,19 +5,15 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import mouse from "../../images/mouse.png";
 import s1_background from "../../images/Mainpage_background_2.png";
 import report1 from "../../images/Mainpage_background_4.png";
+import Header from "../../components/Header";
+import LandingHeader from "../../components/LandingHeader";
 import Footer from "../../components/Footer";
-import contactus from "../../images/contactus.jpg";
 import rightArrow from "../../images/right-arrow.png";
 import leftArrow from "../../images/left-arrow.png";
-import mainpage from "../../images/mainpage.svg";
-import sphere from "../../images/sphere.jpg";
-import sphere2 from "../../images/sphere2.png";
-import sphere3 from "../../images/sphere3.svg";
-
 import news from "../../data/news";
 import Barcode from "../../components/Barcode";
 
-function MainPage(props) {
+function MainPage() {
   return (
     <>
       <ReactFullpage
@@ -34,6 +30,7 @@ function MainPage(props) {
                 <div className='section s0'>
                   <div className='s0_main_container'>
                     <div className='s0_main_container_content'>
+                      {/* <LandingHeader /> */}
                       <div className='s0_mainpage_title'>
                         <h1>NeuroEars</h1>
                         <h4>평형기능</h4>

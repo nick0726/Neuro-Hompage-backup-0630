@@ -14,12 +14,11 @@ import LoginPage from "./pages/login/LoginPage";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [header, headerUpdate] = useState(true);
   return (
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<MainPage headerUpdate={headerUpdate} />} />
+        <Route path='/' element={<MainPage />} />
         <Route path='/company' element={<IntroPage />} />
         <Route path='/technology' element={<TechnologyPage />} />
         <Route path='/products' element={<ProductsPage />} />
@@ -29,7 +28,6 @@ function App() {
         <Route />
         <Route />
       </Routes>
-
       <Footer />
     </>
   );
