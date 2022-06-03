@@ -427,34 +427,40 @@
   background-size: cover;
   display: flex;
   overflow: hidden;
-  padding: 2em;
+  /* padding: 2em; */
   /* border: 3px solid red; */
+  /* padding: 15em 2em 2em 6.2em; */
+  /* justify-content: center; */
+  padding: 11em 0 0 0;
 }
 
-/* 보유기술 & 연구 및 논문자료 */
+/* 연구 및 논문자료 */
+.s4_mainpage_patent {
+  display: block;
+  /* border: 3px solid red; */
+  /* padding-top: 3rem; */
+  font-size: 0.8em;
+  padding-left: 8em;
+}
+
 .s4_mainpage_title2 {
   display: flex;
   width: 50vw;
   /* border: 3px solid blue; */
 }
 
-.s4_mainpage_patent {
-  display: block;
-  /* border: 3px solid red; */
-  /* padding-top: 3rem; */
-  font-size: 0.8em;
-}
-
 .s4_mainpage_patent h1 {
-  display: flex;
-  margin-left: 1.1em;
-  padding-top: 1.3em;
+  display: block;
+  margin-left: 0.8em;
+  /* padding-top: 8em; */
+  font-size: 1.6em;
   /* border: 3px sold orange; */
 }
 
 .s4_mainpage_patent h1 span {
   /* 화살표 위치조절 */
-  margin-left: 20em;
+  /* margin-left: 20em; */
+  padding-left: 21em;
   /* border: 3px solid green; */
 }
 
@@ -468,23 +474,26 @@
 .s4_mainpage_patent_container {
   display: flex;
   /* border: 3px solid blue; */
-  width: 50vw;
-  padding-left: 1.2em;
+  width: 40vw;
+  padding-left: 0.6em;
   /* height: 28vh; */
+  /* margin-left: 5em; */
 }
 
 .s4_mainpage_patent_container_box1 {
   display: block;
   /* border: 3px solid orange; */
-  width: 50vw;
+  width: 40vw;
   height: 25vh;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-left: 1em;
+  padding-right: 2em;
 }
 
 .s4_mainpage_patent_container_box1 h4 {
   margin-top: 1em;
   line-height: 1.6rem;
+  font-size: 1.2em;
 }
 
 .s4_mainpage_patent_container_box1 p {
@@ -495,15 +504,17 @@
 .s4_mainpage_patent_container_box2 {
   display: block;
   /* border: 3px solid orange; */
-  width: 50vw;
+  width: 40vw;
   height: 25vh;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-left: 1em;
+  padding-right: 2em;
 }
 
 .s4_mainpage_patent_container_box2 h4 {
   margin-top: 1em;
   line-height: 1.6rem;
+  font-size: 1.2em;
 }
 
 .s4_mainpage_patent_container_box2 p {

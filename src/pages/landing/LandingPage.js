@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState, useEffect } from "react";
-import "./Mainpage.css";
+import "./LandingPage.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import mouse from "../../images/mouse.png";
 import s1_background from "../../images/Mainpage_background_2.png";
@@ -13,7 +13,7 @@ import leftArrow from "../../images/left-arrow.png";
 import news from "../../data/news";
 import Barcode from "../../components/Barcode";
 
-function MainPage() {
+function LandingPage() {
   return (
     <>
       <ReactFullpage
@@ -239,4 +239,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default LandingPage;

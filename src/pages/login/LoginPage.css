@@ -22,9 +22,14 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
   width: 55%;
   margin: 0 auto;
+  padding-top: 4.5em;
+}
+
+.login_container .login_title h1 {
+  font-size: 1.8em;
 }
 
 .login_container .login_title {
@@ -78,7 +83,7 @@
 /* ID PW 입력칸 */
 .login_box .login_box_left .account_box input {
   margin: 0 0 2em 2.4em;
-  padding-bottom: 2.2em;
+  padding-bottom: 1.2em;
   border: 1px #DCE1E5;
   background-color: #FFFFFF;
   border-radius: 2px;
@@ -106,7 +111,7 @@
 .login_box .login_box_left .social_login {
   /* width: 15vw; */
   /* height: 5vh; */
-  margin: 1em 0 0 2.2em;
+  margin: 0em 0 0 2.5em;
   /* border: 3px solid greenyellow; */
    /*소셜로그인 아이콘 컬럼, 세로 배치 */
   display: flex;
