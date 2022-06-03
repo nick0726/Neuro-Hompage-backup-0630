@@ -523,9 +523,6 @@
 }
 
 
-
-
-
 .s4_mainpage_contactus {
   background-image: url('../../images/contactus.jpg');
   background-size: cover;
@@ -533,6 +530,7 @@
   display: block;
   /* justify-content: center; */
   padding: 3em 0 2em 2em;
+  z-index: inherit;
 }
 
 .s4_mainpage_contactus h1 {

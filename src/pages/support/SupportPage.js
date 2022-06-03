@@ -1,12 +1,12 @@
 import "./SupportPage.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Inquiry from "./Support_Inquiry";
+import Productquery from "./Support_Product_Query";
 import FAQ from "./Support_FAQ";
 import QnA from "./Support_QnA";
 
 const tabList = {
-  0: <Inquiry />,
+  0: <Productquery />,
   1: <FAQ />,
   2: <QnA />,
 };
@@ -15,7 +15,7 @@ function SupportPage() {
   return (
     <>
       <div>
-        <Inquiry />
+        <Productquery />
         <FAQ />
         <QnA />
       </div>

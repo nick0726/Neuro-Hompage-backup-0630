@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import mouse from "../../images/mouse.png";
@@ -14,6 +15,7 @@ import news from "../../data/news";
 import Barcode from "../../components/Barcode";
 
 function LandingPage() {
+  const navigate = useNavigate();
   return (
     <>
       <ReactFullpage
@@ -37,7 +39,13 @@ function LandingPage() {
                         <h4>측정 진단 치료</h4>
                         <h4>소프트웨어 개발 전문기업</h4>
                         <div className='s0_mainpage_btn'>
-                          <button>문의하기</button>
+                          <button
+                            onClick={() => {
+                              navigate("/productquery");
+                            }}
+                          >
+                            문의하기
+                          </button>
                         </div>
                         <div className='s0_mainpage_mouse'>
                           <img src={mouse} alt={mouse} />
@@ -67,7 +75,13 @@ function LandingPage() {
                             니다.
                           </p>
                           <div className='s1_mainpage_btn'>
-                            <button>View More</button>
+                            <button
+                              onClick={() => {
+                                navigate("/CompanyPage");
+                              }}
+                            >
+                              View More
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -102,7 +116,13 @@ function LandingPage() {
                             니다.
                           </p>
                           <div className='s2_mainpage_btn'>
-                            <button>View More</button>
+                            <button
+                              onClick={() => {
+                                navigate("/technology");
+                              }}
+                            >
+                              View More
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -224,7 +244,13 @@ function LandingPage() {
                     <div className='s4_mainpage_contactus'>
                       <h1>Contact Us</h1>
                       <div className='s4_mainpage_btn'>
-                        <button>문의하기</button>
+                        <button
+                          onClick={() => {
+                            navigate("/productquery");
+                          }}
+                        >
+                          문의하기
+                        </button>
                       </div>
                     </div>
                   </div>

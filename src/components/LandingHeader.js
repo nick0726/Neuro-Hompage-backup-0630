@@ -1,40 +1,65 @@
-import React, { useState, useEffect } from "react";
+import React, { Link, useState, useEffect } from "react";
 import "./LandingHeader.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const LandingHeader = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className='Landing header'>
-        <Link to='/'>
-          <h1>NeuroEars</h1>
-        </Link>
+        <h1
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          NeuroEars
+        </h1>
         <div className='menu-nav'>
           <ul>
             <li>
-              <Link to='company'>
-                <p>회사소개</p>
-              </Link>
+              <p
+                onClick={() => {
+                  navigate("/company");
+                }}
+              >
+                회사소개
+              </p>
             </li>
             <li>
-              <Link to='technology'>
-                <p>기술</p>
-              </Link>
+              <p
+                onClick={() => {
+                  navigate("/technology");
+                }}
+              >
+                기술
+              </p>
             </li>
             <li>
-              <Link to='products'>
-                <p>제품</p>
-              </Link>
+              <p
+                onClick={() => {
+                  navigate("/product");
+                }}
+              >
+                제품
+              </p>
             </li>
             <li>
-              <Link to='RnD'>
-                <p>연구개발</p>
-              </Link>
+              <p
+                onClick={() => {
+                  navigate("/RnD");
+                }}
+              >
+                연구개발
+              </p>
             </li>
             <li>
-              <Link to='support_service'>
-                <p>지원 및 서비스</p>
-              </Link>
+              <p
+                onClick={() => {
+                  navigate("/support");
+                }}
+              >
+                지원 및 서비스
+              </p>
             </li>
           </ul>
         </div>
@@ -42,11 +67,15 @@ const LandingHeader = () => {
           <div className='language-Btn'>
             <button>Language</button>
           </div>
-          <Link to='login'>
-            <div className='login-Btn'>
-              <button>로그인</button>
-            </div>
-          </Link>
+          <div className='login-Btn'>
+            <button
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              로그인
+            </button>
+          </div>
         </div>
       </div>
     </>

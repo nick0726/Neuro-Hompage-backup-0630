@@ -1,40 +1,55 @@
-import React, { useState, useEffect } from "react";
-import "./Header.css";
-import { Link } from "react-router-dom";
+import React, { Link, useState, useEffect } from "react";
+import "./LandingHeader.css";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <header className='header'>
-        <Link to='/'>
-          <h1>NeuroEars</h1>
-        </Link>
+      <div className='header'>
+        <h1
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          NeuroEars
+        </h1>
         <div className='menu-nav'>
           <ul>
-            <li>
-              <Link to='company'>
-                <p>회사소개</p>
-              </Link>
+            <li
+              onClick={() => {
+                navigate("/company");
+              }}
+            >
+              회사소개
             </li>
-            <li>
-              <Link to='technology'>
-                <p>기술</p>
-              </Link>
+            <li
+              onClick={() => {
+                navigate("/technology");
+              }}
+            >
+              기술
             </li>
-            <li>
-              <Link to='products'>
-                <p>제품</p>
-              </Link>
+            <li
+              onClick={() => {
+                navigate("/products");
+              }}
+            >
+              제품
             </li>
-            <li>
-              <Link to='RnD'>
-                <p>연구개발</p>
-              </Link>
+            <li
+              onClick={() => {
+                navigate("/RnD");
+              }}
+            >
+              연구개발
             </li>
-            <li>
-              <Link to='support_service'>
-                <p>지원 및 서비스</p>
-              </Link>
+            <li
+              onClick={() => {
+                navigate("/support");
+              }}
+            >
+              지원 및 서비스
             </li>
           </ul>
         </div>
@@ -42,13 +57,26 @@ const Header = () => {
           <div className='language-Btn'>
             <button>Language</button>
           </div>
-          <Link to='login'>
-            <div className='login-Btn'>
-              <button>로그인</button>
-            </div>
-          </Link>
+          <div className='mypage-Btn'>
+            <button
+              onClick={() => {
+                navigate("/mypage");
+              }}
+            >
+              MyPage
+            </button>
+          </div>
+          <div className='login-Btn'>
+            <button
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              로그인
+            </button>
+          </div>
         </div>
-      </header>
+      </div>
     </>
   );
 };

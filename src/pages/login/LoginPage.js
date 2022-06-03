@@ -1,10 +1,12 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./LoginPage.css";
 import naver from "../../../src/images/naver.png";
 import facebook from "../../../src/images/facebook.png";
 import email from "../../../src/images/email.png";
 
 function LoginPage() {
+  const navigate = useNavigate();
   return (
     <>
       <div className='login_container'>
@@ -19,7 +21,13 @@ function LoginPage() {
               <input></input>
             </div>
             <div className='login_btn'>
-              <button>로그인</button>
+              <button
+                onClick={() => {
+                  navigate("/mypage/account");
+                }}
+              >
+                로그인
+              </button>
             </div>
             <div className='social_login'>
               <img src={naver} alt={naver} />
@@ -43,13 +51,25 @@ function LoginPage() {
               <p>뉴로이어즈에 가입하고 다양한 서비스를 이용해 보세요</p>
             </div>
             <div className='signup_btn'>
-              <button>회원가입</button>
+              <button
+                onClick={() => {
+                  navigate("/signup");
+                }}
+              >
+                회원가입
+              </button>
             </div>
             <div className='signup_guide'>
               <p>도움이 필요하신가요?</p>
             </div>
             <div className='signup_guide_p2'>
-              <p className=''>아이디/비밀번호 찾기</p>
+              <p
+                onClick={() => {
+                  navigate("/inquiry");
+                }}
+              >
+                아이디/비밀번호 찾기
+              </p>
             </div>
           </div>
         </div>

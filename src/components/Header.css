@@ -20,6 +20,7 @@
   color: black;
   padding-left: 4em;
   font-size: 1.8em;
+  cursor: pointer;
 }
 
 .header .menu-nav ul li {
@@ -27,6 +28,7 @@
   margin: 0 5em;
   /* color: black; */
   font-size: 0.88em;
+  cursor: pointer;
 }
 
 .header .right-top-menu {
@@ -42,7 +44,14 @@
 
 .header .right-top-menu .login-Btn {
   display: inline-block;
-  margin: 0 2.18em 1.25em;
+  /* margin: 0 2.18em 1.25em; */
+  margin: 0 2em 1.25em;
+}
+
+/* My Page */
+.header .right-top-menu .mypage-Btn {
+  display: inline-block;
+  margin: 0 0 0 2em;
 }
 
 .header .right-top-menu .login-Btn button {
@@ -62,6 +71,28 @@
 }
 
 .header .right-top-menu .login-Btn button:hover {
+  background: whitesmoke;
+  color: rgb(92, 92, 92);
+}
+
+/* My Page */
+.header .right-top-menu .mypage-Btn button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85px;
+  height: 40px;
+  font-size: 0.9em;
+  background-color: #024ABD;
+  color: white;
+  border: 2px solid #024ABD;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.7s ease;
+}
+/* My Page */
+.header .right-top-menu .mypage-Btn button:hover {
   background: whitesmoke;
   color: rgb(92, 92, 92);
 }

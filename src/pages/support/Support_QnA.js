@@ -1,4 +1,4 @@
-function Support_QnA() {
+function SupportQnA() {
   return (
     <>
       <div>QnA페이지</div>
@@ -6,4 +6,4 @@ function Support_QnA() {
   );
 }
 
-export default Support_QnA;
+export default SupportQnA;

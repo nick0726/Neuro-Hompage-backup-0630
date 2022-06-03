@@ -1,4 +1,4 @@
-function Support_FAQ() {
+function SupportFAQ() {
   return (
     <>
       <div>제품문의페이지</div>
@@ -6,4 +6,4 @@ function Support_FAQ() {
   );
 }
 
-export default Support_FAQ;
+export default SupportFAQ;

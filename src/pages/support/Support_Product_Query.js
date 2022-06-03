@@ -1,4 +1,4 @@
-function Support_Inquiry() {
+function SupportProductQuery() {
   return (
     <>
       <div>제품문의페이지</div>
@@ -6,4 +6,4 @@ function Support_Inquiry() {
   );
 }
 
-export default Support_Inquiry;
+export default SupportProductQuery;
