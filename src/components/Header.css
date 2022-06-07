@@ -63,9 +63,9 @@
   width: 85px;
   height: 40px;
   font-size: 0.9em;
-  background-color: #024ABD;
+  background-color: #024abd;
   color: white;
-  border: 2px solid #024ABD;
+  border: 2px solid #024abd;
   border-radius: 50px;
   cursor: pointer;
   margin-top: 20px;
@@ -85,9 +85,9 @@
   width: 85px;
   height: 40px;
   font-size: 0.9em;
-  background-color: #024ABD;
+  background-color: #024abd;
   color: white;
-  border: 2px solid #024ABD;
+  border: 2px solid #024abd;
   border-radius: 50px;
   cursor: pointer;
   margin-top: 20px;
@@ -98,7 +98,6 @@
   background: whitesmoke;
   color: rgb(92, 92, 92);
 }
-
 
 .header .right-top-menu .language-Btn button {
   justify-content: center;
