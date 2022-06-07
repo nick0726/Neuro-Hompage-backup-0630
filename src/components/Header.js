@@ -2,11 +2,18 @@ import React, { Link, useState, useEffect } from "react";
 import "./LandingHeader.css";
 import { useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ landingOn, setLandingOn }) => {
   const navigate = useNavigate();
+
   return (
     <>
-      <div className='header'>
+      <div
+        className='header'
+        style={{
+          backgroundColor: `${landingOn ? "transparent" : "white"}`,
+          position: `${landingOn ? "fixed" : null}`,
+        }}
+      >
         <h1
           onClick={() => {
             navigate("/");
@@ -60,7 +67,7 @@ const Header = () => {
           <div className='mypage-Btn'>
             <button
               onClick={() => {
-                navigate("/mypage");
+                navigate("/mypage/account");
               }}
             >
               MyPage

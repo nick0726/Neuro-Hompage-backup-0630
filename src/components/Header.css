@@ -5,9 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: relative;
   z-index: 1;
   color: black;
+  background: white;
+  /* display: none; */
 }
 
 .header a {

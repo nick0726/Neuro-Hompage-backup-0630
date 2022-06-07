@@ -1,8 +1,6 @@
+import SideNav from "../../components/SideNav";
+
 const AccountPage = () => {
-  return (
-    <>
-      <p>AccountPage 페이지</p>
-    </>
-  );
+  return <></>;
 };
 export default AccountPage;

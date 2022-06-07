@@ -25,36 +25,43 @@ import SupportFAQ from "./pages/support/Support_FAQ";
 import SupportQnA from "./pages/support/Support_QnA";
 import Productquery from "./pages/support/Support_Product_Query";
 import "./bootstrap.css";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
+// import Cart from "./pages/Cart";
 
 function App() {
   return (
     <>
-      <Header />
-      <Routes>
-        <Route path='/' element={<LandingPage />} />
-        <Route path='/company' element={<CompanyPage />} />
-        <Route path='/technology' element={<TechnologyPage />} />
-        <Route path='/products' element={<ProductsPage />} />
-        <Route path='/RnD' element={<RnDPage />} />
-        <Route path='/support' element={<SupportPage />} />
-        <Route path='/productquery' element={<Productquery />} />
-        <Route path='/faq' element={<SupportFAQ />} />
-        <Route path='/qna' element={<SupportQnA />} />
-        <Route path='/login' element={<LoginPage />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/inquiry' element={<Inquiry />} />
-        <Route path='/mypage' element={<MyPage />}>
-          <Route path='account' element={<Account />} />
-          <Route path='hospitalinfo' element={<HospitalInfo />} />
-          <Route path='license' element={<License />} />
-          <Route path='purchasehistory' element={<PurchaseHistory />} />
-          <Route path='connectionhistory' element={<ConnectionHistory />} />
-          <Route path='download' element={<Download />} />
-          <Route path='payment' element={<Payment />} />
-        </Route>
-        <Route path='*' element={<div>404</div>} />
-      </Routes>
-      <Footer />
+      <Provider store={store}>
+        <Header />
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/company' element={<CompanyPage />} />
+          <Route path='/technology' element={<TechnologyPage />} />
+          <Route path='/products' element={<ProductsPage />} />
+          <Route path='/RnD' element={<RnDPage />} />
+          <Route path='/support' element={<SupportPage />} />
+          <Route path='/productquery' element={<Productquery />} />
+          <Route path='/faq' element={<SupportFAQ />} />
+          <Route path='/qna' element={<SupportQnA />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/inquiry' element={<Inquiry />} />
+          <Route path='/mypage' element={<MyPage />}>
+            <Route path='account' element={<Account />} />
+            <Route path='hospitalinfo' element={<HospitalInfo />} />
+            <Route path='license' element={<License />} />
+            <Route path='purchasehistory' element={<PurchaseHistory />} />
+            <Route path='connectionhistory' element={<ConnectionHistory />} />
+            <Route path='download' element={<Download />} />
+            <Route path='payment' element={<Payment />} />
+          </Route>
+          <Route path='*' element={<div>404</div>} />
+          {/* <Route path='/cart' element={<Cart />} /> */}
+        </Routes>
+        <Footer />
+      </Provider>
     </>
   );
 }

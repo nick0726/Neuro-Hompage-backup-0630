@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
+import AccountPage from "./AccountPage";
+import SideNav from "../../components/SideNav";
 
 const MyPage = () => {
   return (
     <>
-      <p>MyPage</p>
-      마이페이지
       <Outlet></Outlet>
+      <SideNav />
+      <AccountPage />
     </>
   );
 };

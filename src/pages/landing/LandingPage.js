@@ -16,6 +16,7 @@ import Barcode from "../../components/Barcode";
 
 function LandingPage() {
   const navigate = useNavigate();
+  const [landing, landingOn] = useState(false);
   return (
     <>
       <ReactFullpage

@@ -6,7 +6,7 @@ const LandingHeader = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className='Landing header'>
+      <div className='Landing-header'>
         <h1
           onClick={() => {
             navigate("/");

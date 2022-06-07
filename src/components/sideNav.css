@@ -1,0 +1,21 @@
+.sideNav {
+  width: 12.9vw;
+  height: 100vh;
+  padding-top: 10em;
+  /* margin-left: 20em; */
+  background: #F2F3F5;
+  /* z-index: -999; */
+}
+
+.sideNav > Nav {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  padding: 30em;
+}
+
+/* .footer {
+  display: none;
+} */
