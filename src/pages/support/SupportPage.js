@@ -18,6 +18,7 @@ function SupportPage() {
         <Productquery />
         <FAQ />
         <QnA />
+        <Footer />
       </div>
     </>
   );

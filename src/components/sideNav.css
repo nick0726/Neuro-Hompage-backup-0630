@@ -5,6 +5,10 @@
   /* margin-left: 20em; */
   background: #F2F3F5;
   /* z-index: -999; */
+  display: block;
+  padding-left: 2em;
+  text-align: left;
+  position: fixed;
 }
 
 .sideNav > Nav {

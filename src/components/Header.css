@@ -5,11 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
   z-index: 1;
-  color: black;
-  background: white;
-  /* display: none; */
+  color: white;
 }
 
 .header a {
@@ -19,7 +17,7 @@
 
 .header h1 {
   /* color: #fff; */
-  color: black;
+  color: white;
   padding-left: 4em;
   font-size: 1.8em;
   cursor: pointer;
@@ -108,11 +106,13 @@
   font-size: 0.9em;
   background-color: transparent;
   color: black;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 50px;
   cursor: pointer;
   margin-top: 20px;
   transition: 0.7s ease;
+  color: white;
+
 }
 
 .header .right-top-menu .language-Btn button:hover {

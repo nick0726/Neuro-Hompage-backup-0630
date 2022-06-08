@@ -1,13 +1,18 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import AccountPage from "./AccountPage";
 import SideNav from "../../components/SideNav";
+import "./MyPage.css";
+import Hospital from "./HospitalInfoPage";
 
 const MyPage = () => {
   return (
     <>
-      <Outlet></Outlet>
-      <SideNav />
-      <AccountPage />
+      <div className='box'>
+        <SideNav />
+        <AccountPage />
+        <Hospital />
+      </div>
+      {/* <Outlet></Outlet> */}
     </>
   );
 };

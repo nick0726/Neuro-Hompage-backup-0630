@@ -4,6 +4,7 @@ import "./LoginPage.css";
 import naver from "../../../src/images/naver.png";
 import facebook from "../../../src/images/facebook.png";
 import email from "../../../src/images/email.png";
+import Footer from "../../components/Footer";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -74,6 +75,7 @@ function LoginPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
