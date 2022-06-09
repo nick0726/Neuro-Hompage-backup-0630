@@ -1,4 +1,4 @@
-.hospital-box {
+.license-box {
   width: 100%;
   margin: 0 auto;
   height: 100vh;
@@ -8,7 +8,6 @@
   justify-content: center;
   text-align: center;
   font-size: 0.78em;
-  color: #303030;
 }
 
 .hospital-title {
@@ -57,9 +56,7 @@
 
 .info input {
   width: 24vw;
-  height: 2.3em;
   margin-left: 1.5em;
-  border: 2px solid #DCE1E5;
 }
 
 .hospital-edit-btn {

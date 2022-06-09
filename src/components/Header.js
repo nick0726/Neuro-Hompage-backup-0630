@@ -1,6 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
-const Header = ({ landingOn, setLandingOn, myPageOn, setMyPageOn }) => {
+const Header = ({
+  landingOn,
+  setLandingOn,
+  myPageOn,
+  setMyPageOn,
+  topBtnColor,
+  setTopBtnColor,
+}) => {
   const navigate = useNavigate();
 
   return (
@@ -85,10 +92,11 @@ const Header = ({ landingOn, setLandingOn, myPageOn, setMyPageOn }) => {
           <div className='mypage-Btn'>
             <button
               onClick={() => {
-                navigate("/mypage/account");
+                navigate("/mypage");
                 setLandingOn(false);
                 // setMyPageOn(!myPageOn);
                 setMyPageOn(false);
+                setTopBtnColor(false);
               }}
             >
               MyPage
