@@ -99,7 +99,7 @@
   margin-left: 1.5em;
   text-align: center;
   width: 120px;
-  height: 3.5vh;
+  height: 4vh;
   font-size: 0.9em;
   /* padding-bottom: 30px; */
   background-color: #fff;
@@ -115,4 +115,117 @@
   background: whitesmoke;
   color: rgb(92, 92, 92);
   text-shadow: 0.063rem 0.063rem #c5c5c5;
+}
+
+.modal_background {
+  position: fixed;
+  top:0; left: 0; bottom: 0; right: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal_box {
+  position: absolute;
+  padding-top: 1.6%;
+  top: calc(50vh - 200px); left: calc(50vw - 200px);
+  background-color: white;
+  display: block;
+  border-radius: 10px;
+  width: 350px;
+  height: 370px;
+}
+
+.modal_box h4 {
+  font-size: 18px;
+}
+
+.modal_box h5 {
+  padding-top: 2.5em;
+  padding-left: 7%;
+  text-align: left;
+  font-size: 13px;
+}
+
+.modal_box .current_pw {
+  text-align: left;
+}
+
+.modal_box .changePW {
+  text-align: left;
+}
+
+.modal_box .current_pw input {
+  margin-left: 8%;
+  width: 280px;
+  height: 32px;
+  margin-top: 0.4em;
+  border: 1px solid #DCE1E5;;
+}
+
+.modal_box .change_pw input {
+  margin-left: -4%;
+  width: 280px;
+  height: 32px;
+  margin-top: 0.5em;
+  border: 1px solid #DCE1E5;;
+}
+
+.button {
+  padding-top: 1.6em;
+}
+
+.change_pw_btn {
+  margin-left: 2em;
+  margin-top: 1em;
+  text-align: center;
+  width: 130px;
+  height: 5vh;
+  font-size: 0.92em;
+  background-color: #024abd;
+  color: white;
+  border: 0.2rem solid rgb(300, 300, 300);
+  border-radius: 30px;
+  transition: 0.7s ease;
+  text-decoration-line: none;
+  text-shadow: 0.05rem 0.05rem #212121;
+}
+
+.change_pw_btn:hover {
+  background: whitesmoke;
+  color: rgb(92, 92, 92);
+  text-shadow: 0.01rem 0.01rem #024abd;
+}
+
+.cancle_change_pw_btn {
+  /* margin-left: -3em; */
+  text-align: center;
+  width: 120px;
+  height: 4.6vh;
+  font-size: 0.9em;
+  /* padding-bottom: 30px; */
+  background-color: #fff;
+  color: black;
+  border: 2px solid #DCE1E5;
+  border-radius: 30px;
+  transition: 0.7s ease;
+  text-decoration-line: none;
+  /* text-shadow: 0.2px 0.2px #212121; */
+}
+
+.phone_certify_btn {
+  text-align: center;
+  width: 120px;
+  height: 4.6vh;
+  margin-left: 1em;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: white;
+  border: 2px solid #DCE1E5;
+  border-radius: 30px;
+  transition: 0.7s ease;
+  text-decoration-line: none;
+  background:#394A64;
+}
+
+.email_certify_btn {
+  margin-left: 2em;
 }

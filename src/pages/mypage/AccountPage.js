@@ -67,7 +67,12 @@ const AccountPage = () => {
           </div>
           <div className='account-title-border' />
           {edit === true ? (
-            <button className='account-cancle-btn'>취소</button>
+            <button
+              className='account-cancle-btn'
+              onClick={() => editOn(false)}
+            >
+              취소
+            </button>
           ) : null}
           <button
             className='account-edit-btn'
@@ -76,7 +81,7 @@ const AccountPage = () => {
               if (!input) {
                 alert("비밀번호를 입력하세요");
               } else {
-                editOn(!edit);
+                editOn(true);
               }
             }}
           >
@@ -105,8 +110,12 @@ const AccountPage = () => {
     return (
       <>
         {/* <div className='phone-edit-input'> */}
-        <input />
-        <button>휴대폰 인증</button>
+        <input
+          style={{
+            width: `${editOn ? "16vw" : null}`,
+          }}
+        />
+        <button className='phone_certify_btn'>휴대폰 인증</button>
         {/* </div> */}
       </>
     );
@@ -115,8 +124,12 @@ const AccountPage = () => {
   function EmailCertify() {
     return (
       <>
-        <input className='email-edit-input'></input>
-        <button>이메일 인증</button>
+        <input
+          style={{
+            width: `${editOn ? "16vw" : null}`,
+          }}
+        ></input>
+        <button className='phone_certify_btn'>이메일 인증</button>
       </>
     );
   }
@@ -124,22 +137,40 @@ const AccountPage = () => {
   function ChangePwModal() {
     return (
       <>
-        <div>
-          <h3>비밀번호 변경</h3>
-          <div>
-            <h4>현재 비밀번호</h4>
-            <input></input>
+        <div className='modal_background' onClick={() => setPwChangeOn(false)}>
+          <div className='modal_box'>
+            <h4>비밀번호 변경</h4>
+            <div className='current_pw'>
+              <h5>현재 비밀번호</h5>
+              <input></input>
+            </div>
+            <div className='change_pw'>
+              <h5>변경할 비밀번호</h5>
+              <input></input>
+              <br />
+              <input></input>
+            </div>
+            <div className='button'>
+              <button
+                className='cancle_change_pw_btn'
+                onClick={() => setPwChangeOn(false)}
+              >
+                취소
+              </button>
+              <button className='change_pw_btn'>비밀번호 변경</button>
+            </div>
           </div>
-          <div>
-            <h4>변경할 비밀번호</h4>
-            <input></input>
-            <input></input>
-          </div>
-          <button onClick={() => setPwChangeOn(false)}>취소</button>
-          <button>비밀번호 변경</button>
         </div>
       </>
     );
+
+    function CertifyModal() {
+      return (
+        <>
+          <div></div>
+        </>
+      );
+    }
   }
 };
 
