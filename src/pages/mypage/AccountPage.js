@@ -4,6 +4,7 @@ import { useState } from "react";
 const AccountPage = () => {
   const [input, inputUpdate] = useState("");
   const [edit, editOn] = useState(false);
+  const [pwChange, setPwChangeOn] = useState(false);
   return (
     <>
       <div className='account-box'>
@@ -82,12 +83,22 @@ const AccountPage = () => {
             수정하기
           </button>
         </div>
+        {pwChange === true ? <ChangePwModal /> : null}
       </div>
     </>
   );
 
   function ChangePW() {
-    return <button className='changePW'>비밀번호 변경하기</button>;
+    return (
+      <button
+        className='changePW'
+        onClick={() => {
+          setPwChangeOn(true);
+        }}
+      >
+        비밀번호 변경하기
+      </button>
+    );
   }
 
   function PhoneCertify() {
@@ -106,6 +117,27 @@ const AccountPage = () => {
       <>
         <input className='email-edit-input'></input>
         <button>이메일 인증</button>
+      </>
+    );
+  }
+
+  function ChangePwModal() {
+    return (
+      <>
+        <div>
+          <h3>비밀번호 변경</h3>
+          <div>
+            <h4>현재 비밀번호</h4>
+            <input></input>
+          </div>
+          <div>
+            <h4>변경할 비밀번호</h4>
+            <input></input>
+            <input></input>
+          </div>
+          <button onClick={() => setPwChangeOn(false)}>취소</button>
+          <button>비밀번호 변경</button>
+        </div>
       </>
     );
   }
