@@ -71,7 +71,7 @@ const AccountPage = () => {
           <button
             className='account-edit-btn'
             onClick={() => {
-              let copy = [...input];
+              // let copy = [...input];
               if (!input) {
                 alert("비밀번호를 입력하세요");
               } else {

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Header = ({
@@ -9,6 +10,7 @@ const Header = ({
   setTopBtnColor,
 }) => {
   const navigate = useNavigate();
+  const [subMenu, setSubMenuOn] = useState(false);
 
   return (
     <>
@@ -41,6 +43,7 @@ const Header = ({
                 navigate("/company");
                 setLandingOn(false);
               }}
+              onMouseEnter={() => setSubMenuOn(true)}
             >
               회사소개
             </li>
@@ -49,6 +52,7 @@ const Header = ({
                 navigate("/technology");
                 setLandingOn(false);
               }}
+              onMouseEnter={() => setSubMenuOn(true)}
             >
               기술
             </li>
@@ -57,6 +61,7 @@ const Header = ({
                 navigate("/products");
                 setLandingOn(false);
               }}
+              onMouseEnter={() => setSubMenuOn(true)}
             >
               제품
             </li>
@@ -65,6 +70,7 @@ const Header = ({
                 navigate("/RnD");
                 setLandingOn(false);
               }}
+              onMouseEnter={() => setSubMenuOn(true)}
             >
               연구개발
             </li>
@@ -73,6 +79,7 @@ const Header = ({
                 navigate("/support");
                 setLandingOn(false);
               }}
+              onMouseEnter={() => setSubMenuOn(true)}
             >
               지원 및 서비스
             </li>
@@ -94,7 +101,6 @@ const Header = ({
               onClick={() => {
                 navigate("/mypage");
                 setLandingOn(false);
-                // setMyPageOn(!myPageOn);
                 setMyPageOn(false);
                 setTopBtnColor(false);
               }}
@@ -113,9 +119,90 @@ const Header = ({
             </button>
           </div>
         </div>
+        {/* {subMenu === true ? <SubMenu /> : null} */}
+        {subMenu ? <SubMenu /> : null}
       </div>
     </>
   );
+
+  function SubMenu() {
+    return (
+      <>
+        <div className='submenu' onMouseLeave={() => setSubMenuOn(false)}>
+          <div className='submenu-logo'>aaa</div>
+          <div className='list'>
+            <ul>
+              <li>인사말</li>
+              <li>비전</li>
+              <li>연혁</li>
+              <li>맴버</li>
+              <li>파트너사</li>
+              <li>보도자료</li>
+            </ul>
+          </div>
+          <div className='list'>
+            <ul>
+              <li>
+                소프트웨어 기반
+                <br />
+                안구추적 알고리즘
+              </li>
+              <li>인공지능(AI)</li>
+              <li>
+                개별 주파수 동조
+                <br />
+                뇌자극 알고리즘
+              </li>
+              <li>가상현실(VR)</li>
+            </ul>
+          </div>
+          <div className='list'>
+            <ul>
+              <li>
+                평형기능 분석
+                <br />
+                소프트웨어
+              </li>
+              <li>
+                어지럼 재활
+                <br />
+                소프트웨어
+              </li>
+              <li>
+                임상의사결정지원
+                <br />
+                소프트웨어
+              </li>
+              <li>
+                이명 디지털
+                <br />
+                전자약
+              </li>
+            </ul>
+          </div>
+          <div className='list'>
+            <ul>
+              <li>
+                보유기술 및<br />
+                특허
+              </li>
+              <li>
+                연구 및<br />
+                논문자료
+              </li>
+            </ul>
+          </div>
+          <div className='list'>
+            <ul>
+              <li>제품문의</li>
+              <li>FAQ</li>
+              <li>Q&A</li>
+            </ul>
+          </div>
+        </div>
+      </>
+    );
+  }
 };
 
 export default Header;

@@ -40,6 +40,7 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
                           <button
                             onClick={() => {
                               navigate("/productquery");
+                              setLandingOn(false);
                             }}
                           >
                             문의하기
@@ -245,6 +246,7 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
                         <button
                           onClick={() => {
                             navigate("/productquery");
+                            setLandingOn(false);
                           }}
                         >
                           문의하기
