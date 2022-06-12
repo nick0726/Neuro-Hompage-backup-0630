@@ -1,10 +1,10 @@
-import React from "react";
-import { Table } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { Table } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 const Cart = () => {
   let state = useSelector((state) => state);
-  console.log(state);
+  // console.log(state);
   return (
     <div>
       <Table>
@@ -24,7 +24,7 @@ const Cart = () => {
             <td>안녕</td>
           </tr>
         </tbody>
-      </Table>{" "}
+      </Table>{' '}
     </div>
   );
 };

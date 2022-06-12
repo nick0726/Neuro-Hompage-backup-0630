@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({
   landingOn,
@@ -14,33 +14,34 @@ const Header = ({
 
   return (
     <>
+      {/* {console.log(landingOn)} */}
       <div
-        className='header'
+        className="header"
         style={{
-          backgroundColor: `${landingOn ? "transparent" : "white"}`,
+          backgroundColor: `${landingOn ? 'transparent' : 'white'}`,
         }}
       >
         <h1
           style={{
-            color: `${landingOn ? "white" : "black"}`,
+            color: `${landingOn ? 'white' : 'black'}`,
           }}
           onClick={() => {
-            navigate("/");
+            navigate('/');
             setLandingOn(true);
           }}
         >
           NeuroEars
         </h1>
         <div
-          className='menu-nav'
+          className="menu-nav"
           style={{
-            color: `${landingOn ? "white" : "black"}`,
+            color: `${landingOn ? 'white' : 'black'}`,
           }}
         >
           <ul>
             <li
               onClick={() => {
-                navigate("/company");
+                navigate('/company');
                 setLandingOn(false);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
@@ -49,7 +50,7 @@ const Header = ({
             </li>
             <li
               onClick={() => {
-                navigate("/technology");
+                navigate('/technology');
                 setLandingOn(false);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
@@ -58,7 +59,7 @@ const Header = ({
             </li>
             <li
               onClick={() => {
-                navigate("/products");
+                navigate('/products');
                 setLandingOn(false);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
@@ -67,7 +68,7 @@ const Header = ({
             </li>
             <li
               onClick={() => {
-                navigate("/RnD");
+                navigate('/RnD');
                 setLandingOn(false);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
@@ -76,7 +77,7 @@ const Header = ({
             </li>
             <li
               onClick={() => {
-                navigate("/support");
+                navigate('/support');
                 setLandingOn(false);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
@@ -85,33 +86,35 @@ const Header = ({
             </li>
           </ul>
         </div>
-        <div className='right-top-menu'>
-          <div className='language-Btn'>
+        <div className="right-top-menu">
+          <div className="language-Btn">
             <button
               style={{
-                color: `${landingOn ? "white" : "black"}`,
-                border: `${landingOn ? "1px solid white" : "1px solid black"}`,
+                color: `${landingOn ? 'white' : 'black'}`,
+                border: `${landingOn ? '1px solid white' : '1px solid black'}`,
               }}
             >
               Language
             </button>
           </div>
-          <div className='mypage-Btn'>
+          <div className="mypage-Btn">
             <button
               onClick={() => {
-                navigate("/mypage");
+                navigate('/mypage');
                 setLandingOn(false);
-                setMyPageOn(false);
-                setTopBtnColor(false);
+                localStorage.setItem('landingOn', false);
+                // setMyPageOn(false);
+                // setTopBtnColor(false);
               }}
             >
+              {/* {console.log(localStorage.getItem('landingOn'))} */}
               MyPage
             </button>
           </div>
-          <div className='login-Btn'>
+          <div className="login-Btn">
             <button
               onClick={() => {
-                navigate("/login");
+                navigate('/login');
                 setLandingOn(false);
               }}
             >
@@ -128,9 +131,9 @@ const Header = ({
   function SubMenu() {
     return (
       <>
-        <div className='submenu' onMouseLeave={() => setSubMenuOn(false)}>
-          <div className='submenu-logo'>aaa</div>
-          <div className='list'>
+        <div className="submenu" onMouseLeave={() => setSubMenuOn(false)}>
+          <div className="submenu-logo">aaa</div>
+          <div className="list">
             <ul>
               <li>인사말</li>
               <li>비전</li>
@@ -140,7 +143,7 @@ const Header = ({
               <li>보도자료</li>
             </ul>
           </div>
-          <div className='list'>
+          <div className="list">
             <ul>
               <li>
                 소프트웨어 기반
@@ -156,7 +159,7 @@ const Header = ({
               <li>가상현실(VR)</li>
             </ul>
           </div>
-          <div className='list'>
+          <div className="list">
             <ul>
               <li>
                 평형기능 분석
@@ -180,7 +183,7 @@ const Header = ({
               </li>
             </ul>
           </div>
-          <div className='list'>
+          <div className="list">
             <ul>
               <li>
                 보유기술 및<br />
@@ -192,7 +195,7 @@ const Header = ({
               </li>
             </ul>
           </div>
-          <div className='list'>
+          <div className="list">
             <ul>
               <li>제품문의</li>
               <li>FAQ</li>
