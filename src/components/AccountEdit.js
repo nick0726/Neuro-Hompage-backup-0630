@@ -17,12 +17,12 @@ const AccountEdit = () => {
           <div className='info'>
             <div className='name'>이름</div>
             <div className='border'></div>
-            <input></input>
+            <input required></input>
           </div>
           <div className='info'>
             <div className='id'>아이디</div>
             <div className='border'></div>
-            <input></input>
+            <input required></input>
           </div>
           <div className='info'>
             <div className='pw'>비밀번호</div>
@@ -31,6 +31,7 @@ const AccountEdit = () => {
               onChange={(e) => {
                 return inputUpdate(e.target.value);
               }}
+              required
             ></input>
           </div>
           <div className='info'>
@@ -41,7 +42,7 @@ const AccountEdit = () => {
           <div className='info'>
             <div className='email'>이메일</div>
             <div className='border'></div>
-            <input></input>
+            <input required></input>
           </div>
           <div className='account-title-border' />
           <button

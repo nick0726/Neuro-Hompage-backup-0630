@@ -5,4 +5,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.purchase-title {
+  line-height: 1.8em;
+}
+
+.purchase-title h1 {
+  color: #024abd;
+  padding-bottom: 0.4em;
+}
+
+.purchase-box .purchase-title-border {
+  border-bottom: 2px solid #dee2e6;
+  padding: 0em 0 2em 0;
+  width: 55vw;
 }
