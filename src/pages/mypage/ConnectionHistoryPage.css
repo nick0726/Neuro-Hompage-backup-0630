@@ -26,7 +26,7 @@
   padding-right: -10em;
 }
 
-.status button {
+.status-btn {
   justify-content: center;
   align-items: center;
   padding: 0 0;
@@ -34,9 +34,9 @@
   height: 26px;
 
   /* White */
-  background: #FFFFFF;
+  background: #ffffff;
   /* Border/4 */
-  border: 1px solid #BDC3CA;
+  border: 1px solid #bdc3ca;
   border-radius: 56px;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }

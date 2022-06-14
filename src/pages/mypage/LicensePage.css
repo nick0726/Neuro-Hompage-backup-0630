@@ -31,8 +31,8 @@
   display: flex;
   width: 700px;
   height: 270px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.20);
+  background: #ffffff;
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   /* border: 3px solid red; */
   align-items: center;
@@ -49,15 +49,13 @@
 
 .license-product-name h3 {
   position: absolute;
-  color:#024ABD
+  color: #024abd;
 }
 
 .license-product-name h6 {
-  color:#024abd;
+  color: #024abd;
   /* display:none; */
 }
-
-
 
 .license-content-box img {
   padding: 7% 0 7% 0;
@@ -73,7 +71,7 @@
   color: white;
   text-align: center;
   padding-top: 15px;
-  background: linear-gradient(89.48deg, #024ABD -17.94%, #08F0FF 112.97%);
+  background: linear-gradient(89.48deg, #024abd -17.94%, #08f0ff 112.97%);
   border-radius: 0px 15px;
 }
 

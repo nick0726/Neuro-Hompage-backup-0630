@@ -3,12 +3,35 @@
   height: 100vh;
   padding-top: 10em;
   /* margin-left: 20em; */
-  background: #F2F3F5;
+  background: #f2f3f5;
   /* z-index: -999; */
   display: block;
   padding-left: 2em;
   text-align: left;
   position: fixed;
+}
+
+.nav h6 {
+  margin-top: 1.5em;
+  padding-bottom: 1em;
+  font-size: 1.2em;
+  color: #496fb6;
+  font-weight: 800;
+}
+
+.nav h4 {
+  /* margin-top: 2em; */
+  margin-bottom: 0.7em;
+}
+
+.nav div {
+  border-top: 2.5px solid #dce1e5;
+  padding-bottom: 1em;
+  width: 30%;
+}
+
+.nav {
+  font-size: 12px;
 }
 
 .sideNav > Nav {
