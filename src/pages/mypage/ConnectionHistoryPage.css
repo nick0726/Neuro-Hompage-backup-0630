@@ -7,3 +7,36 @@
   justify-content: center;
   text-align: center;
 }
+
+.connection-history-title {
+  line-height: 1.8em;
+}
+
+.connection-history-title h1 {
+  color: #024abd;
+  padding-bottom: 0.4em;
+  font-size: 1.8em;
+}
+
+.connection-history-table {
+  margin-top: 3em;
+}
+
+.connection-date {
+  padding-right: -10em;
+}
+
+.status button {
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  width: 70px;
+  height: 26px;
+
+  /* White */
+  background: #FFFFFF;
+  /* Border/4 */
+  border: 1px solid #BDC3CA;
+  border-radius: 56px;
+  font-size: 0.8em;
+}

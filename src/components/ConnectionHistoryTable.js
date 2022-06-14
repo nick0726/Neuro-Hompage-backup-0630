@@ -13,37 +13,49 @@ import TableSortLabel from "@mui/material/TableSortLabel";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
-import Checkbox from "@mui/material/Checkbox";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Switch from "@mui/material/Switch";
 import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
+import { useState } from "react";
 
-function createData(name, calories, fat, carbs, protein) {
+import Anna from "../images/Anna.png";
+import Theara from "../images/Theara.png";
+import Diago from "../images/Diago.png";
+import Print from "../images/Print.jpg";
+
+/*Th에 들어갈 목록 = 파라미터*/
+function createData(
+  no,
+  interfacetype,
+  connectiondate,
+  nation,
+  ipadress,
+  status
+) {
   return {
-    name,
-    calories,
-    fat,
-    carbs,
-    protein,
+    no,
+    interfacetype,
+    connectiondate,
+    nation,
+    ipadress,
+    status,
   };
 }
 
 const rows = [
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Donut", 452, 25.0, 51, 4.9),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
+  createData("1", "2022.03.22(월) 13:22", "한국", "103.86.98.1"),
+  createData("2", "2022.05.07(화) 17:22", "중국", "103.86.98.1"),
+  createData("3", "2022.04.24(수) 00:22", "미국", "103.86.98.1"),
+  createData("4", "2022.03.22(목) 11:01", "캐나다", "103.86.98.1"),
+  createData("5", "2022.03.22(금) 09:22", "한국", "103.86.98.1"),
+  createData("6", 452, 25.0, 51, 4.9),
+  createData("7", 356, 16.0, 49, 3.9),
   createData("Honeycomb", 408, 3.2, 87, 6.5),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
   createData("Jelly Bean", 375, 0.0, 94, 0.0),
   createData("KitKat", 518, 26.0, 65, 7.0),
   createData("Lollipop", 392, 0.2, 98, 0.0),
-  createData("Marshmallow", 318, 0, 81, 2.0),
   createData("Nougat", 360, 19.0, 9, 37.0),
   createData("Oreo", 437, 18.0, 63, 4.0),
 ];
@@ -80,44 +92,51 @@ function stableSort(array, comparator) {
 
 const headCells = [
   {
-    id: "name",
+    id: "no",
     numeric: false,
     disablePadding: true,
-    label: "Dessert (100g serving)",
+    label: "No",
   },
   {
-    id: "calories",
+    id: "interfacetype",
     numeric: true,
     disablePadding: false,
-    label: "Calories",
+    label: "접속유형",
   },
   {
-    id: "fat",
+    id: "connectiondate",
     numeric: true,
     disablePadding: false,
-    label: "Fat (g)",
+    label: "접속날짜",
   },
   {
-    id: "carbs",
+    id: "nation",
     numeric: true,
     disablePadding: false,
-    label: "Carbs (g)",
+    label: "접속 국가",
   },
   {
-    id: "protein",
+    id: "ipadress",
     numeric: true,
     disablePadding: false,
-    label: "Protein (g)",
+    label: "IP 주소",
+  },
+
+  {
+    id: "status",
+    numeric: true,
+    disablePadding: false,
+    label: "상태",
   },
 ];
 
 function EnhancedTableHead(props) {
   const {
-    onSelectAllClick,
+    // onSelectAllClick,
+    // rowCount,
+    // numSelected,
     order,
     orderBy,
-    numSelected,
-    rowCount,
     onRequestSort,
   } = props;
   const createSortHandler = (property) => (event) => {
@@ -127,17 +146,7 @@ function EnhancedTableHead(props) {
   return (
     <TableHead>
       <TableRow>
-        <TableCell padding='checkbox'>
-          <Checkbox
-            color='primary'
-            indeterminate={numSelected > 0 && numSelected < rowCount}
-            checked={rowCount > 0 && numSelected === rowCount}
-            onChange={onSelectAllClick}
-            inputProps={{
-              "aria-label": "select all desserts",
-            }}
-          />
-        </TableCell>
+        <TableCell padding='checkbox'></TableCell>
         {headCells.map((headCell) => (
           <TableCell
             key={headCell.id}
@@ -199,16 +208,7 @@ const EnhancedTableToolbar = (props) => {
         >
           {numSelected} selected
         </Typography>
-      ) : (
-        <Typography
-          sx={{ flex: "1 1 100%" }}
-          variant='h6'
-          id='tableTitle'
-          component='div'
-        >
-          Nutrition
-        </Typography>
-      )}
+      ) : null}
 
       {numSelected > 0 ? (
         <Tooltip title='Delete'>
@@ -293,13 +293,18 @@ export default function EnhancedTable() {
   const emptyRows =
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
 
+  // const [Anna, AnnaOn] = useState(false);
+  // const [Theara, ThearaOn] = useState(false);
+  // const [Diago, DiagoOn] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
+
   return (
     <Box sx={{ width: "100%" }}>
       <Paper sx={{ width: "100%", mb: 2 }}>
         <EnhancedTableToolbar numSelected={selected.length} />
         <TableContainer>
           <Table
-            sx={{ minWidth: 750 }}
+            sx={{ minWidth: 900 }}
             aria-labelledby='tableTitle'
             size={dense ? "small" : "medium"}
           >
@@ -330,27 +335,30 @@ export default function EnhancedTable() {
                       key={row.name}
                       selected={isItemSelected}
                     >
-                      <TableCell padding='checkbox'>
-                        <Checkbox
-                          color='primary'
-                          checked={isItemSelected}
-                          inputProps={{
-                            "aria-labelledby": labelId,
-                          }}
-                        />
-                      </TableCell>
+                      <TableCell padding='checkbox'></TableCell>
                       <TableCell
                         component='th'
                         id={labelId}
                         scope='row'
                         padding='none'
                       >
-                        {row.name}
+                        {row.no}
                       </TableCell>
-                      <TableCell align='right'>{row.calories}</TableCell>
-                      <TableCell align='right'>{row.fat}</TableCell>
-                      <TableCell align='right'>{row.carbs}</TableCell>
-                      <TableCell align='right'>{row.protein}</TableCell>
+                      <TableCell align='right'>
+                        <img src={Anna} />
+                      </TableCell>
+                      <TableCell align='right'>{row.interfacetype}</TableCell>
+                      <TableCell className='connection-date' align='right'>
+                        {row.connectiondate}
+                      </TableCell>
+                      <TableCell align='right'> {row.nation}</TableCell>
+                      <TableCell align='right'>
+                        {isLogin === true ? (
+                          <button>로그인 성공</button>
+                        ) : (
+                          <button>로그인 실패</button>
+                        )}
+                      </TableCell>
                     </TableRow>
                   );
                 })}
@@ -376,10 +384,18 @@ export default function EnhancedTable() {
           onRowsPerPageChange={handleChangeRowsPerPage}
         />
       </Paper>
-      <FormControlLabel
-        control={<Switch checked={dense} onChange={handleChangeDense} />}
-        label='Dense padding'
-      />
     </Box>
   );
+
+  // function Product(props) {
+  //   if (props.Anna === true) {
+  //     AnnaOn(true);
+  //   }
+  //   if (props.Theara === true) {
+  //     ThearaOn(true);
+  //   }
+  //   if (props.Diago === true) {
+  //     DiagoOn(true);
+  //   }
+  // }
 }

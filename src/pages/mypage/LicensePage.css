@@ -17,6 +17,7 @@
 .license-title h1 {
   color: #024abd;
   padding-bottom: 0.4em;
+  /* font-size: 2.5em; */
 }
 
 .license-box .license-title-border {
@@ -29,7 +30,7 @@
   line-height: 3em;
   display: flex;
   width: 700px;
-  height: 300px;
+  height: 270px;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.20);
   border-radius: 15px;
@@ -43,12 +44,20 @@
 .license-product-name {
   text-align: left;
   padding-left: 4%;
-  padding-top: 30px;
+  padding-top: 23px;
 }
 
 .license-product-name h3 {
   position: absolute;
+  color:#024ABD
 }
+
+.license-product-name h6 {
+  color:#024abd;
+  /* display:none; */
+}
+
+
 
 .license-content-box img {
   padding: 7% 0 7% 0;
@@ -58,7 +67,7 @@
   /* position: absolute; */
   width: 8vw;
   /* height: 5.12vh; */
-  height: 61px;
+  height: 40px;
   margin-left: -14%;
   /* margin-bottom: 2em; */
   color: white;
@@ -68,13 +77,17 @@
   border-radius: 0px 15px;
 }
 
+.license-product-isvalid h5 {
+  font-size: 1.1em;
+}
+
 .license-product-specifications {
   /* display: flex; */
   display: grid;
   grid-template-columns: 10em 15em;
   grid-template-rows: 10em 5em;
   column-gap: 1.8em;
-  row-gap: 7em;
+  row-gap: 3em;
   margin-left: 5em;
   margin-top: 1.6em;
   /* padding-bottom: 10em; */
@@ -82,4 +95,5 @@
 
 .license-product-specifications h6 {
   line-height: 2.5em;
+  font-size: 1em;
 }

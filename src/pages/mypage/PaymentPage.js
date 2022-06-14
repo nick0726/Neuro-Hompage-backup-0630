@@ -5,7 +5,7 @@ const PaymentPage = () => {
     <>
       <div className='payment-box'>
         <div className='payment-title'>
-          <h1>라이선스 관리</h1>
+          <h1>결제</h1>
           <div>
             고객님께서 입력하신 내 정보 입니다.
             <br />
