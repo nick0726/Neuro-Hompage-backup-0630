@@ -60,37 +60,45 @@ const LicensePage = () => {
           <h1>라이선스 관리</h1>
           <div>고객님께서 구매하신 라이선스 입니다.</div>
           <div className='license-title-border' />
-
-          <div className='license-content-box'>
-            <div className='license-product-name'>
-              <h6>NeuroEars</h6>
-              {/* <h4>{props.Anna}</h4> */}
-              <h3>Anna</h3>
-              <img src={license_logo} alt={license_logo} />
-              <div className='license-product-isvalid'>
-                <h5>정상 라이센스</h5>
-              </div>
-            </div>
-            <div className='license-product-specifications'>
-              <div className='license-product-specifications-titles'>
-                <h6>발급 일시</h6>
-                <h6>만료기간</h6>
-                <h6>구매 금액</h6>
-                <h6>시리얼 코드</h6>
-                <h6>UDI No.</h6>
-              </div>
-              <div className='license-product-specifications-contents'>
-                <h6>2022-06-13 오전 03:02:12</h6>
-                <h6>2023-06-12</h6>
-                <h6>123,123,123 원</h6>
-                <h6>1234567890</h6>
-              </div>
-              <Barcode />
-            </div>
-          </div>
+          <Card />
+          <Card />
           <div className='license-title-border' />
         </div>
       </div>
+    );
+  }
+
+  function Card() {
+    return (
+      <>
+        <div className='license-content-box'>
+          <div className='license-product-name'>
+            <h6>NeuroEars</h6>
+            {/* <h4>{props.Anna}</h4> */}
+            <h3>Anna</h3>
+            <img src={license_logo} alt={license_logo} />
+            <div className='license-product-isvalid'>
+              <h5>정상 라이센스</h5>
+            </div>
+          </div>
+          <div className='license-product-specifications'>
+            <div className='license-product-specifications-titles'>
+              <h6>발급 일시</h6>
+              <h6>만료기간</h6>
+              <h6>구매 금액</h6>
+              <h6>시리얼 코드</h6>
+              <h6>UDI No.</h6>
+            </div>
+            <div className='license-product-specifications-contents'>
+              <h6>2022-06-13 오전 03:02:12</h6>
+              <h6>2023-06-12</h6>
+              <h6>123,123,123 원</h6>
+              <h6>1234567890</h6>
+            </div>
+            <Barcode />
+          </div>
+        </div>
+      </>
     );
   }
 };

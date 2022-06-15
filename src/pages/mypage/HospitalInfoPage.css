@@ -35,32 +35,88 @@
   padding: 7% 0 7% 0;
 }
 
-.info {
+.hospital-info {
   /* border: 3px solid black; */
-  width: 40vw;
-  text-align: left;
-  margin: 0 auto;
+  width: 45vw;
+  height: 2.2em;
   display: flex;
+  margin: 0 auto;
   margin-top: 2em;
   padding-left: 2em;
-  height: 2.2em;
+  padding-bottom: 2em;
+  text-align: left;
 }
 
-.info > div {
-  width: 4em;
+.hospital-info > div {
+  width: 8em;
 }
 
-.info .border {
+.hospital-info .border {
   margin-left: 5em;
   width: 0em;
   /* width: 30px; */
 }
 
-.info input {
+.hospital-info input {
   width: 24vw;
-  height: 2.3em;
+  height: 2.8em;
   margin-left: 1.5em;
   border: 2px solid #dce1e5;
+  border-radius: 5px;
+}
+
+.adress-search {
+  flex: 1;
+}
+
+.adress-search input {
+  padding-bottom: 1.5em;
+}
+
+.adress-detail input {
+  margin-bottom: 2em;
+}
+
+.hospital-info-phone {
+  margin-top: 5em;
+  width: 45vw;
+  height: 2.2em;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  text-align: left;
+}
+
+.hospital-info-phone input {
+  width: 24vw;
+  height: 2.8em;
+  margin-left: 6.5em;
+  border: 2px solid #dce1e5;
+  border-radius: 5px;
+}
+
+.hospital-edit-cancle-btn {
+  margin-left: 1.5em;
+  margin-top: 3em;
+  text-align: center;
+  width: 120px;
+  height: 4.2vh;
+  font-size: 0.92em;
+  /* padding-bottom: 30px; */
+  background-color: transparent;
+  color: black;
+  border: 2px solid #dce1e5;
+  border-radius: 30px;
+  transition: 0.7s ease;
+  text-decoration-line: none;
+}
+
+.hospital-edit-cancle-btn:hover {
+  background: whitesmoke;
+  color: rgb(92, 92, 92);
+  text-shadow: 0.063rem 0.063rem #c5c5c5;
 }
 
 .hospital-edit-btn {
@@ -83,4 +139,24 @@
   background: whitesmoke;
   color: rgb(92, 92, 92);
   text-shadow: 0.063rem 0.063rem #c5c5c5;
+}
+
+.add-file-btn {
+  margin-left: 1.5em;
+  text-align: center;
+  width: 120px;
+  height: 4.2vh;
+  font-size: 0.92em;
+  /* padding-bottom: 30px; */
+  background-color: #024abd;
+  color: white;
+  border: 2px solid #dce1e5;
+  border-radius: 30px;
+  transition: 0.7s ease;
+  text-decoration-line: none;
+  font-size: 0.8em;
+}
+
+.add-file-btn img {
+  padding-right: 0.3em;
 }

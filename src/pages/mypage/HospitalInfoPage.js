@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./HospitalInfoPage.css";
 import document from "../../images/document.jpg";
+import upload from "../../images/upload.jpg";
 
 const HospitalInfoPage = () => {
   let [hospital, setHospitalOn] = useState(false);
@@ -51,49 +52,71 @@ const HospitalInfoPage = () => {
             원할한 서비스를 위하여 모든 정보를 필히 입력해 주시기 바랍니다.
           </div>
           <div className='hospital-title-border' />
-          <div className='info'>
+
+          <div className='hospital-info'>
             <div className='hospital-name'>병원 이름</div>
             <div className='border'></div>
             <input />
           </div>
-          <div className='info'>
+
+          <div className='hospital-info'>
             <div className='hospital-adress'>병원 주소</div>
             <div className='border'></div>
-            <input />
-            <button>주소검색</button>
-            <input />
+            <div className='adress-search'>
+              <input />
+              <button>주소검색</button>
+              <input />
+            </div>
           </div>
-          <div className='info'>
+
+          <div className='hospital-info-phone'>
             <div className='hospital-phone'>전화 번호</div>
             <div className='border'></div>
             <input />
           </div>
-          <div className='info'>
+
+          <div className='hospital-info'>
             <div className='subject'>진료과</div>
             <div className='border'></div>
             <input />
           </div>
-          <div className='info'>
+          <div className='hospital-info'>
             <div className='care-code'>요양번호코드</div>
             <div className='border'></div>
             <input />
           </div>
-          <div className='info'>
+          <div className='hospital-info'>
             <div className='business-license-number'>사업자 번호</div>
             <div className='border'></div>
             <input />
           </div>
-          <div className='info'>
+          <div className='hospital-info'>
             <div className='business-license'>사업자 등록증</div>
             <div className='border'></div>
             <input />
+            <button className='add-file-btn'>
+              {" "}
+              <img src={upload} alt={upload} />
+              첨부파일
+            </button>
           </div>
-          <div className='info'>
+          <div className='hospital-info'>
             <div className='account-copy'>통장 사본</div>
             <div className='border'></div>
             <input />
+            <button className='add-file-btn'>
+              <img src={upload} alt={upload} /> 첨부파일
+            </button>
           </div>
           <div className='hospital-title-border' />
+          <button
+            className='hospital-edit-cancle-btn'
+            onClick={() => {
+              setHospitalOn(false);
+            }}
+          >
+            취소
+          </button>
           <button className='hospital-edit-btn'>수정하기</button>
         </div>
       </div>

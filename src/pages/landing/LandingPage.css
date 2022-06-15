@@ -22,7 +22,7 @@
   height: 100vh;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
-  background-image: url('../../images/mainpage.svg');
+  background-image: url('../../images/mainpage.jpg');
   background: cover;
   scroll-snap-align: start;
 }

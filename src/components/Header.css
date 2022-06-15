@@ -42,13 +42,13 @@
 .header .right-top-menu .login-Btn {
   display: inline-block;
   /* margin: 0 2.18em 1.25em; */
-  margin: 0 2em 1.25em;
+  margin: 0 2em 1.25em 1em;
 }
 
 /* My Page */
 .header .right-top-menu .mypage-Btn {
   display: inline-block;
-  margin: 0 0 0 2em;
+  margin: 0 0 0 1em;
 }
 
 .header .right-top-menu .login-Btn button {
