@@ -47,12 +47,16 @@ const DownloadPage = () => {
           </div>
           <div className='card-description'>
             <div>Theara™</div>
-            <div>1.0</div>
+            <div>1.0.0</div>
             <div>www.example.co.kr</div>
             <div>VR 구동을 위한 필수 프로그램 입니다.</div>
           </div>
           <div className='card-link'>
-            <button>다운로드 페이지로 이동</button>
+            <button>
+              다운로드
+              <br />
+              페이지로 이동
+            </button>
           </div>
         </div>
         <div className='download-cards'>
@@ -67,12 +71,16 @@ const DownloadPage = () => {
           </div>
           <div className='card-description'>
             <div>Theara™</div>
-            <div>1.0</div>
+            <div>1.0.1</div>
             <div>www.example.co.kr</div>
             <div>VR 구동을 위한 필수 프로그램 입니다.</div>
           </div>
           <div className='card-link'>
-            <button>다운로드 페이지로 이동</button>
+            <button>
+              다운로드
+              <br />
+              페이지로 이동
+            </button>
           </div>
         </div>
         <div className='download-cards'>
@@ -87,12 +95,16 @@ const DownloadPage = () => {
           </div>
           <div className='card-description'>
             <div>Theara™</div>
-            <div>1.0</div>
+            <div>1.0.2</div>
             <div>www.example.co.kr</div>
             <div>VR 구동을 위한 필수 프로그램 입니다.</div>
           </div>
           <div className='card-link'>
-            <button>다운로드 페이지로 이동</button>
+            <button>
+              다운로드
+              <br />
+              페이지로 이동
+            </button>
           </div>
         </div>
       </>

@@ -5,7 +5,8 @@ import "./LandingPage.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import mouse from "../../images/mouse.png";
 import s1_background from "../../images/Mainpage_background_2.png";
-import report1 from "../../images/Mainpage_background_4.png";
+import landing_bg_3 from "../../images/landing-Main-3.jpg";
+import report1 from "../../images/Mainpage_background_4.jpg";
 import Footer from "../../components/Footer";
 import rightArrow from "../../images/right-arrow.png";
 import leftArrow from "../../images/left-arrow.png";
@@ -156,9 +157,6 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
                           <div className='s3_mainpage_news_content_C'>
                             <h1>{news[2].title}</h1>
                             <p>{news[2].content}</p>
-                            <p>
-                              <Barcode />
-                            </p>
                           </div>
                         </div>
                       </div>

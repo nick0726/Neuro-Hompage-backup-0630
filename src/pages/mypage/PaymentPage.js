@@ -1,3 +1,4 @@
+import { Table } from "react-bootstrap";
 import "./PaymentPage.css";
 
 const PaymentPage = () => {
@@ -6,14 +7,49 @@ const PaymentPage = () => {
       <div className='payment-box'>
         <div className='payment-title'>
           <h1>결제</h1>
-          <div>
-            고객님께서 입력하신 내 정보 입니다.
-            <br />
-            원할한 서비스를 위하여 모든 정보를 필히 입력해 주시기 바랍니다.
-          </div>
+        </div>
+        <div className='cart'>
+          <Cart />
+        </div>
+
+        <div className='order-form'>
+          <div className='order-user-form'></div>
+          <div className='refund-account'></div>
+          <div className='payment'></div>
         </div>
       </div>
     </>
   );
+
+  function Cart() {
+    return (
+      <>
+        <div className='card-box'>
+          <div className='product-image'></div>
+          <div className='product-content'>
+            <h6>NeuroEars-Anna</h6>
+            <p>00,000,000원</p>
+          </div>
+          <div className='amount'>
+            <button>+</button>
+            <div className='count'>0</div>
+            <button>-</button>
+          </div>
+          <div className='price'>
+            <h6>원가</h6>
+            <p>00,000,000</p>
+          </div>
+          <div className='discount'>
+            <h6>할인</h6>
+            <p>00,000,000</p>
+          </div>
+          <div className='total'>
+            <h6>합계</h6>
+            <p>00,000,000</p>
+          </div>
+        </div>
+      </>
+    );
+  }
 };
 export default PaymentPage;

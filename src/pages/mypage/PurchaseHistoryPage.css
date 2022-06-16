@@ -60,3 +60,7 @@
 .print button img {
   padding-right: 0.2em;
 }
+
+#thead {
+  background-color: #FAFAFB;
+}

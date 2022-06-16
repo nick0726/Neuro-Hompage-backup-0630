@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./HospitalInfoPage.css";
 import document from "../../images/document.jpg";
 import upload from "../../images/upload.jpg";
+import home from "../../images/home.jpg";
 
 const HospitalInfoPage = () => {
   let [hospital, setHospitalOn] = useState(false);
@@ -64,12 +65,14 @@ const HospitalInfoPage = () => {
             <div className='border'></div>
             <div className='adress-search'>
               <input />
-              <button>주소검색</button>
+              <button>
+                <img src={home} /> 주소 검색
+              </button>
               <input />
             </div>
           </div>
 
-          <div className='hospital-info-phone'>
+          <div className='hospital-info' id='phone'>
             <div className='hospital-phone'>전화 번호</div>
             <div className='border'></div>
             <input />
@@ -95,7 +98,6 @@ const HospitalInfoPage = () => {
             <div className='border'></div>
             <input />
             <button className='add-file-btn'>
-              {" "}
               <img src={upload} alt={upload} />
               첨부파일
             </button>

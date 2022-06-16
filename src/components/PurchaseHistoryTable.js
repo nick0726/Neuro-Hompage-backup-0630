@@ -146,7 +146,7 @@ function EnhancedTableHead(props) {
   };
 
   return (
-    <TableHead>
+    <TableHead id='thead'>
       <TableRow>
         <TableCell padding='checkbox'></TableCell>
         {headCells.map((headCell) => (

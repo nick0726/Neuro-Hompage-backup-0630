@@ -27,7 +27,7 @@
 
 .info {
   /* border: 3px solid black; */
-  width: 40vw;
+  width: 32vw;
   text-align: left;
   margin: 0 auto;
   display: flex;
@@ -47,10 +47,11 @@
 }
 
 .info input {
-  width: 24vw;
-  height: 2.3em;
+  width: 390px;
+  height: 2.5em;
   margin-left: 1.5em;
   border: 2px solid #DCE1E5;
+  border-radius: 5px;
 }
 
 .account-cancle-btn {
@@ -99,7 +100,7 @@
   margin-left: 1.5em;
   text-align: center;
   width: 120px;
-  height: 4vh;
+  height: 38px;
   font-size: 0.9em;
   /* padding-bottom: 30px; */
   background-color: #fff;
@@ -178,7 +179,7 @@
   margin-top: 1em;
   text-align: center;
   width: 130px;
-  height: 5vh;
+  height: 50px;
   font-size: 0.92em;
   background-color: #024abd;
   color: white;
@@ -199,7 +200,7 @@
   /* margin-left: -3em; */
   text-align: center;
   width: 120px;
-  height: 4.6vh;
+  height: 47px;
   font-size: 0.9em;
   /* padding-bottom: 30px; */
   background-color: #fff;
@@ -214,7 +215,7 @@
 .phone_certify_btn {
   text-align: center;
   width: 120px;
-  height: 4.6vh;
+  height: 40px;
   margin-left: 1em;
   font-size: 0.9em;
   font-weight: 500;
@@ -241,3 +242,33 @@
 :invalid {
   border-color: red;
 } 
+
+.account-box input {
+  background-color: #F2F3F5;
+}
+
+#pw-input {
+  background: none;
+}
+
+#certified {
+  position: absolute;
+  /* width: 2em; */
+  /* height: 2em; */
+  /* margin-left: 25.2em; */
+  margin-left: 360px;
+  margin-top: 0.5em;
+  /* margin-top: 0.5em; */
+}
+
+#currentPassword {
+  background: none;
+}
+
+#changePassword {
+  background: none;
+}
+
+#passwordRepeat {
+  background: none;
+}

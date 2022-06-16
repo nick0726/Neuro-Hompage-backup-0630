@@ -2,6 +2,7 @@ import "./AccountPage.css";
 import { useState } from "react";
 import phone_certify from "../../images/phone_certi.jpg";
 import email_certify from "../../images/email_certi.jpg";
+import certified from "../../images/certified.png";
 
 const AccountPage = () => {
   const [input, inputUpdate] = useState("");
@@ -16,6 +17,12 @@ const AccountPage = () => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
+  const [inputBlockOn, setinputBlockOn] = useState(true);
+
+  const inputStyle = {
+    backgroundColor: `${inputBlockOn === true ? "#F2F3F5" : "white"}`,
+    pointerEvent: `${inputBlockOn === true ? "disabled" : null}`,
+  };
   return (
     <>
       <div className='account-box'>
@@ -30,12 +37,12 @@ const AccountPage = () => {
           <div className='info'>
             <div className='name'>이름</div>
             <div className='border'></div>
-            <input />
+            <input style={inputStyle} disabled={inputStyle} />
           </div>
           <div className='info'>
             <div className='id'>아이디</div>
             <div className='border'></div>
-            <input />
+            <input style={inputStyle} disabled={inputStyle} />
           </div>
           <div className='info'>
             <div className='pw'>비밀번호</div>
@@ -44,6 +51,7 @@ const AccountPage = () => {
               <ChangePW />
             ) : (
               <input
+                id='pw-input'
                 onChange={(e) => {
                   return inputUpdate(e.target.value);
                 }}
@@ -57,6 +65,8 @@ const AccountPage = () => {
               <PhoneCertify />
             ) : (
               <input
+                disabled={inputStyle}
+                // style={inputStyle}
                 onChange={(e) => {
                   return inputUpdate(e.target.value);
                 }}
@@ -70,6 +80,8 @@ const AccountPage = () => {
               <EmailCertify />
             ) : (
               <input
+                disabled={inputStyle}
+                // style={inputStyle}
                 onChange={(e) => {
                   return inputUpdate(e.target.value);
                 }}
@@ -87,11 +99,13 @@ const AccountPage = () => {
           ) : null}
           <button
             className='account-edit-btn'
+            type='submit'
             onClick={() => {
               if (!input) {
                 alert("비밀번호를 입력하세요");
               } else {
                 editOn(true);
+                // setinputBlockOn(false);
               }
             }}
           >
@@ -130,17 +144,20 @@ const AccountPage = () => {
       <>
         {/* <div className='phone-edit-input'> */}
         <input
+          disabled={inputStyle}
           style={{
             width: `${editOn ? "16vw" : null}`,
+            backgroundColor: `${editOn ? "#F2F3F5" : "white"}`,
           }}
         />
+        <img id='certified' src={certified} alt={certified} />
         <button className='phone_certify_btn'>
           <img
             className='phone_certify_img'
             src={phone_certify}
             alt={phone_certify}
           />
-          휴대폰 인증
+          휴대폰 재인증
         </button>
       </>
     );
@@ -150,17 +167,20 @@ const AccountPage = () => {
     return (
       <>
         <input
+          disabled={inputStyle}
           style={{
             width: `${editOn ? "16vw" : null}`,
+            backgroundColor: `${editOn ? "#F2F3F5" : "white"}`,
           }}
         ></input>
+        <img id='certified' src={certified} alt={certified} />
         <button className='phone_certify_btn'>
           <img
             className='email_certify_img'
             src={email_certify}
             alt={email_certify}
           />
-          이메일 인증
+          이메일 재인증
         </button>
       </>
     );

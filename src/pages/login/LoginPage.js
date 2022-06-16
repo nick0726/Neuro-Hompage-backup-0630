@@ -24,7 +24,7 @@ function LoginPage() {
             <div className='login_btn'>
               <button
                 onClick={() => {
-                  navigate("/mypage/account");
+                  navigate("/mypage");
                 }}
               >
                 로그인
