@@ -1,4 +1,3 @@
-import { Table } from "react-bootstrap";
 import "./PaymentPage.css";
 import license_logo from "../../images/license_logo.jpg";
 import upload from "../../images/upload.jpg";
@@ -151,14 +150,26 @@ const PaymentPage = () => {
         </div>
         <div className='payment'>
           <div className='order-user-form-box'>
-            <input type='checkbox' />
-            <p>무통장 입금</p>
-            <input type='checkbox' />
-            <p>카드 결제</p>
-            <input type='checkbox' />
-            <p>실시간 계좌이체</p>
-            <input type='checkbox' />
-            <p>현금영수증 신청</p>
+            <div id='paywith'>
+              <p>
+                <input type='checkbox' />
+                무통장 입금
+              </p>
+              <p>
+                <input type='checkbox' />
+                카드 결제
+              </p>
+              <p>
+                <input type='checkbox' />
+                실시간 계좌이체
+              </p>
+
+              <p>
+                <input type='checkbox' />
+                현금영수증 신청
+              </p>
+            </div>
+
             <div className='order-user-form'>
               <p>
                 입금자명<sup>*</sup>
@@ -188,7 +199,7 @@ const PaymentPage = () => {
         <div className='card-box'>
           <div className='product-image'>
             <h6>Logo</h6>
-            <img src={license_logo} />
+            <img src={license_logo} alt={license_logo} />
           </div>
           <div className='product-content'>
             <h6>NeuroEars-Anna</h6>
