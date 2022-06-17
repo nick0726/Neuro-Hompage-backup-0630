@@ -58,7 +58,7 @@ function App() {
           <Route path='*' element={<div>404</div>} />
           {/* <Route path='/cart' element={<Cart />} /> */}
         </Routes>
-        <TopBtn topBtnColor={topBtnColor} setTopBtnColor={setTopBtnColor} />
+        {/* <TopBtn topBtnColor={topBtnColor} setTopBtnColor={setTopBtnColor} /> */}
       </Provider>
     </>
   );
