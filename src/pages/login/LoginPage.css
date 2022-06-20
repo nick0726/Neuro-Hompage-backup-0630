@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "HallymM.otf";
-  src: url('../../fonts/Hallym-OTF/HallymM.otf')
+  font-family: 'HallymM.otf';
+  src: url('../../fonts/Hallym-OTF/HallymM.otf');
 }
 
 * {
@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   height: 80vh;
-  width: 55%;
+  width: 1100px;
   margin: 0 auto;
   padding-top: 4.5em;
 }
@@ -55,8 +55,8 @@
   justify-content: center;
   width: 100%;
   height: 300px;
-  border-top: 3.2px solid #024ABD;
-  background-color: #F5F5F5;
+  border-top: 3.2px solid #024abd;
+  background-color: #f5f5f5;
 }
 
 .login_box .login_box_left {
@@ -84,8 +84,8 @@
 .login_box .login_box_left .account_box input {
   margin: 0 0 2em 2.4em;
   padding-bottom: 1.2em;
-  border: 1px solid #DCE1E5;
-  background-color: #FFFFFF;
+  border: 1px solid #dce1e5;
+  background-color: #ffffff;
   border-radius: 2px;
 }
 
@@ -99,8 +99,8 @@
 }
 
 .login_box .login_box_left .login_btn button {
-  background-color: #3A7BBF;
-  color: #FFFFFF;
+  background-color: #3a7bbf;
+  color: #ffffff;
   /* font-size: 1.1em; */
   font-size: 0.9em;
   font-weight: 700;
@@ -113,7 +113,7 @@
   /* height: 5vh; */
   margin: 0em 0 0 2.5em;
   /* border: 3px solid greenyellow; */
-   /*소셜로그인 아이콘 컬럼, 세로 배치 */
+  /*소셜로그인 아이콘 컬럼, 세로 배치 */
   display: flex;
 }
 
@@ -192,8 +192,8 @@
 }
 
 .login_box .login_box_right .signup_btn button {
-  background-color: #3E3E3E;
-  color: #FFFFFF;
+  background-color: #3e3e3e;
+  color: #ffffff;
   font-size: 0.9em;
   font-weight: 700;
   border-radius: 2px;
@@ -224,15 +224,14 @@
   cursor: pointer;
 }
 
-
 /* ID/PW 찾기 */
 .find_account_box {
   display: flex;
   margin: 0 auto;
   width: 100%;
   height: 300px;
-  border-top: 3.2px solid #024ABD;
-  background-color: #F5F5F5;
+  border-top: 3.2px solid #024abd;
+  background-color: #f5f5f5;
 }
 
 .find_ID {
@@ -265,12 +264,11 @@
   margin-right: 1em;
   margin-bottom: -2em;
   margin-left: 1em;
-  border: 1px solid #DCE1E5;
+  border: 1px solid #dce1e5;
   background-color: white;
   border-radius: 5px;
   width: 400px;
 }
-
 
 .certificate_form {
   margin: 1em;
@@ -280,7 +278,7 @@
 .certificate_form input {
   height: 38px;
   width: 280px;
-  border: 1px solid #DCE1E5;
+  border: 1px solid #dce1e5;
   background-color: white;
   border-radius: 5px;
 }
@@ -308,14 +306,14 @@
   width: 110px;
   height: 35px;
   color: white;
-  background: #3E3E3E;
-  border: #3E3E3E;
+  background: #3e3e3e;
+  border: #3e3e3e;
   border-radius: 5px;
   font-size: 0.8em;
 }
 
 /*아이디 확인 버튼*/
-#confirm_id  {
+#confirm_id {
   height: 50px;
   width: 405px;
   margin-left: 1em;
@@ -356,7 +354,7 @@
   margin-right: 1em;
   margin-bottom: -2em;
   margin-left: 1em;
-  border: 1px solid #DCE1E5;
+  border: 1px solid #dce1e5;
   background-color: white;
   border-radius: 5px;
   width: 400px;
@@ -370,8 +368,8 @@
   margin-right: 1em;
   text-align: center;
   color: white;
-  background: #3E3E3E;
-  border: #3E3E3E;
+  background: #3e3e3e;
+  border: #3e3e3e;
   border-radius: 3px;
   font-size: 0.9em;
 }
