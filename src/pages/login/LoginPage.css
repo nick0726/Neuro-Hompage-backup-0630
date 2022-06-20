@@ -54,7 +54,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 32vh;
+  height: 300px;
   border-top: 3.2px solid #024ABD;
   background-color: #F5F5F5;
 }
@@ -84,7 +84,7 @@
 .login_box .login_box_left .account_box input {
   margin: 0 0 2em 2.4em;
   padding-bottom: 1.2em;
-  border: 1px #DCE1E5;
+  border: 1px solid #DCE1E5;
   background-color: #FFFFFF;
   border-radius: 2px;
 }
@@ -221,5 +221,162 @@
 }
 
 .signup_guide_p2 p {
+  cursor: pointer;
+}
+
+
+/* ID/PW 찾기 */
+.find_account_box {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  border-top: 3.2px solid #024ABD;
+  background-color: #F5F5F5;
+}
+
+.find_ID {
+  flex: 0.8;
+  justify-content: center;
+  display: grid;
+  text-align: left;
+  /* margin-left: 3em; */
+}
+
+.find_ID_title {
+  display: flex;
+  padding-top: 2em;
+  padding-left: 1em;
+  margin-bottom: -1.5em;
+}
+
+.find_ID_title h5 {
+  font-size: 1.2em;
+}
+
+.find_ID_title p {
+  margin-left: 1em;
+  font-size: 0.83em;
+}
+
+#name {
+  height: 38px;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: -2em;
+  margin-left: 1em;
+  border: 1px solid #DCE1E5;
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.certificate_form {
+  margin: 1em;
+  margin-bottom: -0.3em;
+}
+
+.certificate_form input {
+  height: 38px;
+  border: 1px solid #DCE1E5;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#phone_certify {
+  margin-left: 0.8em;
+  margin-left: 1em;
+  margin-top: 0.1em;
+  text-align: center;
+  width: 110px;
+  height: 35px;
+  color: white;
+  background: #024abd;
+  border: #024abd;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.certificate_form button {
+  margin-left: 0.8em;
+  margin-left: 1em;
+  margin-top: 0.1em;
+  text-align: center;
+  width: 110px;
+  height: 35px;
+  color: white;
+  background: #303030;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+#confirm_id  {
+  height: 50px;
+  width: 400px;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+  color: white;
+  background: #024abd;
+  border: #024abd;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.find_PW {
+  flex: 0.8;
+  display: grid;
+  justify-content: center;
+}
+
+.find_PW_title {
+  display: flex;
+  padding-top: 2em;
+  padding-left: 1em;
+  margin-bottom: -1.5em;
+}
+
+.find_PW_title h5 {
+  font-size: 1.2em;
+}
+
+.find_PW_title p {
+  margin-left: 1em;
+  font-size: 0.83em;
+}
+
+#id {
+  height: 38px;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: -2em;
+  margin-left: 1em;
+  border: 1px solid #DCE1E5;
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+}
+
+#confirm_PW {
+  height: 50px;
+  width: 400px;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+  color: white;
+  background: #303030;;
+  border: #303030;;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.bottom-menu {
+  display: flex;
+  margin-left: 830px;
+}
+
+.bottom-menu p {
+  margin-left: 2em;
+  font-size: 0.83em;
   cursor: pointer;
 }

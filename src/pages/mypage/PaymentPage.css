@@ -293,6 +293,7 @@
   align-items: center;
   justify-content: end;
   font-weight: bold;
+  margin-left: 1em;
 }
 
 #account-copy-border {
@@ -327,6 +328,9 @@
   margin-right: 2em;
 }
 
+#paywith input {
+  margin-right: 0.2em;
+}
 
 #lastSection {
   height: 10vh;
