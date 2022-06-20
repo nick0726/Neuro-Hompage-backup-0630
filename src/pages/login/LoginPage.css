@@ -271,6 +271,7 @@
   width: 400px;
 }
 
+
 .certificate_form {
   margin: 1em;
   margin-bottom: -0.3em;
@@ -278,11 +279,13 @@
 
 .certificate_form input {
   height: 38px;
+  width: 280px;
   border: 1px solid #DCE1E5;
   background-color: white;
   border-radius: 5px;
 }
 
+/*인증번호 전송 버튼 */
 #phone_certify {
   margin-left: 0.8em;
   margin-left: 1em;
@@ -305,14 +308,16 @@
   width: 110px;
   height: 35px;
   color: white;
-  background: #303030;
+  background: #3E3E3E;
+  border: #3E3E3E;
   border-radius: 5px;
   font-size: 0.8em;
 }
 
+/*아이디 확인 버튼*/
 #confirm_id  {
   height: 50px;
-  width: 400px;
+  width: 405px;
   margin-left: 1em;
   margin-right: 1em;
   text-align: center;
@@ -357,15 +362,16 @@
   width: 400px;
 }
 
+/*비밀번호 확인 버튼*/
 #confirm_PW {
   height: 50px;
-  width: 400px;
+  width: 405px;
   margin-left: 1em;
   margin-right: 1em;
   text-align: center;
   color: white;
-  background: #303030;;
-  border: #303030;;
+  background: #3E3E3E;
+  border: #3E3E3E;
   border-radius: 3px;
   font-size: 0.9em;
 }
