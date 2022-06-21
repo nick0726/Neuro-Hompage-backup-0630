@@ -22,7 +22,7 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
         //fullpage options
         licenseKey={"F9KG8-XM0I7-7I1LI-VUO8J-TYTKM"}
         scrollingSpeed={800} /* Options here */
-        navigation={true}
+        navigation
         render={({ state, fullpageApi }) => {
           return (
             <>
@@ -34,8 +34,7 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
                     <div className='s0_main_container_content'>
                       <div className='s0_mainpage_title'>
                         <h1>NeuroEars</h1>
-                        <h4>평형기능</h4>
-                        <h4>측정 진단 치료</h4>
+                        <h4>평형기능 측정 진단 치료</h4>
                         <h4>소프트웨어 개발 전문기업</h4>
                         <div className='s0_mainpage_btn'>
                           <button
@@ -48,7 +47,7 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
                           </button>
                         </div>
                         <div className='s0_mainpage_mouse'>
-                          <img src={mouse} alt={mouse} />
+                          <img id='bounce' src={mouse} alt={mouse} />
                         </div>
                       </div>
                     </div>
@@ -65,14 +64,9 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
                         <div className='s1_mainpage_content'>
                           <p>
                             뉴로이어즈(주)는 신경이과 전문의료진과 연구개발
-                            <br />
-                            전문가들이 모여 설립한 기업으로, 의학과 뇌공학계
-                            <br />
-                            와의 공동연구를 통해 어지럼과 이명을 쉽고 간단하
-                            <br />게 진단하고 치료하는 방법을 찾기 위해
-                            설립되었습
-                            <br />
-                            니다.
+                            전문가들이 모여설립한 기업으로, 의학과 뇌공학계와의
+                            공동연구를 통해 어지럼과 이명을 쉽고 간단하게
+                            진단하고 치료하는 방법을 찾기 위해 설립되었습니다.
                           </p>
                           <div className='s1_mainpage_btn'>
                             <button
@@ -106,14 +100,9 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
                         <div className='s2_mainpage_content'>
                           <p>
                             뉴로이어즈(주)는 신경이과 전문의료진과 연구개발
-                            <br />
-                            전문가들이 모여 설립한 기업으로, 의학과 뇌공학계
-                            <br />
-                            와의 공동연구를 통해 어지럼과 이명을 쉽고 간단하
-                            <br />게 진단하고 치료하는 방법을 찾기 위해
-                            설립되었습
-                            <br />
-                            니다.
+                            전문가들이 모여 설립한 기업으로, 의학과 뇌공학계와의
+                            공동연구를 통해 어지럼과 이명을 쉽고 간단하게
+                            진단하고 치료하는 방법을 찾기 위해 설립되었습니다.
                           </p>
                           <div className='s2_mainpage_btn'>
                             <button
@@ -125,6 +114,26 @@ const LandingPage = ({ landingOn, setLandingOn }) => {
                             </button>
                           </div>
                         </div>
+                        <table className='tech-contents'>
+                          <th>테이블</th>
+                          <th>만들기</th>
+                          <th>만들기</th>
+                          <tr>
+                            <td>첫번째 칸</td>
+                            <td>두번째 칸</td>
+                            <td>3333</td>
+                          </tr>
+                          <tr>
+                            <td>첫번째 칸</td>
+                            <td>두번째 칸</td>
+                            <td>3333</td>
+                          </tr>
+                          <tr>
+                            <td>첫번째 칸</td>
+                            <td>두번째 칸</td>
+                            <td>3333</td>
+                          </tr>
+                        </table>
                       </div>
                     </div>
                   </div>

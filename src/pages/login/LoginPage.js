@@ -28,8 +28,8 @@ function LoginPage() {
           <div className='login_box'>
             <div className='login_box_left'>
               <div className='account_box'>
-                <input></input>
-                <input></input>
+                <input placeholder='ID'></input>
+                <input placeholder='PW'></input>
               </div>
               <div className='login_btn'>
                 <button
@@ -105,15 +105,14 @@ function LoginPage() {
                   <p>가입시 입력한 정보를 기입해 주세요</p>
                 </b>
               </div>
-              <input id='name'></input>
+              <input id='name' placeholder='본명을 입력하세요'></input>
               <div className='certificate_form'>
-                <input></input>
+                <input placeholder='휴대폰 번호'></input>
                 <button id='phone_certify'>인증번호 전송</button>
               </div>
               <button id='confirm_id' onClick={() => setTimerOn(true)}>
                 아이디 확인
               </button>
-              {TimerOn === true ? <Timer /> : null}
             </div>
             <div className='find_PW'>
               <div className='find_PW_title'>
@@ -122,9 +121,9 @@ function LoginPage() {
                   <p>가입시 입력한 정보를 기입해주세요.</p>
                 </b>
               </div>
-              <input id='id'></input>
+              <input id='id' placeholder='ID 아이디를 입력하세요'></input>
               <div className='certificate_form'>
-                <input></input>
+                <input placeholder='E-Mail 이메일 주소'></input>
                 <button>이메일 인증</button>
               </div>
               <button id='confirm_PW'>비밀번호 확인</button>

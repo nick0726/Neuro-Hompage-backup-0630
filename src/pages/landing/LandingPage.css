@@ -16,43 +16,63 @@
   scroll-behavior: smooth;
 }
 
+#fp-nav {
+  z-index: 1;
+}
+
+/* 
+#fp-nav {
+  color: white;
+  padding-left: 20px;
+  border-left: 1.5625px solid #FFFFFF;
+}
+
+#fp-nav li {
+  color: white;
+  background: white;
+  border-radius: 100%;
+  opacity: 50%;
+} */
+
 .s0_main_container {
   /* border: 0.188rem solid green; */
   width: 100%;
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  scrollbar-width: none;
+  height: 100%;
+  overflow: hidden;
   background-image: url('../../images/mainpage.jpg');
-  background: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* scrollbar-width: none; */
 }
 
 .s0_main_container_content {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  overflow: hidden;
   /* border: 0.188rem solid blue; */
 }
 
 .s0_mainpage_title {
-  animation: slideUp .8s ease-in-out forwards .8s;
-  width: 100%;
-  height: 100%;
-  padding: 12em 0 0 11em;
+  /* animation: slideUp.8s ease-in-out forwards .8s; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 15%;
+  margin-left: 8%;
 }
 
 .s0_mainpage_title h1 {
   font-size: 3em;
   padding: 0 0 1.5rem;
   color: #FFFFFF;
+  text-shadow: 0.188rem 0.188rem #3E3535;
 }
 
 .s0_mainpage_title h4 {
-  /* border: 0.188rem solid red; */
-  color: #FFFFFF;
-  line-height: 6.8rem;
+  /* animation: slideUp .8s ease-in-out forwards .8s; */
   font-size: 3.5rem;
-  animation: slideUp .8s ease-in-out forwards .8s;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 90px;
 }
 
 .s0_mainpage_btn button {
@@ -89,12 +109,13 @@
 }
 
 .s0_mainpage_mouse img {
-  /* border: 3px solid red; */
-  background: cover;
-  padding-top: 6em;
-  width: 3.2vw;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5em;
+  width: 65px;
 }
 
+    
 .s1_main_container {
   /* border: 0.188rem solid green; */
   width: 100%;
@@ -106,9 +127,6 @@
   flex: 1;
   width: 100%;
   height: 100%;
-  display: block;
-  background-size: cover;
-  overflow: hidden;
   padding-left: 7rem;
   /* border: 0.188rem solid blue; */
 }
@@ -121,7 +139,7 @@
 }
 
 .s1_mainpage_title h1 {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   padding: 0 0 2rem;
 }
 
@@ -132,8 +150,9 @@
 }
 
 .s1_mainpage_content p {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 3rem;
+  width: 53%;
 }
 
 .s1_mainpage_btn button {
@@ -177,14 +196,13 @@
   height:100vh;
   display: flex;
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .s2_main_container_content {
   width: 100%;
   height: 100vh;
-  display: block;
-  background-size: cover;
-  overflow: hidden;
   /* border: 0.188rem solid blue; */
 }
 
@@ -192,7 +210,10 @@
   animation: slideUp .8s ease-in-out forwards .8s;
   width: 100%;
   height: 100%;
-  padding: 15em 0 0 9em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 13%;
+  margin-left: 11%;
 }
 
 .s2_mainpage_title h1 {
@@ -212,24 +233,30 @@
 }
 
 .s2_mainpage_content p {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 3rem;
+  width: 24%;
 }
 
-/* .s2_mainpage_sphere {
-  width: 100%;
-  height: 30em;
+.tech-contents {
+  position: absolute;
+  right: 0;
+  margin-right: 16%;
+  margin-top: 8%;
+  width: 200px;
+  border: 1px solid blue;
 }
 
-.s2_mainpage_sphere img {
-  width: 100%;
-  height: 30em;
+.tech-contents th {
+  display: none;
 }
 
-.s2_mainpage_sphere video {
-  width: 100%;
-  height: 30em;
-} */
+.tech-contents {
+  width: 500px;
+}
+
+.tech-contents td {
+}
 
 .s2_mainpage_btn button {
   justify-content: center;
@@ -261,9 +288,6 @@
   /* border: 0.188rem solid green; */
   width: 100%;
   height: 100vh;
-  overflow: hidden;
-  /* background-color: #eeee; */
-  /* margin-bottom: 8.6em; */
 }
 
 .s3_main_container_content {
@@ -420,26 +444,17 @@
   /* border: 0.188rem solid green; */
   width: 100%;
   height: 100vh;
-  overflow: hidden;
-  /* background-size: cover; */
 }
 
 .s4_main_container_content {
   width: 100%;
-  /* height: 42vh; */
-  background-size: cover;
   display: flex;
-  overflow: hidden;
-  /* padding: 2em; */
-  /* border: 3px solid red; */
-  /* padding: 15em 2em 2em 6.2em; */
-  /* justify-content: center; */
+  margin-top: 2%;
   padding: 11em 0 0 0;
 }
 
 /* 연구 및 논문자료 */
 .s4_mainpage_patent {
-  display: block;
   /* border: 3px solid red; */
   /* padding-top: 3rem; */
   font-size: 0.8em;
@@ -502,6 +517,7 @@
 .s4_mainpage_patent_container_box1 p {
   margin-top: 1em;
   line-height: 1.6rem;
+  font-size: 0.9em;
 }
 
 .s4_mainpage_patent_container_box2 {
@@ -523,17 +539,17 @@
 .s4_mainpage_patent_container_box2 p {
   margin-top: 1em;
   line-height: 1.6rem;
+  font-size: 0.9em;
 }
 
 
 .s4_mainpage_contactus {
   background-image: url('../../images/contactus.jpg');
   background-size: cover;
-  height: 41vh;
-  display: block;
+  background-repeat: no-repeat;
+  height: 30vh;
   /* justify-content: center; */
   padding: 3em 0 2em 2em;
-  z-index: inherit;
 }
 
 .s4_mainpage_contactus h1 {

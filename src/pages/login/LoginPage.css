@@ -16,6 +16,12 @@
   scroll-behavior: smooth;
 }
 
+input::placeholder {
+  font-size: 0.8em;
+  align-items: center;
+  padding-left: 0.5em;
+}
+
 .login_container {
   /* border: 3px solid red; */
   display: flex;
@@ -83,7 +89,9 @@
 /* ID PW 입력칸 */
 .login_box .login_box_left .account_box input {
   margin: 0 0 2em 2.4em;
-  padding-bottom: 1.2em;
+  /* padding-bottom: 1em; */
+  align-items: center;
+  height: 43px;
   border: 1px solid #DCE1E5;
   background-color: #FFFFFF;
   border-radius: 2px;
@@ -271,7 +279,6 @@
   width: 400px;
 }
 
-
 .certificate_form {
   margin: 1em;
   margin-bottom: -0.3em;
@@ -291,7 +298,7 @@
   margin-left: 1em;
   margin-top: 0.1em;
   text-align: center;
-  width: 110px;
+  width: 107px;
   height: 35px;
   color: white;
   background: #024abd;
@@ -305,7 +312,7 @@
   margin-left: 1em;
   margin-top: 0.1em;
   text-align: center;
-  width: 110px;
+  width: 107px;
   height: 35px;
   color: white;
   background: #3E3E3E;
@@ -317,7 +324,7 @@
 /*아이디 확인 버튼*/
 #confirm_id  {
   height: 50px;
-  width: 405px;
+  width: 402px;
   margin-left: 1em;
   margin-right: 1em;
   text-align: center;
@@ -365,7 +372,7 @@
 /*비밀번호 확인 버튼*/
 #confirm_PW {
   height: 50px;
-  width: 405px;
+  width: 402px;
   margin-left: 1em;
   margin-right: 1em;
   text-align: center;

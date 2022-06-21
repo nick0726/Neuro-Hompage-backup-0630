@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../images/logo.jpg";
+import whitelogo from "../images/whitelogo.png";
+import NevigationBg from "../images/Nevigation-bg.png";
 
 const Header = ({
   landingOn,
@@ -39,7 +42,7 @@ const Header = ({
             setLandingOn(true);
           }}
         >
-          NeuroEars
+          {landingOn === true ? <img src={whitelogo} /> : <img src={logo} />}
         </h1>
         <div
           className='menu-nav'
@@ -141,8 +144,10 @@ const Header = ({
     return (
       <>
         <div className='submenu' onMouseLeave={() => setSubMenuOn(false)}>
-          <div className='submenu-logo'>aaa</div>
-          <div className='list'>
+          <div className='submenu-logo'>
+            <img src={NevigationBg} />
+          </div>
+          <div id='list' className='list'>
             <ul>
               <li>인사말</li>
               <li>비전</li>
@@ -192,7 +197,7 @@ const Header = ({
               </li>
             </ul>
           </div>
-          <div className='list'>
+          <div id='RnD-list' className='list'>
             <ul>
               <li>
                 보유기술 및<br />
@@ -204,7 +209,7 @@ const Header = ({
               </li>
             </ul>
           </div>
-          <div className='list'>
+          <div id='query-list' className='list'>
             <ul>
               <li>제품문의</li>
               <li>FAQ</li>

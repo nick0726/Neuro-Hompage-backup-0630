@@ -1,28 +1,33 @@
 .header {
   width: 100%;
-  height: 8vh;
-  /* margin: 0 auto; */
+  height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  /* background: transparent; */
   /* position: relative; */
   z-index: 1;
   color: white;
-  /* border: 3px solid red; */
+  border-width: thin;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.header img {
+  width: 180px;
 }
 
 .header h1 {
   /* color: #fff; */
   color: white;
-  padding-left: 4em;
+  margin-left: 57px;
   font-size: 1.8em;
   cursor: pointer;
 }
 
 .header .menu-nav ul li {
   display: inline-block;
-  margin: 0 5em;
+  margin: 0 70px;
   /* color: black; */
   font-size: 0.88em;
   cursor: pointer;
@@ -41,14 +46,13 @@
 
 .header .right-top-menu .login-Btn {
   display: inline-block;
-  /* margin: 0 2.18em 1.25em; */
-  margin: 0 2em 1.25em 1em;
+  margin: 0 20px 15px 15px;
 }
 
 /* My Page */
 .header .right-top-menu .mypage-Btn {
   display: inline-block;
-  margin: 0 0 0 1em;
+  margin: 0 0 0 15px;
 }
 
 .header .right-top-menu .login-Btn button {
@@ -88,6 +92,7 @@
   margin-top: 20px;
   transition: 0.7s ease;
 }
+
 /* My Page */
 .header .right-top-menu .mypage-Btn button:hover {
   background: whitesmoke;
@@ -119,35 +124,51 @@
 .submenu {
   width: 100%;
   height: 310px;
-  border: 3px solid blue;
   /* z-index: -1; */
   background: white;
   opacity: 50%;
   position: fixed;
   display: flex;
-  margin-top: 24.2em;
-  display: flex;
+  margin-top: 395px;
+  text-align: center;
 }
 
 .submenu-logo {
-  width: 22em;
+  width: 390px;
   /* width: 350px; */
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: 305px;
 }
 
+.submenu-logo img {
+  background-size: cover;
+  width: 350px;
+  height: 310px;
+}
+
+#list {
+  margin-left: 110px;
+}
+
 .list {
-  width: 8%;
+  width: 160px;
   /* height: 30vh; */
   height: 30px;
   color: black;
   font-size: 0.88em;
   cursor: pointer;
-  border: 3px solid orange;
-  margin: 0 0 0 8em;
+  margin-right: 4px;
 }
 
 .list li {
   display: flex;
-  padding-bottom: 1.3em;
+  padding-bottom: 35px;
+}
+
+#RnD-list {
+  margin-left: 30px;
+}
+
+#query-list {
+  margin-left: 50px;
 }
