@@ -7,7 +7,10 @@ function TechnologyPage() {
     <>
       <div className='technologypage-box'>
         <div className='bg-box'>
-          <MiddleNav />
+          <h4>기술</h4>
+          <div className='middle-nav-box'>
+            <MiddleNav />
+          </div>
         </div>
         <div className='s1-sb-algo'>
           <h4>소프트웨어 기반 안구추적 알고리즘</h4>
