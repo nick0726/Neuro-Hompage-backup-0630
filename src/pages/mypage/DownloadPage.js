@@ -1,6 +1,6 @@
 import "./DownloadPage.css";
-import newestDownloadBtn from "../../images/newest-download.jpg";
-import manualDownloadBtn from "../../images/manual-download.jpg";
+import newestDownloadBtn from "../../images/newest-download.svg";
+import manualDownloadBtn from "../../images/manual-download.svg";
 import steamIcon from "../../images/steam-icon.png";
 import { useState, version } from "react";
 import { Table } from "react-bootstrap";

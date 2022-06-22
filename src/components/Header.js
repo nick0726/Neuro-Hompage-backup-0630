@@ -14,6 +14,7 @@ const Header = ({
 }) => {
   const navigate = useNavigate();
   const [subMenu, setSubMenuOn] = useState(false);
+  const [setHeaderFix, setHeaderFixOn] = useState(false);
 
   useEffect(() => {
     let landingLocalStorageOn = localStorage.getItem("landingOn");
@@ -31,6 +32,7 @@ const Header = ({
         className='header'
         style={{
           backgroundColor: `${landingOn ? "transparent" : "white"}`,
+          position: `${setHeaderFix === true ? "relative" : "fixed"}`,
         }}
       >
         <h1
@@ -40,9 +42,14 @@ const Header = ({
           onClick={() => {
             navigate("/");
             setLandingOn(true);
+            setHeaderFixOn(false); /* true = Fixed,  flase = relative*/
           }}
         >
-          {landingOn === true ? <img src={whitelogo} /> : <img src={logo} />}
+          {landingOn === true ? (
+            <img src={whitelogo} alt={whitelogo} />
+          ) : (
+            <img src={logo} alt={logo} />
+          )}
         </h1>
         <div
           className='menu-nav'
@@ -55,6 +62,7 @@ const Header = ({
               onClick={() => {
                 navigate("/company");
                 setLandingOn(false);
+                setHeaderFixOn(true);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -64,6 +72,8 @@ const Header = ({
               onClick={() => {
                 navigate("/technology");
                 setLandingOn(false);
+                setHeaderFixOn(true);
+                console.log(setHeaderFix);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -73,6 +83,7 @@ const Header = ({
               onClick={() => {
                 navigate("/products");
                 setLandingOn(false);
+                setHeaderFixOn(true);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -82,6 +93,7 @@ const Header = ({
               onClick={() => {
                 navigate("/RnD");
                 setLandingOn(false);
+                setHeaderFixOn(true);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -91,6 +103,7 @@ const Header = ({
               onClick={() => {
                 navigate("/support");
                 setLandingOn(false);
+                setHeaderFixOn(true);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -114,6 +127,7 @@ const Header = ({
               onClick={() => {
                 navigate("/mypage");
                 setLandingOn(false);
+                setHeaderFixOn(false);
                 localStorage.setItem("landingOn", false);
                 // setMyPageOn(false);
                 // setTopBtnColor(false);
@@ -128,6 +142,7 @@ const Header = ({
               onClick={() => {
                 navigate("/login");
                 setLandingOn(false);
+                setHeaderFixOn(false);
               }}
             >
               로그인
