@@ -16,8 +16,9 @@ body {
   align-items: center;
   text-align: center;
   justify-content: flex-start;
-  border: 1px solid blue;
+  border: 1px solid red;
   padding-left: 300px;
+  /* position: inherit; */
 }
 
 .middle-nav-box .home-img {
@@ -29,12 +30,12 @@ body {
   border-right: 1px solid white;
   /* margin-left: 300px; */
 }
-  
+
 .middle-nav-box .menu {
   text-align: left;
   width: 200px;
 }
-  
+
 .middle-nav-box .section {
   text-align: left;
   align-items: center;

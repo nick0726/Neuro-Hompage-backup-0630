@@ -5,14 +5,16 @@ import MiddleNav from "../../components/MiddleNav";
 function TechnologyPage() {
   return (
     <>
-      <div className='technologypage-box'>
-        <div className='bg-box'>
+      <div className="bg-box">
+        <div className="bg-contents">
           <h4>기술</h4>
-          <div className='middle-nav-box'>
+          <div className="middle-nav-box">
             <MiddleNav />
           </div>
         </div>
-        <div className='s1-sb-algo'>
+      </div>
+      <div className="technologypage-box">
+        <div className="s1-sb-algo">
           <h4>소프트웨어 기반 안구추적 알고리즘</h4>
           <p>
             뉴로이어즈는 귀의 평형기관 혹은 중추평형신경계의 이상은 안구움직임의
