@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #B7D4F8 0%, #FFFFFF 100%);;
+  background: linear-gradient(180deg, #b7d4f8 0%, #ffffff 100%);
 }
 
 .product-page-box {
@@ -25,7 +25,6 @@ body {
 }
 
 #logo {
-  /* border: 1px solid red; */
   height: 30px;
   margin-top: 120px;
 }
@@ -48,17 +47,24 @@ body {
   margin-top: 15px;
   width: 200px;
   height: 64px;
-  background: #024ABD;
-  border: 1px solid #BEDEF0;
+  background: #024abd;
+  border: 1px solid #bedef0;
   box-shadow: 0px 3px 25px rgba(93, 151, 243, 0.87);
   border-radius: 35px;
   color: white;
 }
 
+.product-bg .product-page-box .product button:hover {
+  background: whitesmoke;
+  color: #024abd;
+  border: #024abd;
+  text-shadow: 0.063rem 0.063rem #c5c5c5;
+}
+
 .product-bg .product-page-box .product .certificate {
   /* height: 50px; */
   width: 380px;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
   margin-top: 20px;
   text-align: left;
@@ -81,7 +87,6 @@ body {
   margin-left: 50px;
 }
 
-
 /*중간 nav와 제품 description*/
 .description-full-box {
   width: 1440px;
@@ -90,7 +95,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #024ABD;
 }
 
 .description-full-box .product-nav {
@@ -98,11 +102,10 @@ body {
   flex-direction: row;
   display: flex;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .description-full-box .product-nav .nav-menu {
-  border: 1px solid #024ABD;
+  border: 1px solid #e3e3e3;
   width: 300px;
   height: 56px;
   display: flex;
@@ -114,22 +117,21 @@ body {
 }
 
 .nav-menu:hover {
-  background: #024ABD;
+  background: #024abd;
   color: white;
 }
 
+/*Anna™ 사용 시 아래의 18가지 평형기능 검사가 가능합니다*/
 .inspect-decription-box {
   width: 1200px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
   margin-bottom: 120px;
 }
 
 .inspect-decription-title {
   margin-left: 50px;
-
 }
 
 .inspect-decription-box .inspect-decription-title h6 {
@@ -151,9 +153,8 @@ body {
   display: flex;
   width: 400px;
   height: 236px;
-  /* border: 1px solid red; */
-  background: #FFFFFF;
-  border: 1px solid #E3E3E3;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
   box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.04);
   flex-direction: column;
   /* 이거때매 */
@@ -176,7 +177,15 @@ body {
   line-height: 28px;
 }
 
-/* 두번째 본문, 요약, "합리적인 비용" */
+/* 두번째 본문, 요약, "합리적인 초기 비용" */
+#inspect-decription-full-box {
+  width: 100%;
+  background: #f8fafd;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .inspect-decription-box {
   /* margin-bottom: 120px; */
   /* 여기서부터 재개 */
@@ -193,6 +202,11 @@ body {
   width: 600px;
 }
 
+.inspect-decription-box .summary-1 .left img {
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
+}
+
 .inspect-decription-box .summary-1 .left h4 {
   margin-top: 30px;
   margin-bottom: 15px;
@@ -201,12 +215,15 @@ body {
 .inspect-decription-box .summary-1 .left p {
   line-height: 28px;
 }
-.inspect-decription-box .summary-1 .right {
-  width: 600px;
-}
 
 .inspect-decription-box .summary-1 .right {
+  width: 600px;
   padding-top: 250px;
+}
+
+.inspect-decription-box .summary-1 .right img {
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
 }
 
 .inspect-decription-box .summary-2 {
@@ -215,15 +232,29 @@ body {
   padding-left: 50px;
 }
 
+/* Contents 있는 칸 */
+.inspect-decription-box .summary-2 h4 {
+  margin-bottom: 15px;
+}
+
+.inspect-decription-box .summary-2 p {
+  line-height: 28px;
+}
+
 .inspect-decription-box .summary-2 .left {
   width: 600px;
+}
+
+/* Contents 있는 칸 */
+.inspect-decription-box .summary-2 .left img {
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
 }
 
 .inspect-decription-box .summary-2 .right {
   padding-top: 50px;
   width: 600px;
 }
-
 
 .inspect-decription-box .summary-3 {
   width: 1200px;
@@ -238,7 +269,80 @@ body {
   margin-bottom: 15px;
 }
 
+/* Contents 있는 칸 */
+.inspect-decription-box .summary-3 .left h4 {
+  margin-bottom: 15px;
+}
+
+.inspect-decription-box .summary-3 .left p {
+  line-height: 28px;
+}
+
 .inspect-decription-box .summary-3 .right {
   width: 600px;
   padding-top: 50px;
+}
+
+.inspect-decription-box .summary-3 .right img {
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
+}
+
+/* Contents 있는 칸 */
+.inspect-decription-box .summary-3 .right h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.inspect-decription-box .summary-3 .right p {
+  line-height: 28px;
+}
+
+#product-specifications {
+  margin-top: 240px;
+}
+
+#FAQ {
+  background: #f8fafd;
+}
+
+#FAQ-title {
+  padding-left: 50px;
+  border: none;
+}
+
+#FAQ-title h4 {
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.FAQ-contents {
+  width: 1100px;
+  /*질문박스 크기조정*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+  margin-top: 30px;
+  cursor: pointer;
+  border: 2px solid #eceff4;
+  border-radius: 5px;
+}
+
+.FAQ-contents h5 {
+  margin-left: 15px;
+}
+
+.FAQ-contents-modal {
+  width: 1100px;
+  padding-top: 8px;
+  padding-left: 42px;
+  padding-bottom: 15px;
+  border-right: 2px solid #eceff4;
+  border-bottom: 2px solid #eceff4;
+  border-left: 2px solid #eceff4;
+}
+
+.FAQ-contents:hover {
+  background: #eceff4;
 }
