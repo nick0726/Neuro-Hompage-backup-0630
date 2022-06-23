@@ -59,6 +59,8 @@ function TechnologyPage() {
               하나입니다.
             </p>
           </div>
+
+          {/* 본문 */}
           <div className='s1-content'>
             <div className='s1-prev-way'>
               <div className='s1-prev-way-img'>
@@ -246,10 +248,12 @@ function TechnologyPage() {
           </div>
 
           {/* 본문 주파수 동조 알고리즘 */}
-          <div className='frequency-content'>
+          <div id='frquency-first-content' className='frequency-content'>
             <div className='frequency-content-img'>
               <img src={frequency1} alt={frequency1} />
             </div>
+
+            {/* 주파수 알고리즘 첫번째 본문 */}
             <div className='frequency-content-description'>
               <h6>Title</h6>
               <p>
@@ -265,7 +269,9 @@ function TechnologyPage() {
               </p>
             </div>
           </div>
-          <div className='frequency-content'>
+
+          {/* 주파수 알고리즘 두번째 본문 */}
+          <div id='frquency-second-content' className='frequency-content'>
             <div className='frequency-content-img'>
               <img src={frequency2} alt={frequency2} />
             </div>

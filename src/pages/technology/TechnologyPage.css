@@ -171,6 +171,10 @@ body {
     width: 620px;
 }
 
+#VR-full-box .technology-section .technology-title {
+    padding-top: 100px;
+}
+
 .VR-content {
     /* border: 1px solid red; */
     margin-top: 60px;
@@ -183,6 +187,7 @@ body {
 .VR-content .VR-content-description {
     margin-top: 40px;
     margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .VR-content .VR-content-description h6 {
@@ -240,10 +245,22 @@ body {
     height: 100%;
     display: flex;
     margin: 0 auto;
+    margin-top: 120px;
+    padding-top: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #F8F8F8;
+}
+
+#frquency-first-content {
+    /* border: 3px solid red; */
+    border-bottom: 3px solid #dce1e5;
+    padding-bottom: 60px;
+}
+
+#frquency-second-content {
+    margin-top: -40px;
 }
 
 .frequency-content {
