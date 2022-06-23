@@ -10,15 +10,17 @@ body {
 }
 
 .middle-nav-box {
-  width: 100%;
+  width: 1440px;
   height: 60px;
   display: flex;
+  position: sticky;
+  /* 내부 글씨 수평 조정 */
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  justify-content: flex-start;
-  border: 1px solid red;
-  padding-left: 300px;
-  /* position: inherit; */
+  margin-left: 180px;
+  /* background-color: rgba(44, 63, 92, 0.8); */
+  /* border: 1px solid red; */
 }
 
 .middle-nav-box .home-img {

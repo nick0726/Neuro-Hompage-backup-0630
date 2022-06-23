@@ -42,7 +42,7 @@ const Header = ({
           onClick={() => {
             navigate("/");
             setLandingOn(true);
-            setHeaderFixOn(false); /* true = Fixed,  flase = relative*/
+            setHeaderFixOn(false); /* true = relative,  flase = fixed*/
           }}
         >
           {landingOn === true ? (

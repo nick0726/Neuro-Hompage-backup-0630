@@ -4,9 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   /* background: transparent; */
-  /* position: relative; */
+  position: relative;
   z-index: 1;
   color: white;
   border-width: thin;
