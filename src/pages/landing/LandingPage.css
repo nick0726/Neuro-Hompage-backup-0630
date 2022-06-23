@@ -150,7 +150,7 @@
 }
 
 .s1_mainpage_content p {
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 3rem;
   width: 53%;
 }
@@ -231,8 +231,8 @@
 }
 
 .s2_mainpage_content p {
-  font-size: 0.9em;
-  line-height: 3rem;
+  font-size: 1em;
+  line-height: 2rem;
   width: 470px
 }
 
@@ -251,7 +251,7 @@
   /* border: 1px solid white; */
   text-align: center;
   color: white;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .tech-contents-col {
@@ -442,7 +442,7 @@
 }
 
 .s3_mainpage_news_content_A p {
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.6rem;
   padding-top: 1em;
 }
@@ -471,7 +471,7 @@
 }
 
 .s3_mainpage_news_content_B p {
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.6rem;
   padding-top: 1em;
 }
@@ -499,7 +499,7 @@
 }
 
 .s3_mainpage_news_content_C p {
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.6rem;
   padding-top: 1em;
 }
@@ -612,7 +612,7 @@
 .s4_mainpage_patent_container_box1 p {
   margin-top: 1em;
   line-height: 1.6rem;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .s4_mainpage_patent_container_box2 {
@@ -634,7 +634,7 @@
 .s4_mainpage_patent_container_box2 p {
   margin-top: 1em;
   line-height: 1.6rem;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 
