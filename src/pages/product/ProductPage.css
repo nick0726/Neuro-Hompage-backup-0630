@@ -127,7 +127,8 @@ body {
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
+  /* border: 1px solid red; */
+  /* margin-bottom: 120px; */
 }
 
 .inspect-decription-title {
@@ -137,7 +138,6 @@ body {
 .inspect-decription-box .inspect-decription-title h6 {
   color: #033079;
   font-weight: bold;
-  margin-top: 60px;
 }
 
 .inspect-decription-box .inspect-decription-title h4 {
@@ -154,12 +154,18 @@ body {
   width: 400px;
   height: 236px;
   background: #ffffff;
-  border: 1px solid #e3e3e3;
+  border: 2px solid #e3e3e3;
+  /*카드 이미지 쉐도우*/
   box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.04);
   flex-direction: column;
-  /* 이거때매 */
   margin-left: 40px;
   margin-top: 40px;
+}
+
+.inspect-decription .contents  b {
+  color: rgb(189, 181, 181);
+  font-size: 0.8em;
+  /* text-shadow: 0.1px 0.1px #c5c5c5; */
 }
 
 .inspect-decription .contents .twocol-test-contents {
@@ -187,8 +193,9 @@ body {
 }
 
 .inspect-decription-box {
-  /* margin-bottom: 120px; */
   /* 여기서부터 재개 */
+  margin-top: 120px;
+  padding-bottom: 120px;
 }
 
 .inspect-decription-box .summary-1 {
@@ -196,6 +203,12 @@ body {
   height: 400px;
   display: flex;
   padding-left: 50px;
+}
+
+/* 대각선 카드뷰 옆 & 아래 마진 */
+#summary-1 {
+  margin-bottom: 160px;
+  margin-left: 110px;
 }
 
 .inspect-decription-box .summary-1 .left {
@@ -298,12 +311,55 @@ body {
   line-height: 28px;
 }
 
+#table {
+  height: 1080px;
+  margin-top: -80px;
+  border: 2px solid #e3dcdc;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.04);
+}
+
+#table thead,
+tfoot {
+border: 2px solid #e3dcdc;
+background: #F7F7F7;
+height: 50px;
+font-size: 16px;
+font-weight: bold;
+}
+
+#table th {
+  border: 2px solid #e3dcdc;
+}
+
+#table td {
+  border: 2px solid #e3dcdc;
+}
+
 #product-specifications {
-  margin-top: 240px;
+  border: none;
+}
+
+#product-specifications .small-box {
+  border: none;
+}
+
+#product-specifications {
+  margin-top: 80px;
+}
+
+#product-specifications h4 {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 #FAQ {
   background: #f8fafd;
+}
+
+#FAQ .middle-box {
+  border: none;
 }
 
 #FAQ-title {
@@ -317,6 +373,10 @@ body {
   margin-bottom: 10px;
 }
 
+#FAQ .middle-box .small-box {
+  flex-direction: column;
+}
+
 .FAQ-contents {
   width: 1100px;
   /*질문박스 크기조정*/
@@ -327,6 +387,7 @@ body {
   cursor: pointer;
   border: 2px solid #eceff4;
   border-radius: 5px;
+  
 }
 
 .FAQ-contents h5 {

@@ -1,8 +1,7 @@
 .full-box {
   width: 100%;
-  height: 1440px;
-  background: ivory;
-  border: 1px solid ivory;
+  height: 1080px;
+  border: 1px solid black;
   display: flex;
   margin: 0 auto;
   justify-content: center;

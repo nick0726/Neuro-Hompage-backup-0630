@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.company-bg-box {
+  background-image: url("../../images/02_company/Img-Bg-Company.png");
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.company-bg-box h2 {
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+#company-s1 {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/*width 1440px middle box*/
+#company-s2-bg {
+  background: #F8F8F8;
+}
+
+#company-s2 {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+#company-s3-bg {
+  background: linear-gradient(80.99deg, rgba(20, 59, 120, 0.4) 6.42%, rgba(0, 0, 0, 0) 89.06%);
+  background-image: url('../../images/02_company/company-2.svg');
+  height: 700px;
+  border: none;
+}
+
+#company-s3-bg .middle-box {
+  border: none;
+}
+
+#company-s3 {
+  display: flex;
+  margin: 0 auto;
+  border: none;
+}
+
+#company-s3 .left {
+  width: 600px;
+}
+
+#company-s3 .right {
+  width: 600px;
+  display: flex;
+  margin-left: 200px;
+}
+
+#company-s3 .right .table {
+  flex-direction: row;
+}
+
+#company-table {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+#company-table td {
+  border-top: 1px solid #FFFF;
+  border-bottom: 1px solid #FFFF;
+  height: 80px;
+}
+
+#company-table img {
+  width: 150px;
+  height: 30px;
+}
+
+#mission-box {
+  border: none;
+}
+
+#mission {
+  height: 800px;
+  border: none;
+}
+
+#core-value {
+  border: none;
+  background: #F8FAFD;
+}
+
+#core-value .middle-box {
+  border: none;
+  padding-top: 80px;
+}
+
+#core-value .middle-box  h4 {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#core-value .middle-box  b {
+  margin-left: 80px;
+  line-height: 30px;
+}
+
+#core-value .middle-box .small-box {
+  border: none;
+}
+
+
+{/* 카드 뷰 모듈 */}
+.value-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  line-height: 30px;
+  margin-right: 80px;
+  margin: 0 auto;
+}
+
+.value-box .number {
+  border-bottom: 3px solid #024ABD;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.value-box img {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.value-box h5 {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+#value-card {
+  border: none;
+}
