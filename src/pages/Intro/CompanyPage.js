@@ -10,6 +10,12 @@ import logo from "../../images/logo.jpg";
 import value1 from "../../images/02_company/value-1.svg";
 import value2 from "../../images/02_company/value-2.svg";
 import value3 from "../../images/02_company/value-3.svg";
+import Hallym from "../../images/02_company/Hallym.svg";
+import tobii from "../../images/02_company/tobii.svg";
+import JCH from "../../images/02_company/JCH.svg";
+import htc from "../../images/02_company/htc.svg";
+import JohnsHopkins from "../../images/02_company/Johns-Hopkins.svg";
+import map from "../../images/02_company/map.svg";
 
 function CompanyPage() {
   return (
@@ -24,13 +30,17 @@ function CompanyPage() {
 
       <div className='middle-box'>
         <div id='company-s1' className='small-box'>
-          <h1>NeuroEars</h1>
-          <h3>
+          <h1>
+            <img src={logo} alt={logo} />
+          </h1>
+          <div className='underline' />
+          {/* <h1>NeuroEars</h1> */}
+          <h4>
             신경이과 전문의료진과 연구개발 전문가들이 모여 만든 기업으로
             <br />
             어지럼증을 쉽고 간단하게 <b>측정 및 진단하고 치료(재활)</b>하는
             방법을 찾는 기업
-          </h3>
+          </h4>
           <img src={company1} alt={company1} />
 
           <p>
@@ -42,8 +52,8 @@ function CompanyPage() {
           </p>
           <p>
             우리 회사는 이런 의료적 관심뿐만 아니라 사회적-의료적 비용의 절감을
-            위해 혁신적 기술에 기반한 어지럼 측정 및 진단, 그리고 재활이 가능한
-            소프트웨어를 개발하고 있습니다.
+            위해 혁신적 기술에 기반한 어지럼 <b>측정</b>및 <b>진단</b>, 그리고{" "}
+            <b>재활</b>이 가능한 소프트웨어를 개발하고 있습니다.
           </p>
         </div>
       </div>
@@ -63,10 +73,10 @@ function CompanyPage() {
             의과대학들과 함께 공동 임상 연구를 수행 중입니다.
           </p>
           <p>
-            우리 회사는 평형기능 측정 진단 치료(재활) 소프트웨어 개발
-            전문기업으로서 국내를 넘어 세계를 선도하는 주역으로 성장하기 위하여
-            끊임없는 도전정신과 혁신을 통해 지금보다 나은 내일로 전진할 수 있는
-            기업이 되겠습니다.
+            우리 회사는 평형기능 <b>측정</b> <b>진단</b> <b>치료(재활)</b>{" "}
+            소프트웨어 개발 전문기업으로서 국내를 넘어 세계를 선도하는 주역으로
+            성장하기 위하여 끊임없는 도전정신과 혁신을 통해 지금보다 나은 내일로
+            전진할 수 있는 기업이 되겠습니다.
           </p>
         </div>
       </div>
@@ -123,7 +133,7 @@ function CompanyPage() {
           {/* 카드 뷰 모듈 */}
           <div id='value-card' className='small-box'>
             <div className='value-box'>
-              <div className='number'>
+              <div id='number-1' className='number'>
                 <h3>01</h3>
               </div>
               <img src={value1} alt={value1} />
@@ -135,8 +145,8 @@ function CompanyPage() {
               </p>
             </div>
             <div className='value-box'>
-              <div className='number'>
-                <h3>01</h3>
+              <div id='number-2' className='number'>
+                <h3>02</h3>
               </div>
               <img src={value2} alt={value2} />
               <h5>도전정신</h5>
@@ -147,8 +157,8 @@ function CompanyPage() {
               </p>
             </div>
             <div className='value-box'>
-              <div className='number'>
-                <h3>01</h3>
+              <div id='number-3' className='number'>
+                <h3>03</h3>
               </div>
               <img src={value3} alt={value3} />
               <h5>사회적책임</h5>
@@ -157,6 +167,184 @@ function CompanyPage() {
                 <br />
                 뉴로이어즈가 지켜온 가치입니다.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='middle-box'>
+        <div id='history' className='small-box'>
+          <h3>회사 연혁</h3>
+        </div>
+      </div>
+
+      <div id='member-box-1' className='full-box'>
+        <div className='middle-box'>
+          <div className='small-box'>
+            <h3>맴버소개</h3>
+            <h6>뉴로이어즈의 맴버를 소개합니다.</h6>
+          </div>
+          <div id='dept' className='small-box'>
+            <h5>경영팀</h5>
+            {/* 프로필 카드 모듈 */}
+            <div id='member' className='small-box'>
+              <div className='member-box'>
+                <div className='profile-img-box'>
+                  <img src={value1} alt={value1} />
+                </div>
+                <h5>대표이사 CEO</h5>
+                <b>
+                  <p>서규원</p>
+                </b>
+              </div>
+              <div className='member-box'>
+                <div className='profile-img-box'>
+                  <img src={value1} alt={value1} />
+                </div>
+                <h5>대표이사 CEO</h5>
+                <b>
+                  <p>서규원</p>
+                </b>
+              </div>
+              <div className='member-box'>
+                <div className='profile-img-box'>
+                  <img src={value1} alt={value1} />
+                </div>
+                <h5>대표이사 CEO</h5>
+                <b>
+                  <p>서규원</p>
+                </b>
+              </div>
+              <div className='member-box'>
+                <div className='profile-img-box'>
+                  <img src={value1} alt={value1} />
+                </div>
+                <h5>대표이사 CEO</h5>
+                <b>
+                  <p>서규원</p>
+                </b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='member-box-2' className='full-box'>
+        <div className='middle-box'>
+          <div className='small-box'>
+            <div id='dept' className='small-box'>
+              <h5>연구개발팀</h5>
+              {/* 프로필 카드 모듈 */}
+              <div id='member' className='small-box'>
+                <div className='member-box'>
+                  <div className='profile-img-box'>
+                    <img src={value1} alt={value1} />
+                  </div>
+                  <h5>대표이사 CEO</h5>
+                  <b>
+                    <p>서규원</p>
+                  </b>
+                </div>
+                <div className='member-box'>
+                  <div className='profile-img-box'>
+                    <img src={value1} alt={value1} />
+                  </div>
+                  <h5>대표이사 CEO</h5>
+                  <b>
+                    <p>서규원</p>
+                  </b>
+                </div>
+                <div className='member-box'>
+                  <div className='profile-img-box'>
+                    <img src={value1} alt={value1} />
+                  </div>
+                  <h5>대표이사 CEO</h5>
+                  <b>
+                    <p>서규원</p>
+                  </b>
+                </div>
+                <div className='member-box'>
+                  <div className='profile-img-box'>
+                    <img src={value1} alt={value1} />
+                  </div>
+                  <h5>대표이사 CEO</h5>
+                  <b>
+                    <p>서규원</p>
+                  </b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='full-box'>
+        <div id='partners' className='middle-box'>
+          <div className='small-box'>
+            <h3>파트너사</h3>
+            <h5>국내 파트너</h5>
+          </div>
+
+          <div id='partenrs-list'>
+            <div className='partenrs'>
+              <div>
+                <img src={Hallym} alt={Hallym} />
+              </div>
+            </div>
+            <div className='partenrs'>
+              <div>
+                <img src={htc} alt={htc} />
+              </div>
+            </div>
+          </div>
+
+          <div id='partners2' className='small-box'>
+            <h5>해외 파트너</h5>
+          </div>
+          <div id='partenrs-list'>
+            <div className='partenrs'>
+              <div>
+                <img src={tobii} alt={tobii} />
+              </div>
+            </div>
+            <div className='partenrs'>
+              <div>
+                <img src={JohnsHopkins} alt={JohnsHopkins} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='location-box' className='full-box'>
+        <div className='middle-box'>
+          <div className='small-box'>
+            <h2>오시는 길</h2>
+          </div>
+          <div className='small-box'>
+            <div className='map'>
+              <img src={map} alt={map} />
+            </div>
+          </div>
+
+          <div id='info' className='small-box'>
+            <div className='contact'>
+              <h6>주소 및 연락처</h6>
+              <b>
+                <p>주소</p>
+              </b>
+              <p>[도로명]경기 안양시 동안구 부림로170번길 41-10, 7층</p>
+              <p>[지번] 경기 안양시 관양동 1735-4 7층</p>
+            </div>
+            <div className='transportation'>
+              <h6>찾아오시는 방법</h6>
+              <b>
+                <p>버스</p>
+              </b>
+              <p>평촌역 3번 출구 5번, 5-1번, 7번, 52번, 52-1번 이용</p>
+              <b>
+                <p>지하철</p>
+              </b>
+              <p>4호선 평촌역, 인덕원역 이용</p>
             </div>
           </div>
         </div>

@@ -48,6 +48,7 @@ function App() {
           <Route path='/qna' element={<SupportQnA />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/signup' element={<SignUp />} />
+          {/* 비밀번호 변경 */}
           <Route path='/inquiry' element={<Inquiry />} />
           <Route
             path='/mypage'

@@ -29,17 +29,68 @@ body {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
+  margin-bottom: 80px;
+  border: none;
+}
+
+#company-s1 h1 img {
+  display: flex;
+  margin: 0 auto;
+  color: #024ABD;
+  width: 350px;
+  font-size: 56px;
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+
+#company-s1 .underline {
+  border: 3px solid #024ABD;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#company-s1 h4 {
+  margin-top: 35px;
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 60px;
+}
+
+#company-s1 b {
+  color: rgba(255, 76, 19, 1);
+}
+
+#company-s1 p {
+  margin-top: 30px;
+  line-height: 30px;
 }
 
 /*width 1440px middle box*/
 #company-s2-bg {
   background: #F8F8F8;
+  display: flex;
+  margin: 0 auto;
 }
 
 #company-s2 {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
+  margin-bottom: 120px;
+}
+
+#company-s2 b {
+  color: rgba(255, 76, 19, 1);
+}
+
+#company-s2 img {
+  margin-top: 80px;
+}
+
+
+#company-s2 p {
+  margin-top: 30px;
+  line-height: 30px;
 }
 
 #company-s3-bg {
@@ -98,6 +149,8 @@ body {
 #mission {
   height: 800px;
   border: none;
+  display: flex;
+  margin: 0 auto;
 }
 
 #core-value {
@@ -150,6 +203,16 @@ body {
   margin-bottom: 30px;
 }
 
+#number-1 {
+  border-bottom: 3px solid #024ABD;
+}
+#number-2 {
+  border-bottom: 3px solid #13AAFF;;
+}
+#number-3 {
+  border-bottom: 3px solid #394A64;;
+}
+
 .value-box h5 {
   margin-bottom: 10px;
   font-size: 19px;
@@ -157,4 +220,183 @@ body {
 
 #value-card {
   border: none;
+}
+
+#history {
+  height: 2300px;
+}
+
+#member-box-1 {
+  height: 700px;
+  background:#F8FAFD;
+}
+
+#member-box-1 h6 {
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+#member-box-1 h3 {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#dept {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+}
+
+#dept h5 {
+  padding-bottom: 30px;
+}
+
+.value-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  line-height: 30px;
+}
+
+.member-box  {
+  padding-bottom: 15px;
+  margin: 0 auto;
+  width: 240px;
+  height: 360px;
+  background: #FFFFFF;
+  border: 1px solid #ECEFF2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+}
+
+.profile-img-box {
+  width: 180px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px solid #ccced0;
+  margin-top: 50px;
+}
+
+.member-box .profile-img-box img {
+  width: 100px;
+  margin: 0 auto;
+  /*프로필 사진 내부 원 크기 조절*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.member-box h5 {
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+#member-box-2 {
+  height: 700px;
+  background:#ECF2F6;
+}
+
+#partners {
+  height: 700px;
+  border: none;
+  margin-top: 60px;
+}
+
+#partners .small-box {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+#partners .small-box h5 {
+  margin-top: 30px;
+}
+
+#partenrs-list {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  margin-bottom: 120px;
+}
+
+#partenrs-list .partenrs {
+  display: flex;
+  width: 176px;
+  height: 176px;
+  margin-top: -100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #E0E0E0;
+}
+
+#partners2 {
+  margin-top: -50px;
+}
+
+#location-box {
+  height: 900px;
+  background:#ECF2F6;
+  display: flex;
+  flex-direction: column;
+}
+
+#location-box .middle-box {
+  border: none;
+}
+#location-box .small-box {
+  border: none;
+}
+
+#location-box h2 {
+  padding-top: 40px;
+  padding-bottom: -40px;
+}
+
+#location-box .map {
+  margin-top: -60px;
+  width: 1200px;
+  height: 350px;
+  border: none;
+
+}
+
+#info {
+  display: flex;
+  border: none;
+}
+
+#info .contact {
+  width: 600px;
+  height: 100px;
+  margin-top: -60px;
+}
+
+#info .transportation {
+  width: 600px;
+  height: 100px;
+  margin-top: -60px;
+}
+
+#info h6 {
+  color: #024ABD;
+  margin-bottom: 15px;
+}
+
+.contact b p {
+  margin-bottom: 10px;
+}
+
+.transportation b p {
+  margin-top: 12px;
+  line-height: 30px;
 }
