@@ -16,19 +16,21 @@ function RnDPage() {
         <Certifications />
       ) : (
         <>
-          <div className='RnD-bg'>
-            <h2
-              onClick={() => {
-                setCertiOn(!isCertiOn);
-              }}
-            >
-              연구개발
-            </h2>
-            <p>All-in-one 어지럼증 통합 솔루션</p>
+          <div className="RnD-bg">
+            <div className="bg-title">
+              <h2
+                onClick={() => {
+                  setCertiOn(!isCertiOn);
+                }}
+              >
+                연구개발
+              </h2>
+              <p>All-in-one 어지럼증 통합 솔루션</p>
+            </div>
             <MiddleNav />
           </div>
-          <div id='RnD-contents' className='middle-box'>
-            <div id='thesis' className='small-box'>
+          <div id="RnD-contents" className="middle-box">
+            <div id="thesis" className="small-box">
               <h2>연구 및 논문 자료</h2>
               <Thesis />
               <Thesis />
@@ -48,7 +50,7 @@ function RnDPage() {
   function Thesis() {
     return (
       <>
-        <div className='thesis'>
+        <div className="thesis">
           <h5>
             Top-down and bottom-up neurodynamic evidence in patients with
             tinnitus
@@ -57,7 +59,7 @@ function RnDPage() {
             <img src={Author} alt={Author} />
             Han Jae Jeon, Hyung-Jong Kim, Hyo-Jeong Lee, Chang-Geun Song, Sung
             Kwang Hong
-            <img id='arrow' src={ThesisArrow} alt={ThesisArrow} />
+            <img id="arrow" src={ThesisArrow} alt={ThesisArrow} />
           </p>
           <p>
             <img src={Calender} alt={Calender} />
@@ -71,13 +73,13 @@ function RnDPage() {
   function Certifications() {
     return (
       <>
-        <div className='RnD-bg'>
+        <div className="RnD-bg">
           <h2>연구개발</h2>
           <p>All-in-one 어지럼증 통합 솔루션</p>
           <MiddleNav />
         </div>
-        <div id='RnD-certifications' className='middle-box'>
-          <div className='small-box'>
+        <div id="RnD-certifications" className="middle-box">
+          <div className="small-box">
             <h2
               onClick={() => {
                 setCertiOn(!isCertiOn);
@@ -85,13 +87,13 @@ function RnDPage() {
             >
               보유기술 및 특허
             </h2>
-            <div id='cards'>
+            <div id="cards">
               <CertiCards />
               <CertiCards />
               <CertiCards />
               <CertiCards />
             </div>
-            <div id='cards'>
+            <div id="cards">
               <CertiCards />
               <CertiCards />
               <CertiCards />
@@ -106,7 +108,7 @@ function RnDPage() {
   function CertiCards() {
     return (
       <>
-        <div className='certification'>
+        <div className="certification">
           <img src={certi} alt={certi} />
           <h6>제 10-1934235호</h6>
           <h6>위변조 방지용</h6>

@@ -10,17 +10,21 @@ body {
 }
 
 .middle-nav-box {
-  width: 1440px;
-  height: 60px;
+  width: 100%;
   display: flex;
-  position: sticky;
   /* 내부 글씨 수평 조정 */
-  justify-content: flex-start;
+  background-color: rgba(44, 63, 92, 0.8);
+  margin-top: 55px;
+  position: sticky;
+}
+
+.middle-nav-contents {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-left: 180px;
-  /* background-color: rgba(44, 63, 92, 0.8); */
-  /* border: 1px solid red; */
+  text-align: left;
+  margin-left: 350px;
+  color: white;
 }
 
 .middle-nav-box .home-img {
@@ -35,13 +39,15 @@ body {
 
 .middle-nav-box .menu {
   text-align: left;
-  width: 200px;
+  width: 210px;
+  margin-left: 20px;
 }
 
 .middle-nav-box .section {
   text-align: left;
   align-items: center;
-  width: 200px;
+  width: 210px;
+  padding-left: 20px;
   border-left: 1px solid white;
   border-right: 1px solid white;
 }

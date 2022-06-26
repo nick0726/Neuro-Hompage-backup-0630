@@ -20,20 +20,20 @@ import map from "../../images/02_company/map.svg";
 function CompanyPage() {
   return (
     <>
-      <div className='company-bg-box'>
-        <h2>회사소개</h2>
-        <h6>About Company</h6>
-        <div className='middle-nav-box'>
-          <MiddleNav />
+      <div className="company-bg-box">
+        <div className="bg-title">
+          <h2>회사소개</h2>
+          <h6>About Company</h6>
         </div>
+        <MiddleNav />
       </div>
 
-      <div className='middle-box'>
-        <div id='company-s1' className='small-box'>
+      <div className="middle-box">
+        <div id="company-s1" className="small-box">
           <h1>
             <img src={logo} alt={logo} />
           </h1>
-          <div className='underline' />
+          <div className="underline" />
           {/* <h1>NeuroEars</h1> */}
           <h4>
             신경이과 전문의료진과 연구개발 전문가들이 모여 만든 기업으로
@@ -57,8 +57,8 @@ function CompanyPage() {
           </p>
         </div>
       </div>
-      <div id='company-s2-bg' className='middle-box'>
-        <div id='company-s2' className='small-box'>
+      <div id="company-s2-bg" className="middle-box">
+        <div id="company-s2" className="small-box">
           <img src={company1} alt={company1} />
           <p>
             우리 회사는 기존 고가의 일체형 의료 하드웨어가 아닌 일반적으로
@@ -81,14 +81,14 @@ function CompanyPage() {
         </div>
       </div>
 
-      <div id='company-s3-bg' className='full-box'>
-        <div className='middle-box'>
-          <div id='company-s3' className='small-box'>
-            <div className='left'></div>
-            <div className='right'>
-              <table id='company-table' width={520}>
+      <div id="company-s3-bg" className="full-box">
+        <div className="middle-box">
+          <div id="company-s3" className="small-box">
+            <div className="left"></div>
+            <div className="right">
+              <table id="company-table" width={520}>
                 <tbody>
-                  <tr id='top-margin'>
+                  <tr id="top-margin">
                     <td>회사명</td>
                     <td>뉴로이어즈(주)</td>
                   </tr>
@@ -111,15 +111,15 @@ function CompanyPage() {
         </div>
       </div>
 
-      <div id='mission-box' className='middle-box'>
-        <div id='mission' className='small-box'>
+      <div id="mission-box" className="middle-box">
+        <div id="mission" className="small-box">
           <img src={Misson} alt={Misson} />
         </div>
       </div>
 
-      <div id='core-value' className='ful-box'>
-        <div className='middle-box'>
-          <div className='small-box'>
+      <div id="core-value" className="ful-box">
+        <div className="middle-box">
+          <div className="small-box">
             <h4>핵심가치</h4>
             <b>
               <p>
@@ -131,9 +131,9 @@ function CompanyPage() {
           </div>
 
           {/* 카드 뷰 모듈 */}
-          <div id='value-card' className='small-box'>
-            <div className='value-box'>
-              <div id='number-1' className='number'>
+          <div id="value-card" className="small-box">
+            <div className="value-box">
+              <div id="number-1" className="number">
                 <h3>01</h3>
               </div>
               <img src={value1} alt={value1} />
@@ -144,8 +144,8 @@ function CompanyPage() {
                 뉴로이어즈가 지켜온 가치입니다.
               </p>
             </div>
-            <div className='value-box'>
-              <div id='number-2' className='number'>
+            <div className="value-box">
+              <div id="number-2" className="number">
                 <h3>02</h3>
               </div>
               <img src={value2} alt={value2} />
@@ -156,8 +156,8 @@ function CompanyPage() {
                 뉴로이어즈가 지켜온 가치입니다.
               </p>
             </div>
-            <div className='value-box'>
-              <div id='number-3' className='number'>
+            <div className="value-box">
+              <div id="number-3" className="number">
                 <h3>03</h3>
               </div>
               <img src={value3} alt={value3} />
@@ -172,24 +172,24 @@ function CompanyPage() {
         </div>
       </div>
 
-      <div className='middle-box'>
-        <div id='history' className='small-box'>
+      <div className="middle-box">
+        <div id="history" className="small-box">
           <h3>회사 연혁</h3>
         </div>
       </div>
 
-      <div id='member-box-1' className='full-box'>
-        <div className='middle-box'>
-          <div className='small-box'>
+      <div id="member-box-1" className="full-box">
+        <div className="middle-box">
+          <div className="small-box">
             <h3>맴버소개</h3>
             <h6>뉴로이어즈의 맴버를 소개합니다.</h6>
           </div>
-          <div id='dept' className='small-box'>
+          <div id="dept" className="small-box">
             <h5>경영팀</h5>
             {/* 프로필 카드 모듈 */}
-            <div id='member' className='small-box'>
-              <div className='member-box'>
-                <div className='profile-img-box'>
+            <div id="member" className="small-box">
+              <div className="member-box">
+                <div className="profile-img-box">
                   <img src={value1} alt={value1} />
                 </div>
                 <h5>대표이사 CEO</h5>
@@ -197,8 +197,8 @@ function CompanyPage() {
                   <p>서규원</p>
                 </b>
               </div>
-              <div className='member-box'>
-                <div className='profile-img-box'>
+              <div className="member-box">
+                <div className="profile-img-box">
                   <img src={value1} alt={value1} />
                 </div>
                 <h5>대표이사 CEO</h5>
@@ -206,8 +206,8 @@ function CompanyPage() {
                   <p>서규원</p>
                 </b>
               </div>
-              <div className='member-box'>
-                <div className='profile-img-box'>
+              <div className="member-box">
+                <div className="profile-img-box">
                   <img src={value1} alt={value1} />
                 </div>
                 <h5>대표이사 CEO</h5>
@@ -215,8 +215,8 @@ function CompanyPage() {
                   <p>서규원</p>
                 </b>
               </div>
-              <div className='member-box'>
-                <div className='profile-img-box'>
+              <div className="member-box">
+                <div className="profile-img-box">
                   <img src={value1} alt={value1} />
                 </div>
                 <h5>대표이사 CEO</h5>
@@ -228,15 +228,15 @@ function CompanyPage() {
           </div>
         </div>
       </div>
-      <div id='member-box-2' className='full-box'>
-        <div className='middle-box'>
-          <div className='small-box'>
-            <div id='dept' className='small-box'>
+      <div id="member-box-2" className="full-box">
+        <div className="middle-box">
+          <div className="small-box">
+            <div id="dept" className="small-box">
               <h5>연구개발팀</h5>
               {/* 프로필 카드 모듈 */}
-              <div id='member' className='small-box'>
-                <div className='member-box'>
-                  <div className='profile-img-box'>
+              <div id="member" className="small-box">
+                <div className="member-box">
+                  <div className="profile-img-box">
                     <img src={value1} alt={value1} />
                   </div>
                   <h5>대표이사 CEO</h5>
@@ -244,8 +244,8 @@ function CompanyPage() {
                     <p>서규원</p>
                   </b>
                 </div>
-                <div className='member-box'>
-                  <div className='profile-img-box'>
+                <div className="member-box">
+                  <div className="profile-img-box">
                     <img src={value1} alt={value1} />
                   </div>
                   <h5>대표이사 CEO</h5>
@@ -253,8 +253,8 @@ function CompanyPage() {
                     <p>서규원</p>
                   </b>
                 </div>
-                <div className='member-box'>
-                  <div className='profile-img-box'>
+                <div className="member-box">
+                  <div className="profile-img-box">
                     <img src={value1} alt={value1} />
                   </div>
                   <h5>대표이사 CEO</h5>
@@ -262,8 +262,8 @@ function CompanyPage() {
                     <p>서규원</p>
                   </b>
                 </div>
-                <div className='member-box'>
-                  <div className='profile-img-box'>
+                <div className="member-box">
+                  <div className="profile-img-box">
                     <img src={value1} alt={value1} />
                   </div>
                   <h5>대표이사 CEO</h5>
@@ -277,36 +277,36 @@ function CompanyPage() {
         </div>
       </div>
 
-      <div className='full-box'>
-        <div id='partners' className='middle-box'>
-          <div className='small-box'>
+      <div className="full-box">
+        <div id="partners" className="middle-box">
+          <div className="small-box">
             <h3>파트너사</h3>
             <h5>국내 파트너</h5>
           </div>
 
-          <div id='partenrs-list'>
-            <div className='partenrs'>
+          <div id="partenrs-list">
+            <div className="partenrs">
               <div>
                 <img src={Hallym} alt={Hallym} />
               </div>
             </div>
-            <div className='partenrs'>
+            <div className="partenrs">
               <div>
                 <img src={htc} alt={htc} />
               </div>
             </div>
           </div>
 
-          <div id='partners2' className='small-box'>
+          <div id="partners2" className="small-box">
             <h5>해외 파트너</h5>
           </div>
-          <div id='partenrs-list'>
-            <div className='partenrs'>
+          <div id="partenrs-list">
+            <div className="partenrs">
               <div>
                 <img src={tobii} alt={tobii} />
               </div>
             </div>
-            <div className='partenrs'>
+            <div className="partenrs">
               <div>
                 <img src={JohnsHopkins} alt={JohnsHopkins} />
               </div>
@@ -315,19 +315,19 @@ function CompanyPage() {
         </div>
       </div>
 
-      <div id='location-box' className='full-box'>
-        <div className='middle-box'>
-          <div className='small-box'>
+      <div id="location-box" className="full-box">
+        <div className="middle-box">
+          <div className="small-box">
             <h2>오시는 길</h2>
           </div>
-          <div className='small-box'>
-            <div className='map'>
+          <div className="small-box">
+            <div className="map">
               <img src={map} alt={map} />
             </div>
           </div>
 
-          <div id='info' className='small-box'>
-            <div className='contact'>
+          <div id="info" className="small-box">
+            <div className="contact">
               <h6>주소 및 연락처</h6>
               <b>
                 <p>주소</p>
@@ -335,7 +335,7 @@ function CompanyPage() {
               <p>[도로명]경기 안양시 동안구 부림로170번길 41-10, 7층</p>
               <p>[지번] 경기 안양시 관양동 1735-4 7층</p>
             </div>
-            <div className='transportation'>
+            <div className="transportation">
               <h6>찾아오시는 방법</h6>
               <b>
                 <p>버스</p>

@@ -124,52 +124,99 @@
 
 .submenu {
   width: 100%;
-  height: 310px;
+  height: 350px;
   /* z-index: -1; */
   background: white;
   opacity: 50%;
   position: fixed;
   display: flex;
-  margin-top: 395px;
-  text-align: center;
+  margin-top: 430px;
+}
+
+.submenu-box {
+  display: flex;
 }
 
 .submenu-logo {
-  width: 390px;
-  height: 305px;
+  height: 350px;
   /* width: 350px; */
-  /* border: 3px solid red; */
+  background: #293f64;
+  display: flex;
+  margin-top: 2px;
+  flex: 2.35;
+}
+
+.list-open {
+  flex: 7;
+  display: flex;
+}
+
+.submenu-logo .logo-left {
+  flex: 1;
+}
+
+.submenu-logo .logo-right {
+  flex: 1;
 }
 
 .submenu-logo img {
+  width: auto;
   background-size: cover;
-  width: 350px;
-  height: 310px;
-}
-
-#list {
-  margin-left: 110px;
+  height: 350px;
 }
 
 .list {
-  width: 160px;
-  /* height: 30vh; */
+  /* width: 144px; */
+  width: 7.7vw;
   height: 30px;
   color: black;
-  /* font-size: 14px; */
+  font-size: 14px;
   cursor: pointer;
-  margin-right: 4px;
+  margin-right: 5px;
+  margin-top: 15px;
+  /* border: 1px solid rebeccapurple; */
+}
+
+ul {
+  text-align: center;
 }
 
 .list li {
-  display: flex;
-  padding-bottom: 35px;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+
+.list ul li {
+  text-align: center;
+}
+
+/* .menu-border {
+  border-bottom: 2px solid #cdcdcd;
+  padding-top: 15px;
+} */
+
+#intro-list {
+  width: 100px;
+  margin-right: 45px;
+  margin-left: -5px;
+}
+
+#tech-list {
+  width: 150px;
+  margin-left: 17px;
+}
+
+#product-list {
+  margin-left: 20px;
 }
 
 #RnD-list {
-  margin-left: 30px;
+  margin-left: 38px;
 }
 
 #query-list {
-  margin-left: 50px;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+  width: 88px;
 }

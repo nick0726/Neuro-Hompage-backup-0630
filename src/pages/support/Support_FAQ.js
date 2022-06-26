@@ -1,9 +1,7 @@
-function SupportFAQ() {
-  return (
-    <>
-      <div>제품문의페이지</div>
-    </>
-  );
-}
+import React from "react";
 
-export default SupportFAQ;
+const Support_FAQ = () => {
+  return <div>Support_FAQ</div>;
+};
+
+export default Support_FAQ;

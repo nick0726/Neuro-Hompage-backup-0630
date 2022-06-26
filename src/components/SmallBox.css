@@ -3,6 +3,6 @@
   display: flex;
   margin: 0 auto;
   /*flex-direction 지우면 안됌! FAQ 무너짐, FAQ에 따로 넣든가 -> 따로 넣을수밖에읎네...*/
-  border: 1px solid red;
   margin-bottom: 120px;
+  border: 1px solid red;
 }
