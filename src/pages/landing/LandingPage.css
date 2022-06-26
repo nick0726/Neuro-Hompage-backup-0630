@@ -1,13 +1,13 @@
 @font-face {
   font-family: "HallymM.otf";
-  src: url('../../fonts/Hallym-OTF/HallymM.otf')
+  src: url("../../fonts/Hallym-OTF/HallymM.otf");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'HallymM.ttf';
+  font-family: "HallymM.ttf";
 }
 
 .body {
@@ -39,7 +39,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url('../../images/mainpage.jpg');
+  background-image: url("../../images/mainpage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   scrollbar-width: none;
@@ -49,29 +49,32 @@
   width: 100%;
   height: 100%;
   /* border: 0.188rem solid blue; */
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .s0_mainpage_title {
-  /* animation: slideUp.8s ease-in-out forwards .8s; */
-  display: flex;
-  flex-direction: column;
+  animation: slideUp.8s ease-in-out forwards 0.8s;
+  padding-left: 15%;
+  /* align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 15%;
-  margin-left: 8%;
+  text-align: left; */
 }
 
 .s0_mainpage_title h1 {
   font-size: 3em;
   padding: 0 0 1.5rem;
-  color: #FFFFFF;
-  text-shadow: 0.188rem 0.188rem #3E3535;
+  color: #ffffff;
+  text-shadow: 0.188rem 0.188rem #3e3535;
 }
 
 .s0_mainpage_title h4 {
   /* animation: slideUp .8s ease-in-out forwards .8s; */
   font-size: 3.5rem;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 90px;
 }
 
@@ -85,7 +88,7 @@
   font-size: 1.2em;
   /* background-color: transparent; */
   background-color: rgba(255, 255, 255, 0.07);
-  color: #FFFFFF;
+  color: #ffffff;
   border: 0.125rem solid rgb(255, 255, 255, 0.07);
   border-radius: 5px;
   cursor: pointer;
@@ -103,6 +106,8 @@
 
 .s0_mainpage_mouse {
   display: flex;
+  margin: 0 auto;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   /* border-color: #FFFFFF; */
@@ -111,15 +116,16 @@
 .s0_mainpage_mouse img {
   position: absolute;
   bottom: 0;
-  margin-bottom: 5em;
+  margin-bottom: 150px;
   width: 65px;
+  display: flex;
+  text-align: center;
 }
 
-    
 .s1_main_container {
   /* border: 0.188rem solid green; */
   width: 100%;
-  height:100vh;
+  height: 100vh;
   display: flex;
 }
 
@@ -132,20 +138,23 @@
 }
 
 .s1_mainpage_title {
-  animation: slideUp .8s ease-in-out forwards .8s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideUp 0.8s ease-in-out forwards 0.8s;
   width: 100%;
   height: 100%;
-  padding: 15em 0 0 2.5em;
+  /* border: 1px solid black; */
 }
 
 .s1_mainpage_title h1 {
   font-size: 3.2rem;
-  padding: 0 0 2rem;
+  margin-bottom: 30px;
 }
 
 .s1_mainpage_title_underline {
   width: 7em;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 30px 0;
   border-bottom: 1px solid black;
 }
 
@@ -164,7 +173,7 @@
   width: 210px;
   height: 58px;
   font-size: 1em;
-  background-color: #3E3535;
+  background-color: #3e3535;
   color: white;
   border: 0.125rem solid rgb(194, 194, 194);
   border-radius: 15px;
@@ -189,7 +198,7 @@
 
 .s2_main_container {
   /* border: 0.188rem solid green; */
-  background-image: url('../../images/landing-Main-3.jpg');
+  background-image: url("../../images/landing-Main-3.jpg");
   width: 100%;
   height: 100%;
   display: flex;
@@ -203,13 +212,13 @@
   display: flex;
   height: 100%;
   margin-left: 12.5%;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   /* border: 0.188rem solid blue; */
 }
 
 .s2_mainpage_title {
-  animation: slideUp .8s ease-in-out forwards .8s;
+  animation: slideUp 0.8s ease-in-out forwards 0.8s;
   flex-direction: column;
 }
 
@@ -233,7 +242,7 @@
 .s2_mainpage_content p {
   font-size: 1em;
   line-height: 2rem;
-  width: 470px
+  width: 470px;
 }
 
 /*Shpere*/
@@ -383,23 +392,23 @@
 .s3_main_container {
   /* border: 0.188rem solid green; */
   width: 100%;
-  height: 100vh;
-}
-
-.s3_main_container_content {
-  width: 80%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background: #efefef;
+}
+
+.s3_main_container_content {
+  /* width: 80%; */
   /* margin-left: 10%; */
   /* border: 0.188rem solid orange; */
 }
 
 .s3_mainpage_title {
-  animation: slideUp .8s ease-in-out forwards .8s;
+  animation: slideUp 0.8s ease-in-out forwards 0.8s;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -418,12 +427,13 @@
   /* border: 3px solid blue; */
   width: 100%;
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .s3_mainpage_news_A {
   width: 30%;
   height: 40vh;
-  display: block;
   /* margin-left: 2em; */
   /* border: 3px solid red; */
 }
@@ -434,7 +444,7 @@
   height: 26vh;
 }
 
-.s3_mainpage_news_content_A h1{
+.s3_mainpage_news_content_A h1 {
   width: 100%;
   display: block;
   font-size: 1.3em;
@@ -461,7 +471,7 @@
   height: 26vh;
 }
 
-.s3_mainpage_news_content_B h1{
+.s3_mainpage_news_content_B h1 {
   width: 100%;
   /* height: 50vh; */
   display: block;
@@ -490,7 +500,7 @@
   height: 26vh;
 }
 
-.s3_mainpage_news_content_C h1{
+.s3_mainpage_news_content_C h1 {
   width: 100%;
   display: block;
   font-size: 1.2em;
@@ -505,6 +515,8 @@
 }
 
 .s3_mainpage_btn {
+  display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 5em;
 }
@@ -534,12 +546,11 @@
   text-shadow: 0.063rem 0.063rem #c5c5c5;
 }
 
-
 /* 보유기술 및 특허 컨테이너 */
 .s4_main_container {
   /* border: 0.188rem solid green; */
   width: 100%;
-  height: 76.2%;
+  height: fit-content;
 }
 
 .s4_main_container_content {
@@ -552,45 +563,47 @@
 /* 연구 및 논문자료 */
 .s4_mainpage_patent {
   /* border: 3px solid red; */
-  /* padding-top: 3rem; */
-  font-size: 0.8em;
-  padding-left: 8em;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .s4_mainpage_title2 {
   display: flex;
-  width: 50vw;
+  /* width: 50vw; */
   /* border: 3px solid blue; */
 }
 
 .s4_mainpage_patent h1 {
-  margin-left: 0.8em;
-  /* padding-top: 8em; */
-  font-size: 1.6em;
+  display: flex;
+  margin-left: 15px;
   /* border: 3px sold orange; */
 }
 
-.s4_mainpage_patent h1 span {
+.s4_mainpage_patent span {
   /* 화살표 위치조절 */
-  /* margin-left: 20em; */
-  padding-left: 21em;
+  /* display: flex; */
+  /* margin-left: 250px; */
   /* border: 3px solid green; */
+  right: 0;
+  margin-right: 100px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.s4_mainpage_patent h1 span img {
+.s4_mainpage_patent span img {
   /* border: 3px solid red; */
   width: 1.2vw;
   /* 화살표 내부 조절 */
-  margin-left: 2em; 
+  margin-left: 50px;
 }
 
 .s4_mainpage_patent_container {
   display: flex;
-  /* border: 3px solid blue; */
   width: 40vw;
   padding-left: 0.6em;
-  /* height: 28vh; */
-  /* margin-left: 5em; */
+  /* border: 3px solid blue; */
 }
 
 .s4_mainpage_patent_container_box1 {
@@ -637,22 +650,25 @@
   font-size: 1em;
 }
 
-
 .s4_mainpage_contactus {
-  background-image: url('../../images/contactus.jpg');
+  background-image: url("../../images/contactus.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30vh;
-  /* justify-content: center; */
-  padding: 3em 0 2em 2em;
+  position: relative;
+  height: 28vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 100px;
 }
 
 .s4_mainpage_contactus h1 {
   /* border: 3px solid white; */
   padding-left: 0.2em;
   color: white;
-  font-size: 1.8em;
   text-shadow: 0.1rem 0.1rem #212121;
+  margin-bottom: 15px;
   /* display: flex; */
 }
 

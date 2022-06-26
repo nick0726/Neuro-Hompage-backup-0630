@@ -29,13 +29,14 @@ const Header = ({
     <>
       {/* {console.log(landingOn)} */}
       <div
-        className='header'
+        className="header"
         style={{
           backgroundColor: `${landingOn ? "transparent" : "white"}`,
           position: `${setHeaderFix === true ? "relative" : "fixed"}`,
         }}
       >
-        <h1
+        <div
+          className="logo"
           style={{
             color: `${landingOn ? "white" : "black"}`,
           }}
@@ -50,9 +51,9 @@ const Header = ({
           ) : (
             <img src={logo} alt={logo} />
           )}
-        </h1>
+        </div>
         <div
-          className='menu-nav'
+          className="menu-nav"
           style={{
             color: `${landingOn ? "white" : "black"}`,
           }}
@@ -111,8 +112,8 @@ const Header = ({
             </li>
           </ul>
         </div>
-        <div className='right-top-menu'>
-          <div className='language-Btn'>
+        <div className="right-top-menu">
+          <div className="language-Btn">
             <button
               style={{
                 color: `${landingOn ? "white" : "black"}`,
@@ -122,7 +123,7 @@ const Header = ({
               Language
             </button>
           </div>
-          <div className='mypage-Btn'>
+          <div className="mypage-Btn">
             <button
               onClick={() => {
                 navigate("/mypage");
@@ -137,7 +138,7 @@ const Header = ({
               MyPage
             </button>
           </div>
-          <div className='login-Btn'>
+          <div className="login-Btn">
             <button
               onClick={() => {
                 navigate("/login");
@@ -158,11 +159,11 @@ const Header = ({
   function SubMenu() {
     return (
       <>
-        <div className='submenu' onMouseLeave={() => setSubMenuOn(false)}>
-          <div className='submenu-logo'>
+        <div className="submenu" onMouseLeave={() => setSubMenuOn(false)}>
+          <div className="submenu-logo">
             <img src={NevigationBg} />
           </div>
-          <div id='list' className='list'>
+          <div id="list" className="list">
             <ul>
               <li>인사말</li>
               <li>비전</li>
@@ -172,7 +173,7 @@ const Header = ({
               <li>보도자료</li>
             </ul>
           </div>
-          <div className='list'>
+          <div className="list">
             <ul>
               <li>
                 소프트웨어 기반
@@ -188,7 +189,7 @@ const Header = ({
               <li>가상현실(VR)</li>
             </ul>
           </div>
-          <div className='list'>
+          <div className="list">
             <ul>
               <li>
                 평형기능 분석
@@ -212,7 +213,7 @@ const Header = ({
               </li>
             </ul>
           </div>
-          <div id='RnD-list' className='list'>
+          <div id="RnD-list" className="list">
             <ul>
               <li>
                 보유기술 및<br />
@@ -224,7 +225,7 @@ const Header = ({
               </li>
             </ul>
           </div>
-          <div id='query-list' className='list'>
+          <div id="query-list" className="list">
             <ul>
               <li>제품문의</li>
               <li>FAQ</li>
