@@ -17,18 +17,18 @@ import frequency2 from "../../images/frequency2.png";
 function TechnologyPage() {
   return (
     <>
-      <div className="bg-box">
-        <div className="bg-title">
+      <div className='bg-box'>
+        <div className='bg-title'>
           <h2>기술</h2>
           <h6>Technology</h6>
         </div>
-        <MiddleNav />
       </div>
+      <MiddleNav />
 
       {/* 소프트웨어 기반 안구추적 알고리즘 */}
-      <div className="technologypage-box">
-        <div className="technology-section">
-          <div className="technology-title">
+      <div className='technologypage-box'>
+        <div className='technology-section'>
+          <div className='technology-title'>
             <h4>소프트웨어 기반 안구추적 알고리즘</h4>
             <p>
               뉴로이어즈는 귀의 평형기관 혹은 중추평형신경계의 이상은
@@ -37,8 +37,8 @@ function TechnologyPage() {
               진단과 측정에 사용하고자 하였습니다.
             </p>
           </div>
-          <div className="technolgoy-intro">
-            <div className="cause-img">
+          <div className='technolgoy-intro'>
+            <div className='cause-img'>
               <div>
                 <img src={cause1} alt={cause1} />
               </div>
@@ -61,12 +61,12 @@ function TechnologyPage() {
           </div>
 
           {/* 본문 */}
-          <div className="s1-content">
-            <div className="s1-prev-way">
-              <div className="s1-prev-way-img">
+          <div className='s1-content'>
+            <div className='s1-prev-way'>
+              <div className='s1-prev-way-img'>
                 <img src={sb_prev_way} alt={sb_prev_way} />
               </div>
-              <div className="s1-prev-way-contents">
+              <div className='s1-prev-way-contents'>
                 <h6>기존 방식</h6>
                 <p>
                   귀의 평형기관 혹은 중추평형신경계의 이상은 안구 움직임의
@@ -84,8 +84,8 @@ function TechnologyPage() {
                 </p>
               </div>
             </div>
-            <div className="s1-sol">
-              <div className="s1-sol-contents">
+            <div className='s1-sol'>
+              <div className='s1-sol-contents'>
                 <h6>Our Solutions</h6>
                 <p>
                   뉴로이어즈는 실제 임상에서의 이러한 문제를 해결하기 위해
@@ -105,7 +105,7 @@ function TechnologyPage() {
                   개발로 이어집니다.
                 </p>
               </div>
-              <div className="s1-sol-way-img">
+              <div className='s1-sol-way-img'>
                 <img src={sb_algo_sol} />
               </div>
             </div>
@@ -114,9 +114,9 @@ function TechnologyPage() {
       </div>
 
       {/*가상현실 VR 섹션 */}
-      <div id="VR-full-box">
-        <div className="technology-section">
-          <div className="technology-title">
+      <div id='VR-full-box'>
+        <div className='technology-section'>
+          <div className='technology-title'>
             <h4>
               가상현실
               <br />
@@ -132,13 +132,13 @@ function TechnologyPage() {
             </p>
           </div>
 
-          <div className="technolgoy-intro">
-            <div className="cause-img">
+          <div className='technolgoy-intro'>
+            <div className='cause-img'>
               <div>
-                <img id="VR-img1" src={VR1} alt={VR1} />
+                <img id='VR-img1' src={VR1} alt={VR1} />
               </div>
               <div>
-                <img id="VR-img2" src={VR2} alt={VR2} />
+                <img id='VR-img2' src={VR2} alt={VR2} />
               </div>
             </div>
             <h6>기존 한계점</h6>
@@ -152,11 +152,11 @@ function TechnologyPage() {
           </div>
 
           {/* VR 본문 섹션  */}
-          <div className="VR-content">
-            <div className="VR-content-img">
+          <div className='VR-content'>
+            <div className='VR-content-img'>
               <img src={TechVR} alt={TechVR} />
             </div>
-            <div className="VR-content-description">
+            <div className='VR-content-description'>
               <h6>해결방안</h6>
               <p>
                 그러나 가상현실은 헤드셋의 착용만으로 암실의 구현이 가능하고
@@ -175,8 +175,8 @@ function TechnologyPage() {
       </div>
 
       {/* 인공지능 AI */}
-      <div className="technology-section">
-        <div className="technology-title">
+      <div className='technology-section'>
+        <div className='technology-title'>
           <h4>
             인공지능
             <br />
@@ -192,11 +192,11 @@ function TechnologyPage() {
         </div>
 
         {/* content1 독보적인 데이터 베이스 */}
-        <div id="AI-content1" className="AI-content">
-          <div className="AI-content-img">
+        <div id='AI-content1' className='AI-content'>
+          <div className='AI-content-img'>
             <img src={AI1} />
           </div>
-          <div className="AI-content-description">
+          <div className='AI-content-description'>
             <h6>독보적인 데이터 베이스</h6>
             <p>
               우리는 5년 전부터 한림의대에 구축된 9만 개의 안구운동데이터
@@ -209,11 +209,11 @@ function TechnologyPage() {
         </div>
 
         {/* content2 인공지능 모델의 개발 */}
-        <div className="AI-content">
-          <div className="AI-content-img">
+        <div className='AI-content'>
+          <div className='AI-content-img'>
             <img src={AI2} />
           </div>
-          <div className="AI-content-description">
+          <div className='AI-content-description'>
             <h6>인공지능 모델의 개발</h6>
             <p>
               한국지능정보사회연구원에서 주관하는 인공지능학습데이터 구축사업에
@@ -231,9 +231,9 @@ function TechnologyPage() {
       </div>
 
       {/* 개별주파수 동조 알고리즘 */}
-      <div id="frequency-ALGO">
-        <div className="technology-section">
-          <div className="technology-title">
+      <div id='frequency-ALGO'>
+        <div className='technology-section'>
+          <div className='technology-title'>
             <h4>
               개별주파수 동조
               <br />
@@ -248,13 +248,13 @@ function TechnologyPage() {
           </div>
 
           {/* 본문 주파수 동조 알고리즘 */}
-          <div id="frquency-first-content" className="frequency-content">
-            <div className="frequency-content-img">
+          <div id='frquency-first-content' className='frequency-content'>
+            <div className='frequency-content-img'>
               <img src={frequency1} alt={frequency1} />
             </div>
 
             {/* 주파수 알고리즘 첫번째 본문 */}
-            <div className="frequency-content-description">
+            <div className='frequency-content-description'>
               <h6>Title</h6>
               <p>
                 이명을 호소하는 환자들 대부분은 그러한 고주파수대의 청각저하가
@@ -271,11 +271,11 @@ function TechnologyPage() {
           </div>
 
           {/* 주파수 알고리즘 두번째 본문 */}
-          <div id="frquency-second-content" className="frequency-content">
-            <div className="frequency-content-img">
+          <div id='frquency-second-content' className='frequency-content'>
+            <div className='frequency-content-img'>
               <img src={frequency2} alt={frequency2} />
             </div>
-            <div className="frequency-content-description">
+            <div className='frequency-content-description'>
               <h6>Title</h6>
               <p>
                 우리는 기존에 연구중인 일반적 뇌자극 기술과 달리 원하는 영역에

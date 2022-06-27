@@ -21,8 +21,8 @@ function RnDPage() {
             <h2>연구개발</h2>
             <p>All-in-one 어지럼증 통합 솔루션</p>
           </div>
-          <MiddleNav />
         </div>
+        <MiddleNav />
         <div id='RnD-certifications' className='middle-box'>
           <div className='small-box'>
             <h2>보유기술 및 특허</h2>

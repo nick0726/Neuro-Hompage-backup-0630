@@ -12,10 +12,13 @@ import Anna4 from "../../images/Anna-4.png";
 import FullBox from "../../components/FullBox";
 import Specifications from "../../components/Specifications";
 import { useNavigate } from "react-router-dom";
+import data from "./FaQdata";
 
 function ProdcutsPage() {
+  const [faq, faqUpdate] = useState(data);
   const navigate = useNavigate();
-  const [isFaqOn, setFaqOn] = useState(true);
+  const [selected, setSelected] = useState(-1);
+
   return (
     <>
       <div className='product-bg'>
@@ -212,14 +215,18 @@ function ProdcutsPage() {
         <div className='middle-box'>
           <div id='FAQ-title' className='small-box'>
             <h4>FAQ-자주묻는질문</h4>
-            <FAQ />
-            <FAQ />
-            <FAQ />
-            <FAQ />
-            <FAQ />
-            <FAQ />
-            <FAQ />
-            <FAQ />
+            {faq.map((el, i) => {
+              return (
+                <div key={i}>
+                  <FAQ
+                    faq={faq[i]}
+                    idx={i}
+                    selected={selected}
+                    setSelected={setSelected}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -227,35 +234,48 @@ function ProdcutsPage() {
     </>
   );
 
-  function FAQ() {
+  function FAQ(props) {
+    // console.log(props.idx);
+    const isSelected = props.selected === props.idx;
     return (
       <>
-        {isFaqOn === true ? (
-          <div className='FAQ-contents' onClick={() => setFaqOn(!isFaqOn)}>
-            <h5>Q 개인병원에서도 사용 가능한가요?</h5>
-          </div>
+        {isSelected ? (
+          <FAQmodal
+            faq={props.faq}
+            idx={props.idx}
+            isSelected={props.isSelected}
+          />
         ) : (
-          <FAQmodal />
+          <div
+            className='FAQ-contents'
+            onClick={() => {
+              props.setSelected(props.idx);
+            }}
+          >
+            {/* title */}
+            <div>
+              <h5>Q {props.faq.title}</h5>
+              {/* {console.log(props.faq)} */}
+            </div>
+          </div>
         )}
       </>
     );
   }
 
-  function FAQmodal(isFaqOn, setFaqOn) {
+  function FAQmodal(props) {
     const style = {
-      color: `${isFaqOn === true ? "black" : "#024abd"}`,
-      backgroundColor: `${isFaqOn === true ? "white" : null}`,
+      color: `${props.isSelected === true ? "black" : "#024abd"}`,
+      backgroundColor: `${props.isSelected === true ? "white" : null}`,
     };
     return (
       <>
-        <div className='FAQ-contents' onClick={() => setFaqOn(!isFaqOn)}>
+        <div className='FAQ-contents'>
           <h5 style={style}>
-            <b style={style}>Q</b> 개인병원에서도 사용 가능한가요?
+            <b style={style}>Q</b> {props.faq.title}
           </h5>
         </div>
-        <div className='FAQ-contents-modal'>
-          네, 개인병원에도 사용 가능합니다.
-        </div>
+        <div className='FAQ-contents-modal'>{props.faq.answer}</div>
       </>
     );
   }

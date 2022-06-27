@@ -14,8 +14,8 @@ body {
   display: flex;
   /* 내부 글씨 수평 조정 */
   background-color: rgba(44, 63, 92, 0.8);
-  margin-top: 55px;
   position: sticky;
+  top: 0px;
 }
 
 .middle-nav-contents {

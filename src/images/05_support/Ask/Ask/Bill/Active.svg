@@ -4,13 +4,9 @@
 	 y="0px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
 </style>
 <rect class="st0" width="42" height="42"/>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="41.4668" y1="15.3975" x2="-4.584" y2="29.9209" gradientTransform="matrix(1 0 0 -1 0 44)">
-	<stop  offset="0" style="stop-color:#2867CC"/>
-	<stop  offset="1" style="stop-color:#00CCF9"/>
-</linearGradient>
 <path class="st1" d="M10.5,7v7h21V7H35c1,0,1.7,0.8,1.7,1.7v28c0,0.5-0.2,0.9-0.5,1.2c-0.3,0.3-0.8,0.5-1.2,0.5H7
 	c-0.5,0-0.9-0.2-1.2-0.5c-0.3-0.3-0.5-0.8-0.5-1.2v-28C5.2,7.8,6,7,7,7H10.5z M14,3.5h14v7H14V3.5z"/>
 </svg>

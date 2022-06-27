@@ -14,20 +14,18 @@ body {
   background-image: url("../../images/techBg.svg");
   background-size: cover;
   width: 100%;
-  height: 400px;
+  height: 350px;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .bg-title {
   display: flex;
+  margin: 0 auto;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 70px;
   color: white;
 }
 
@@ -47,7 +45,6 @@ body {
 
 .technology-section {
   width: 1200px;
-  height: 100%;
   margin: 0 auto;
 }
 

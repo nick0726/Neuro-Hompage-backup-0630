@@ -21,8 +21,8 @@ function SupportProductQuery() {
           <h2>지원/서비스</h2>
           <h6>고객님의 문의에 친절하게 답변해 드리겠습니다.</h6>
         </div>
-        <MiddleNav />
       </div>
+      <MiddleNav />
       <div id='query-box' className='middle-box'>
         <div className='small-box'>
           <h2>제품문의</h2>
