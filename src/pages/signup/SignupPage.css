@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#signup-middle-box {
+  height: 1100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 35px;
+  border: none;
+}
+
+#signup-small-box {
+  margin: 0 auto;
+  margin-top: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.signup-term-box {
+  border-top: 2px solid #024abd;
+  width: 490px;
+  height: 510px;
+  background: #FAFAFB;
+}
+
+.signup-terms {
+  height: 110px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-terms .terms-1 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+}
+
+.signup-terms .terms-1 input {
+  transform: scale(1.2);
+  margin-right: 5px;
+}
+
+.signup-terms .terms-2 {
+  border-top: 2px solid #DCE1E5;
+  margin-left: 15px;
+  padding-top: 15px;
+}
+
+.signup-terms .terms-2 h6 {
+  margin-bottom: 5px;
+}
+
+.signup-terms .terms-2 input {
+  margin-right: 5px;
+  transform: scale(1.2);
+  border: 1px solid #dce1e5;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.signup-terms .terms-3 {
+  border-top: 2px solid #DCE1E5;
+  padding-top: 15px;
+  margin-left: 15px;
+}
+
+.signup-terms .terms-3 h6 {
+  margin-bottom: 5px;
+}
+
+.signup-terms .terms-3 input {
+  margin-right: 5px;
+  transform: scale(1.2);
+
+}
+
+.signup-terms button {
+  background: #024ABD;
+  border: #024abd;
+  border-radius: 2px;
+  color: white;
+  padding: 5px;
+  margin: 15px 15px 15px 15px;
+  margin-top: 50px;
+}
+
+#terms-4 {
+  display: flex;
+  margin: 0 auto;
+}
+
+#terms-4 p {
+  margin-right: 15px;
+}
+
+#terms-4 b {
+  color: #024abd;
+  cursor: pointer;
+}
+
+
+
+
+/*회원가입 양식*/
+.signup-box {
+  border-top: 2px solid #024abd;
+  width: 490px;
+  /* height: 630px; */
+  padding-bottom: 40px;
+  background: #FAFAFB;
+}
+
+.signup-forms {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-forms h6 {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.signup-forms input {
+  width: 330px;
+  height: 45px;
+  margin: 5px;
+  background: #FFFFFF;
+  border: 2px solid #DCE1E5;
+  border-radius: 2px;
+}
+
+.signup-forms .forms-with-btn {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-forms .forms-without-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-forms .forms-without-btn input {
+  width: 330px;
+  margin-left: 15px;
+}
+
+.signup-forms .forms-without-btn p {
+  margin-left: 15px;
+  font-size: 11px;
+  color: #13AAFF;
+  font-weight: bold;
+}
+
+.signup-forms .forms-without-btn img {
+  display: inline-block;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+}
+
+
+.signup-forms button {
+  background: #024ABD;
+  border: #024abd;
+  border-radius: 35px;
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  margin-left: 5px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 13px;
+}
+
+#signup-btn {
+  width: 460px;
+  height: 52px;
+  background: #024ABD;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#phone-certificatoin {
+  background: #394A64;
+  border-radius: 35px;
+}
+
+#phone-certificatoin img {
+  margin-right: 1px;
+}
+
+#email-certificatoin {
+  background: #394A64;
+  border-radius: 35px;
+}
+
+#email-certificatoin img {
+  margin-right: 2px;
+}
+
+#resend-certification {
+  background-color: white;
+  border: 2px solid #DCE1E5;
+  color: black;
+  font-weight: bold;
+}

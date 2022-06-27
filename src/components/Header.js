@@ -29,14 +29,14 @@ const Header = ({
     <>
       {/* {console.log(landingOn)} */}
       <div
-        className="header"
+        className='header'
         style={{
           backgroundColor: `${landingOn ? "transparent" : "white"}`,
           position: `${setHeaderFix === true ? "relative" : "fixed"}`,
         }}
       >
         <div
-          className="logo"
+          className='logo'
           style={{
             color: `${landingOn ? "white" : "black"}`,
           }}
@@ -53,7 +53,7 @@ const Header = ({
           )}
         </div>
         <div
-          className="menu-nav"
+          className='menu-nav'
           style={{
             color: `${landingOn ? "white" : "black"}`,
           }}
@@ -112,8 +112,8 @@ const Header = ({
             </li>
           </ul>
         </div>
-        <div className="right-top-menu">
-          <div className="language-Btn">
+        <div className='right-top-menu'>
+          <div className='language-Btn'>
             <button
               style={{
                 color: `${landingOn ? "white" : "black"}`,
@@ -123,7 +123,7 @@ const Header = ({
               Language
             </button>
           </div>
-          <div className="mypage-Btn">
+          <div className='mypage-Btn'>
             <button
               onClick={() => {
                 navigate("/mypage");
@@ -138,7 +138,7 @@ const Header = ({
               MyPage
             </button>
           </div>
-          <div className="login-Btn">
+          <div className='login-Btn'>
             <button
               onClick={() => {
                 navigate("/login");
@@ -159,15 +159,15 @@ const Header = ({
   function SubMenu() {
     return (
       <>
-        <div className="submenu" onMouseLeave={() => setSubMenuOn(false)}>
-          <div className="submenu-logo">
-            <div className="logo-left"></div>
-            <div className="logo-right">
+        <div className='submenu' onMouseLeave={() => setSubMenuOn(false)}>
+          <div className='submenu-logo'>
+            <div className='logo-left'></div>
+            <div className='logo-right'>
               <img src={NevigationBg} />
             </div>
           </div>
-          <div className="list-open">
-            <div id="intro-list" className="list">
+          <div className='list-open'>
+            <div id='intro-list' className='list'>
               <ul>
                 <li>인사말</li>
                 <li>비전</li>
@@ -177,7 +177,7 @@ const Header = ({
                 <li>보도자료</li>
               </ul>
             </div>
-            <div id="tech-list" className="list">
+            <div id='tech-list' className='list'>
               <ul>
                 <li>
                   소프트웨어 기반
@@ -194,7 +194,7 @@ const Header = ({
                 <li>가상현실(VR)</li>
               </ul>
             </div>
-            <div id="product-list" className="list">
+            <div id='product-list' className='list'>
               <ul>
                 <li>
                   평형기능 분석
@@ -218,23 +218,59 @@ const Header = ({
                 </li>
               </ul>
             </div>
-            <div id="RnD-list" className="list">
+            <div id='RnD-list' className='list'>
               <ul>
-                <li>
+                <li
+                  onClick={() => {
+                    navigate("/RnD");
+                    setLandingOn(false);
+                    setHeaderFixOn(false);
+                  }}
+                >
                   보유기술 및<br />
                   특허
                 </li>
-                <li>
+                <li
+                  onClick={() => {
+                    navigate("/thesis");
+                    setLandingOn(false);
+                    setHeaderFixOn(false);
+                  }}
+                >
                   연구 및<br />
                   논문자료
                 </li>
               </ul>
             </div>
-            <div id="query-list" className="list">
+            <div id='query-list' className='list'>
               <ul>
-                <li>제품문의</li>
-                <li>FAQ</li>
-                <li>Q&A</li>
+                <li
+                  onClick={() => {
+                    navigate("/productquery");
+                    setLandingOn(false);
+                    setHeaderFixOn(false);
+                  }}
+                >
+                  제품문의
+                </li>
+                <li
+                  onClick={() => {
+                    navigate("/faq");
+                    setLandingOn(false);
+                    setHeaderFixOn(false);
+                  }}
+                >
+                  FAQ
+                </li>
+                <li
+                  onClick={() => {
+                    navigate("/qna");
+                    setLandingOn(false);
+                    setHeaderFixOn(false);
+                  }}
+                >
+                  Q&A
+                </li>
               </ul>
             </div>
           </div>

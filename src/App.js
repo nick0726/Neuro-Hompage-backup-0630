@@ -19,7 +19,9 @@ import "./bootstrap.css";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import TopBtn from "./components/TopBtn";
+import { ThesisPage } from "./pages/RnD/ThesisPage";
 // import Cart from "./pages/Cart";
+import QueryRegistration from "./pages/support/Support_QueryRegistratoin";
 
 function App() {
   const [landingOn, setLandingOn] = useState(true);
@@ -36,25 +38,27 @@ function App() {
           setTopBtnColor={setTopBtnColor}
         />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/company" element={<CompanyPage />} />
-          <Route path="/technology" element={<TechnologyPage />} />
-          <Route path="/products" element={<ProductsPage />} />
-          <Route path="/RnD" element={<RnDPage />} />
-          <Route path="/productquery" element={<Support_Product_Query />} />
-          <Route path="/faq" element={<SupportFAQ />} />
-          <Route path="/qna" element={<SupportQnA />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/company' element={<CompanyPage />} />
+          <Route path='/technology' element={<TechnologyPage />} />
+          <Route path='/products' element={<ProductsPage />} />
+          <Route path='/RnD' element={<RnDPage />} />
+          <Route path='/thesis' element={<ThesisPage />} />
+          <Route path='/productquery' element={<Support_Product_Query />} />
+          <Route path='/queryregistratoin' element={<QueryRegistration />} />
+          <Route path='/faq' element={<SupportFAQ />} />
+          <Route path='/qna' element={<SupportQnA />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/signup' element={<SignUp />} />
           {/* 비밀번호 변경 */}
-          <Route path="/inquiry" element={<Inquiry />} />
+          <Route path='/inquiry' element={<Inquiry />} />
           <Route
-            path="/mypage"
+            path='/mypage'
             element={
               <MyPage landingOn={landingOn} setLandingOn={setLandingOn} />
             }
           ></Route>
-          <Route path="*" element={<div>404</div>} />
+          <Route path='*' element={<div>404</div>} />
           {/* <Route path='/cart' element={<Cart />} /> */}
         </Routes>
         {/* <TopBtn topBtnColor={topBtnColor} setTopBtnColor={setTopBtnColor} /> */}

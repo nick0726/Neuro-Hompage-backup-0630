@@ -525,7 +525,7 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  padding-left: 1.25rem;
+  padding-left: 1.8rem;
   padding-bottom: 0.5rem;
   width: 280px;
   height: 58px;
@@ -537,7 +537,11 @@
   cursor: pointer;
   transition: 0.7s ease;
   text-decoration-line: none;
-  text-shadow: 0.188rem 0.188rem #212121;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  color: #3e3535;
+  text-shadow: 0.1px 0.11px #212121;
 }
 
 .s3_mainpage_btn button:hover {
@@ -577,7 +581,8 @@
 
 .s4_mainpage_patent h1 {
   display: flex;
-  margin-left: 15px;
+  margin-left: 22px;
+  font-size: 30px;
   /* border: 3px sold orange; */
 }
 
@@ -603,6 +608,7 @@
   display: flex;
   width: 40vw;
   padding-left: 0.6em;
+  margin-bottom: 30px;
   /* border: 3px solid blue; */
 }
 
@@ -701,4 +707,21 @@
   background: whitesmoke;
   color: rgb(92, 92, 92);
   text-shadow: 0.063rem 0.063rem #c5c5c5;
+}
+
+#s1-view-more-btn {
+  margin-left: 88px;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+#view-more-btn {
+  margin-left: 60px;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+#gray-view-more-btn {
+  margin-left: 85px;
+  align-items: center;
 }

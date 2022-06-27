@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 
 function ProdcutsPage() {
   const navigate = useNavigate();
-  const [isFaqOn, setFaqOn] = useState(false);
+  const [isFaqOn, setFaqOn] = useState(true);
   return (
     <>
       <div className='product-bg'>
@@ -241,7 +241,7 @@ function ProdcutsPage() {
     );
   }
 
-  function FAQmodal() {
+  function FAQmodal(isFaqOn, setFaqOn) {
     const style = {
       color: `${isFaqOn === true ? "black" : "#024abd"}`,
       backgroundColor: `${isFaqOn === true ? "white" : null}`,

@@ -71,7 +71,15 @@ function LoginPage() {
                 </button>
               </div>
               <div className='signup_guide'>
-                <p>도움이 필요하신가요?</p>
+                <b>
+                  <p
+                    onClick={() => {
+                      navigate("/qna");
+                    }}
+                  >
+                    도움이 필요하신가요?
+                  </p>
+                </b>
               </div>
               <div className='signup_guide_p2'>
                 <p
@@ -131,7 +139,7 @@ function LoginPage() {
           </div>
           <div className='bottom-menu'>
             <p onClick={() => setLoginOn(true)}>로그인 화면으로</p>
-            <p>회원가입</p>
+            <p onClick={() => navigate("/signup")}>회원가입</p>
           </div>
         </div>
       </>

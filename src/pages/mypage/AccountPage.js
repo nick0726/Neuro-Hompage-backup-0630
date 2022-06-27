@@ -1,6 +1,6 @@
 import "./AccountPage.css";
 import { useState } from "react";
-import phone_certify from "../../images/phone_certi.jpg";
+import phone_certify from "../../images/phone_certi.svg";
 import email_certify from "../../images/email_certi.jpg";
 import certified from "../../images/certified.png";
 

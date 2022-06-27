@@ -177,17 +177,13 @@
   /* border: 1px solid rebeccapurple; */
 }
 
-ul {
+.list ul {
   text-align: center;
 }
 
 .list li {
   display: inline-block;
   margin-bottom: 35px;
-}
-
-.list ul li {
-  text-align: center;
 }
 
 /* .menu-border {

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#query-registration {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+  border: none;
+}
+
+#query-registration h4 {
+  margin-bottom: 60px;
+}
+
+#query-regeistration-box {
+  width: 800px;
+  border: none;
+}
+
+#isOpen p {
+margin-right: 21px;
+}
+
+#order-user-form {
+  flex: 0.8;
+  padding: 0em 0 0.5em 0;
+  border: 2px solid #c0cad3;
+  border-radius: 5px;
+  width: 80px;
+}
