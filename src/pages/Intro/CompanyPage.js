@@ -11,11 +11,19 @@ import value1 from "../../images/02_company/value-1.svg";
 import value2 from "../../images/02_company/value-2.svg";
 import value3 from "../../images/02_company/value-3.svg";
 import Hallym from "../../images/02_company/Hallym.svg";
-import tobii from "../../images/02_company/tobii.svg";
+import tobii from "../../images/02_company/tobii-logo.png";
+import tobii2 from "../../images/02_company/tobii.svg";
 import JCH from "../../images/02_company/JCH.svg";
 import htc from "../../images/02_company/htc.svg";
 import JohnsHopkins from "../../images/02_company/Johns-Hopkins.svg";
 import map from "../../images/02_company/map.svg";
+import johnshopkins from "../../images/02_company/johns-hopkins.jpg";
+import utech from "../../images/02_company/u-tech.jpg";
+import biotech from "../../images/02_company/바이오데이터검증.png";
+import biocore from "../../images/02_company/바이오아이코어.png";
+import zay from "../../images/02_company/제이씨현.png";
+import consulting from "../../images/02_company/특허컨설팅.png";
+import GMP from "../../images/02_company/GMP.jpg";
 
 function CompanyPage() {
   return (
@@ -120,7 +128,7 @@ function CompanyPage() {
       <div id='core-value' className='ful-box'>
         <div className='middle-box'>
           <div className='small-box'>
-            <h4>핵심가치</h4>
+            <h3>핵심가치</h3>
             <b>
               <p>
                 뉴로이어즈의 기업정신 중 가장 핵심이며
@@ -173,8 +181,124 @@ function CompanyPage() {
       </div>
 
       <div className='middle-box'>
-        <div id='history' className='small-box'>
+        <div id='history-small-box' className='small-box'>
           <h3>회사 연혁</h3>
+        </div>
+
+        <div className='small-box'>
+          <div className='history'>
+            <div>
+              <h3>2022</h3>
+              <ol>
+                <h6>2022.03</h6>
+                <li>2022 바이오 코리아 소프트웨어 선전</li>
+              </ol>
+              {/* <ol>
+                <h6 id='left'>2022.03</h6>
+                <li>내용</li>
+              </ol> */}
+
+              {/* 2021 */}
+              <h3>2021</h3>
+              <ol>
+                <h6>2021.03</h6>
+                <li>뉴로이어즈 설립</li>
+              </ol>
+              <ol>
+                <h6>2021.03</h6>
+                <li>HTC View(대만)/제이씨현(한국) NDA 체결</li>
+                <img id='zay' src={zay} alt={zay} />
+              </ol>
+              <ol>
+                <h6>2021.05</h6>
+                <li>
+                  바이오데이터검증 지원사업 선정
+                  <b>
+                    <p>(과학기술일자리진흥원)</p>
+                  </b>
+                  <img id='biotech' src={biotech} alt={biotech} />
+                </li>
+              </ol>
+              <ol>
+                <h6>2021.06</h6>
+                <li>
+                  특허 컨설팅 지원사업 선정
+                  <b>
+                    <p>(과학기술일자리진흥원)</p>
+                  </b>
+                  <img id='consulting' src={consulting} alt={consulting} />
+                </li>
+              </ol>
+              <ol>
+                <h6>2021.08</h6>
+                <li>연구전담부서 인증, Tobii(스웨덴) NDA 체결</li>
+                <img id='tobii' src={tobii} alt={tobii} />
+              </ol>
+              <ol>
+                <h6>2021.09</h6>
+                <li>
+                  바이오아이코어 사업 글로벌 창업팀 선정
+                  <b>
+                    <p>(과학기술일자리진흥원)</p>
+                  </b>
+                  <img src={biocore} alt={biocore} />
+                </li>
+              </ol>
+              <ol>
+                <h6>2021.09</h6>
+                <li>
+                  바이오아이코어 사업 글로벌 창업팀 선정
+                  <b>
+                    <p>(과학기술일자리진흥원)</p>
+                  </b>
+                  <img src={biocore} alt={biocore} />
+                </li>
+              </ol>
+              <ol>
+                <h6>2021.10</h6>
+                <li>
+                  벤처기업 인증,U-Tech,Vally 사업 선정
+                  <b>
+                    <p>(기술보증기금)</p>
+                  </b>
+                  <img id='utech' src={utech} alt={utech} />
+                </li>
+              </ol>
+              <ol>
+                <h6>2021.11</h6>
+                <li>
+                  Johns Hopkins H. NDA 체결
+                  <b>
+                    <p>(Department of Neurology)</p>
+                  </b>
+                  <img
+                    id='johns-hopkins'
+                    src={johnshopkins}
+                    alt={johnshopkins}
+                  />
+                </li>
+              </ol>
+              <ol>
+                <h6>2021.11</h6>
+                <li>
+                  의료용 소프트웨어 (SaMD) GMP 인증
+                  <b>
+                    <p>(국내 최초 평형기능 분석 S/W)</p>
+                  </b>
+                  <img id='GMP' src={GMP} alt={GMP} />
+                </li>
+              </ol>
+              <ol>
+                <h6>2021.12</h6>
+                <li>
+                  어지럼 진단 소프트웨어 식약처 임상면제 확정
+                  <b>
+                    <p>(기술보증기금)</p>
+                  </b>
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -321,7 +445,7 @@ function CompanyPage() {
           <div id='partenrs-list'>
             <div className='partenrs'>
               <div>
-                <img src={tobii} alt={tobii} />
+                <img src={tobii2} alt={tobii2} />
               </div>
             </div>
             <div className='partenrs'>

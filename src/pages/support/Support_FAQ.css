@@ -57,7 +57,7 @@ body {
   color: #454C53;
 }
 
-.nav-menu:hover {
+.FAQ-box .FAQ-nav .nav-menu:hover {
   color: white;
   background: #024abd;
 }

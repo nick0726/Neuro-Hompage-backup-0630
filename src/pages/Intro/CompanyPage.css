@@ -173,7 +173,7 @@ body {
   padding-top: 80px;
 }
 
-#core-value .middle-box h4 {
+#core-value .middle-box h3 {
   margin-top: 15px;
   margin-left: 15px;
 }
@@ -187,7 +187,7 @@ body {
   border: none;
 }
 
- {
+{
   /* 카드 뷰 모듈 */
 }
 .value-box {
@@ -233,10 +233,119 @@ body {
   border: none;
 }
 
-#history {
-  height: 2300px;
+/* 회사 연혁 간격조정 */
+.history {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  width: 1200px;
+  /* border: 1px solid blue; */
 }
 
+#history-small-box {
+  padding-top: 80px;
+}
+
+#history-small-box h3 {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+/* 연혁 박스 */
+.history div {
+  padding: 0 0 0 10px;
+  position: relative;
+}
+
+.history div:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  /* border-left: 5px; */
+  height: 100%;
+  background: #ddd;
+}
+
+.history div:first-child:before {
+  /*첫줄 시작부 조정*/
+  top: 58px;
+  /*꼬리 조정*/
+  height: calc(100% - 110px);
+}
+
+.history div:first-child::after {
+  height: calc(100% - 50px);
+}
+
+/*연도*/
+.history h3 {
+  margin-left: 3px;
+}
+
+.history ol {
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 74px;
+  
+}
+
+.history li {
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.history h6 {
+  position: relative;
+}
+
+/*연혁 이벤트 볼*/
+.history h6:before {
+  content: '';
+  position: absolute;
+  left: -48px;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background-color: #fff;
+  /* border: 5px solid #393939; */
+  border: 5px solid #024abd;
+  box-sizing: border-box;
+  transform: translateY(23%);
+}
+
+.history img {
+  margin-top: 15px;
+}
+
+#biotech {
+  width: 300px;
+  margin-top: 20px;
+}
+
+#tobii {
+  width: 200px;
+  margin-top: -30px;
+  margin-left: -25px;
+}
+
+#johns-hopkins {
+  width: 200px;
+}
+
+#utech {
+  width: 330px;
+}
+
+#GMP {
+  width: 200px;
+}
+
+/* 맴버소개 */
 #member-box-1 {
   height: 700px;
   background: #f8fafd;
@@ -265,6 +374,10 @@ body {
 
 #dept h5 {
   padding-bottom: 30px;
+}
+
+#consulting {
+  width: 250px;
 }
 
 .value-box {
