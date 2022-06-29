@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
-import "../src/components/Header.css";
-import Header from "../src/components/Header";
+import "../src/components/GlobalHeader.css";
+import Header from "../src/components/GlobalHeader";
 import LandingPage from "./pages/landing/LandingPage";
 import CompanyPage from "./pages/Intro/CompanyPage";
 import TechnologyPage from "./pages/technology/TechnologyPage";
@@ -24,19 +24,19 @@ import { ThesisPage } from "./pages/RnD/ThesisPage";
 import QueryRegistration from "./pages/support/Support_QueryRegistratoin";
 
 function App() {
-  const [landingOn, setLandingOn] = useState(true);
+  const [isGlobalHeaderOn, setGlobalHeaderOn] = useState(true);
   const [isMainFold, setMainFoldOn] = useState(false);
   const [isSubFold, setSubFoldOn] = useState(false);
   // const [topBtnColor, setTopBtnColor] = useState(true);
 
+  const currentPath = useLocation().pathname;
+
   return (
     <>
-      {console.log(landingOn)}
+      {/* {console.log(currentPath)} */}
       <Provider store={store}>
         <Header
-          landingOn={landingOn}
-          setLandingOn={setLandingOn}
-          style={{ display: `${landingOn ? "none" : "flex"}` }}
+          style={{ display: `${currentPath == "/" ? "none" : "flex"}` }}
         />
         <Routes>
           <Route path='/' element={<LandingPage />} />

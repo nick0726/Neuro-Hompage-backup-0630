@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+a {
+  padding: 0;
+}
+
 #Intro-Subnav a {
   margin: 0;
   padding: 0;

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../images/logo.jpg";
 import NevigationBg from "../images/Nevigation-bg.png";
+import "./GlobalHeader.css";
 
 function Header(props) {
   const navigate = useNavigate();
@@ -20,7 +21,9 @@ function Header(props) {
           onClick={() => {
             navigate("/");
           }}
-        ></div>
+        >
+          <img src={logo} alt={logo} />
+        </div>
         <div className='menu-nav'>
           <ul>
             <li
@@ -89,12 +92,14 @@ function Header(props) {
             </button>
           </div>
         </div>
-        {subMenu ? <SubMenu /> : null}
+        {/* 2차오픈때 mvc 패턴, 상태가 없어서 에러 */}
+        {/* {subMenu ? <SubMenu /> : null} */}
       </div>
     </>
   );
 
   function SubMenu() {
+    const navigate = useNavigate();
     return (
       <>
         <div className='submenu' onMouseLeave={() => setSubMenuOn(false)}>
@@ -107,12 +112,13 @@ function Header(props) {
           <div className='list-open'>
             <div id='intro-list' className='list'>
               <ul>
-                <li>인사말</li>
+                <li onClick={() => navigate("/company")}>
+                  <a href='#company-s1'>회사소개</a>
+                </li>
                 <li>비전</li>
                 <li>연혁</li>
-                <li>맴버</li>
                 <li>파트너사</li>
-                <li>보도자료</li>
+                {/* <li>오시는길</li> */}
               </ul>
             </div>
             <div id='tech-list' className='list'>

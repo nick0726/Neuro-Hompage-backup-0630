@@ -16,7 +16,7 @@ import GrayViewmore from "../../images/GrayViewMore.svg";
 import logo from "../../images/logo.jpg";
 import whitelogo from "../../images/whitelogo.png";
 import NevigationBg from "../../images/Nevigation-bg.png";
-import "../../components/Header.css";
+import "./LandingHeader.css";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -328,7 +328,6 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <Footer  /> */}
                   <Footer />
                 </div>
               </ReactFullpage.Wrapper>
@@ -485,41 +484,13 @@ const LandingPage = () => {
 const Header = ({}) => {
   const navigate = useNavigate();
   const [subMenu, setSubMenuOn] = useState(false);
-  // const headerStyle = {
-  //   backgroundColor: `${landingOn ? "transparent" : "white"}`,
-  //   position: `${setHeaderFix === true ? "relative" : "fixed"}`,
-  // };
-  // const [setHeaderFix, setHeaderFixOn] = useState(false);
-
-  // useEffect(() => {
-  //   setHeaderFix === false ? setHeaderFixOn(false) : setLandingOn(landingOn);
-  //   // landingLocalOn === null ? setLandingOn(true) : setLandingOn(false);
-  // }, [setHeaderFixOn()]);
-
-  // useEffect(() => {
-  //   let landingLocalStorageOn = localStorage.getItem("landingOn");
-  //   landingLocalStorageOn === null
-  //     ? setLandingOn(true)
-  //     : setLandingOn(landingOn);
-  //   // landingLocalOn === null ? setLandingOn(true) : setLandingOn(false);
-  //   console.log(landingLocalStorageOn);
-  // }, []);
 
   return (
     <>
       {/* {console.log(landingOn)} */}
-      <div
-        className='header'
-        // style={{
-        //   backgroundColor: `${landingOn ? "transparent" : "white"}`,
-        //   position: `${setHeaderFix === true ? "relative" : "fixed"}`,
-        // }}
-      >
+      <div id='landingHeader' className='header'>
         <div
           className='logo'
-          // style={{
-          //   color: `${landingOn ? "white" : "black"}`,
-          // }}
           onClick={() => {
             navigate("/");
           }}
@@ -596,8 +567,8 @@ const Header = ({}) => {
             </button>
           </div>
         </div>
-        {/* {subMenu === true ? <SubMenu /> : null} */}
-        {subMenu ? <SubMenu /> : null}
+        {/* 2차오픈때 mvc 패턴, 상태가 없어서 에러 */}
+        {/* {subMenu ? <SubMenu /> : null} */}
       </div>
     </>
   );
@@ -614,13 +585,12 @@ const Header = ({}) => {
           </div>
           <div className='list-open'>
             <div id='intro-list' className='list'>
-              <ul>
-                <li>인사말</li>
+              <ul onClick={() => navigate("/company")}>
+                <li>소개</li>
                 <li>비전</li>
                 <li>연혁</li>
-                <li>맴버</li>
                 <li>파트너사</li>
-                <li>보도자료</li>
+                <li>오시는길</li>
               </ul>
             </div>
             <div id='tech-list' className='list'>

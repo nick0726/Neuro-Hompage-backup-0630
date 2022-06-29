@@ -15,7 +15,12 @@ const MiddleNav = (props) => {
     <>
       <div className='middle-nav-box'>
         <div className='middle-nav-contents'>
-          <div className='home-img'>
+          <div
+            className='home-img'
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <img src={home} alt={home} />
           </div>
           <div className='menu'>
@@ -32,7 +37,7 @@ const MiddleNav = (props) => {
             />
           </div>
           <div className='section'>
-            <div className='section-title'>인사말</div>
+            <div className='section-title'>소개</div>
             {/* {introNavData[0].subtitle} */}
             <img
               onClick={() => {
@@ -91,7 +96,7 @@ function Subnav(props) {
           <div className='menu'></div>
           <div className='section'>
             <a href='#history-small-box'>
-              <div>비전연혁</div>
+              <div>연혁</div>
             </a>
             <a href='#member-box-1'>
               <div>맴버</div>

@@ -15,7 +15,12 @@ const MiddleNav = (props) => {
     <>
       <div className='middle-nav-box'>
         <div className='middle-nav-contents'>
-          <div className='home-img'>
+          <div
+            className='home-img'
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <img src={home} alt={home} />
           </div>
           <div className='menu'>

@@ -8,7 +8,7 @@ const IntroNavData = [
   {
     id: 1,
     title: "회사소개",
-    subtitle: "비전연혁",
+    subtitle: "연혁",
   },
 
   {
