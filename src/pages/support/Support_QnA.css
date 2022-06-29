@@ -9,6 +9,13 @@ body {
   padding: 0;
 }
 
+#support-bg .bg-title {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
 #QnA-middle-box {
   margin: 0 auto;
   justify-content: center;

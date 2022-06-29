@@ -1,69 +1,31 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../images/logo.jpg";
-import whitelogo from "../images/whitelogo.png";
 import NevigationBg from "../images/Nevigation-bg.png";
 
-const Header = ({
-  landingOn,
-  setLandingOn,
-  myPageOn,
-  setMyPageOn,
-  topBtnColor,
-  setTopBtnColor,
-}) => {
+function Header(props) {
   const navigate = useNavigate();
   const [subMenu, setSubMenuOn] = useState(false);
-  const [setHeaderFix, setHeaderFixOn] = useState(false);
-
-  useEffect(() => {
-    let landingLocalStorageOn = localStorage.getItem("landingOn");
-    landingLocalStorageOn === null
-      ? setLandingOn(true)
-      : setLandingOn(landingOn);
-    // landingLocalOn === null ? setLandingOn(true) : setLandingOn(false);
-    console.log(landingLocalStorageOn);
-  }, [landingOn]);
 
   return (
     <>
-      {/* {console.log(landingOn)} */}
       <div
+        // id='Global-header'
         className='header'
-        style={{
-          backgroundColor: `${landingOn ? "transparent" : "white"}`,
-          position: `${setHeaderFix === true ? "relative" : "fixed"}`,
-        }}
+        style={props.style}
       >
+        {/* {console.log(setHeaderFix)} */}
         <div
           className='logo'
-          style={{
-            color: `${landingOn ? "white" : "black"}`,
-          }}
           onClick={() => {
             navigate("/");
-            setLandingOn(true);
-            setHeaderFixOn(false); /* true = relative,  flase = fixed*/
           }}
-        >
-          {landingOn === true ? (
-            <img src={whitelogo} alt={whitelogo} />
-          ) : (
-            <img src={logo} alt={logo} />
-          )}
-        </div>
-        <div
-          className='menu-nav'
-          style={{
-            color: `${landingOn ? "white" : "black"}`,
-          }}
-        >
+        ></div>
+        <div className='menu-nav'>
           <ul>
             <li
               onClick={() => {
                 navigate("/company");
-                setLandingOn(false);
-                setHeaderFixOn(true);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -72,9 +34,6 @@ const Header = ({
             <li
               onClick={() => {
                 navigate("/technology");
-                setLandingOn(false);
-                setHeaderFixOn(true);
-                console.log(setHeaderFix);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -83,8 +42,6 @@ const Header = ({
             <li
               onClick={() => {
                 navigate("/products");
-                setLandingOn(false);
-                setHeaderFixOn(true);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -93,8 +50,6 @@ const Header = ({
             <li
               onClick={() => {
                 navigate("/RnD");
-                setLandingOn(false);
-                setHeaderFixOn(true);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -103,8 +58,6 @@ const Header = ({
             <li
               onClick={() => {
                 navigate("/Productquery");
-                setLandingOn(false);
-                setHeaderFixOn(true);
               }}
               onMouseEnter={() => setSubMenuOn(true)}
             >
@@ -114,27 +67,15 @@ const Header = ({
         </div>
         <div className='right-top-menu'>
           <div className='language-Btn'>
-            <button
-              style={{
-                color: `${landingOn ? "white" : "black"}`,
-                border: `${landingOn ? "1px solid white" : "1px solid black"}`,
-              }}
-            >
-              Language
-            </button>
+            <button>Language</button>
           </div>
           <div className='mypage-Btn'>
             <button
               onClick={() => {
                 navigate("/mypage");
-                setLandingOn(false);
-                setHeaderFixOn(false);
                 localStorage.setItem("landingOn", false);
-                // setMyPageOn(false);
-                // setTopBtnColor(false);
               }}
             >
-              {/* {console.log(localStorage.getItem('landingOn'))} */}
               MyPage
             </button>
           </div>
@@ -142,15 +83,12 @@ const Header = ({
             <button
               onClick={() => {
                 navigate("/login");
-                setLandingOn(false);
-                setHeaderFixOn(false);
               }}
             >
               로그인
             </button>
           </div>
         </div>
-        {/* {subMenu === true ? <SubMenu /> : null} */}
         {subMenu ? <SubMenu /> : null}
       </div>
     </>
@@ -163,7 +101,7 @@ const Header = ({
           <div className='submenu-logo'>
             <div className='logo-left'></div>
             <div className='logo-right'>
-              <img src={NevigationBg} />
+              <img src={NevigationBg} alt={NevigationBg} />
             </div>
           </div>
           <div className='list-open'>
@@ -184,7 +122,6 @@ const Header = ({
                   <br />
                   안구추적 알고리즘
                 </li>
-                {/* <div className="menu-border" /> */}
                 <li>인공지능(AI)</li>
                 <li>
                   개별 주파수 동조
@@ -207,7 +144,7 @@ const Header = ({
                   소프트웨어
                 </li>
                 <li>
-                  임상의사결정지원
+                  임상의사 결정지원
                   <br />
                   소프트웨어
                 </li>
@@ -223,8 +160,6 @@ const Header = ({
                 <li
                   onClick={() => {
                     navigate("/RnD");
-                    setLandingOn(false);
-                    setHeaderFixOn(false);
                   }}
                 >
                   보유기술 및<br />
@@ -233,8 +168,6 @@ const Header = ({
                 <li
                   onClick={() => {
                     navigate("/thesis");
-                    setLandingOn(false);
-                    setHeaderFixOn(false);
                   }}
                 >
                   연구 및<br />
@@ -247,8 +180,6 @@ const Header = ({
                 <li
                   onClick={() => {
                     navigate("/productquery");
-                    setLandingOn(false);
-                    setHeaderFixOn(false);
                   }}
                 >
                   제품문의
@@ -256,8 +187,6 @@ const Header = ({
                 <li
                   onClick={() => {
                     navigate("/faq");
-                    setLandingOn(false);
-                    setHeaderFixOn(false);
                   }}
                 >
                   FAQ
@@ -265,8 +194,6 @@ const Header = ({
                 <li
                   onClick={() => {
                     navigate("/qna");
-                    setLandingOn(false);
-                    setHeaderFixOn(false);
                   }}
                 >
                   Q&A
@@ -278,6 +205,6 @@ const Header = ({
       </>
     );
   }
-};
+}
 
 export default Header;

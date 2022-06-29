@@ -13,7 +13,7 @@ body {
   background-image: url("../../images/02_company/Img-Bg-Company.png");
   background-size: cover;
   width: 100%;
-  height: 346px;
+  height: 350px;
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -275,7 +275,7 @@ body {
   /*첫줄 시작부 조정*/
   top: 58px;
   /*꼬리 조정*/
-  height: calc(100% - 110px);
+  height: calc(100% - 212px);
 }
 
 .history div:first-child::after {

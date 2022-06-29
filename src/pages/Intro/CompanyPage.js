@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import "./CompanyPage.css";
 import Misson from "../../images/02_company/MissionVision_Desktop.svg";
 import MissonVision from "../../images/02_company/MissionVision_Desktop.svg";
-import MiddleNav from "../../components/MiddleNav";
+import MiddleNav from "../../components/MiddleNav_Intro";
 import company1 from "../../images/02_company/company-1.svg";
 import company2 from "../../images/02_company/company-1.svg";
 import whitelogo from "../../images/whitelogo.png";
@@ -24,19 +24,50 @@ import biocore from "../../images/02_company/바이오아이코어.png";
 import zay from "../../images/02_company/제이씨현.png";
 import consulting from "../../images/02_company/특허컨설팅.png";
 import GMP from "../../images/02_company/GMP.jpg";
+import { useState } from "react";
+// import { useEffect } from "react";
+// import data from "../../data/IntroNavData";
+// import { useState } from "react";
 
 function CompanyPage() {
+  const [isMainFold, setMainFoldOn] = useState(false);
+  const [isSubFold, setSubFoldOn] = useState(false);
+
+  // useEffect(() => {});
+  // const [introNavData, setIntroNavData] = useState(data);
+
   return (
     <>
-      <div className='company-bg-box'>
+      <div
+        className='company-bg-box'
+        onClick={() => {
+          setMainFoldOn(false);
+          setSubFoldOn(false);
+        }}
+      >
         <div className='bg-title'>
           <h2>회사소개</h2>
           <h6>About Company</h6>
         </div>
       </div>
-      <MiddleNav />
+      {/* <MiddleNav
+        introNavData={introNavData}
+        setintroNavData={setIntroNavData}
+      /> */}
+      <MiddleNav
+        isMainFold={isMainFold}
+        setMainFoldOn={setMainFoldOn}
+        isSubFold={isSubFold}
+        setSubFoldOn={setSubFoldOn}
+      />
 
-      <div className='middle-box'>
+      <div
+        className='middle-box'
+        onClick={() => {
+          setMainFoldOn(false);
+          setSubFoldOn(false);
+        }}
+      >
         <div id='company-s1' className='small-box'>
           <h1>
             <img src={logo} alt={logo} />
@@ -302,7 +333,7 @@ function CompanyPage() {
         </div>
       </div>
 
-      <div id='member-box-1' className='full-box'>
+      {/* <div id='member-box-1' className='full-box'>
         <div className='middle-box'>
           <div className='small-box'>
             <h3>맴버소개</h3>
@@ -310,7 +341,6 @@ function CompanyPage() {
           </div>
           <div id='dept' className='small-box'>
             <h5>경영팀</h5>
-            {/* 프로필 카드 모듈 */}
             <div id='member' className='small-box'>
               <div className='member-box'>
                 <div className='profile-img-box'>
@@ -357,7 +387,6 @@ function CompanyPage() {
           <div className='small-box'>
             <div id='dept' className='small-box'>
               <h5>연구개발팀</h5>
-              {/* 프로필 카드 모듈 */}
               <div id='member' className='small-box'>
                 <div className='member-box'>
                   <div className='profile-img-box'>
@@ -417,7 +446,7 @@ function CompanyPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className='full-box'>
         <div id='partners' className='middle-box'>

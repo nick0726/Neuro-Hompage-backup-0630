@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer";
 import "./TechnologyPage.css";
-import MiddleNav from "../../components/MiddleNav";
+import MiddleNav from "../../components/MiddleNav_Technology";
 import cause1 from "../../images/cause1.png";
 import cause2 from "../../images/cause2.png";
 import cause3 from "../../images/cause3.png";
@@ -13,20 +13,50 @@ import AI1 from "../../images/Ai-1.png";
 import AI2 from "../../images/Ai-2.png";
 import frequency1 from "../../images/frequency1.png";
 import frequency2 from "../../images/frequency2.png";
+import { useState } from "react";
 
-function TechnologyPage() {
+const TechnologyPage = ({
+  landingOn,
+  setLandingOn,
+  setHeaderFix,
+  setHeaderFixOn,
+  headerStyle,
+}) => {
+  const [isMainFold, setMainFoldOn] = useState(false);
+  const [isSubFold, setSubFoldOn] = useState(false);
+
   return (
     <>
-      <div className='bg-box'>
+      <div
+        className='bg-box'
+        onClick={() => {
+          setMainFoldOn(false);
+          setSubFoldOn(false);
+        }}
+      >
         <div className='bg-title'>
           <h2>기술</h2>
           <h6>Technology</h6>
         </div>
       </div>
-      <MiddleNav />
+      <MiddleNav
+        isMainFold={isMainFold}
+        setMainFoldOn={setMainFoldOn}
+        isSubFold={isSubFold}
+        setSubFoldOn={setSubFoldOn}
+        headerStyle={headerStyle}
+        setHeaderFix={setHeaderFix}
+        setHeaderFixOn={setHeaderFixOn}
+      />
 
       {/* 소프트웨어 기반 안구추적 알고리즘 */}
-      <div className='technologypage-box'>
+      <div
+        className='technologypage-box'
+        onClick={() => {
+          setMainFoldOn(false);
+          setSubFoldOn(false);
+        }}
+      >
         <div className='technology-section'>
           <div className='technology-title'>
             <h4>소프트웨어 기반 안구추적 알고리즘</h4>
@@ -175,7 +205,7 @@ function TechnologyPage() {
       </div>
 
       {/* 인공지능 AI */}
-      <div className='technology-section'>
+      <div id='AI-section' className='technology-section'>
         <div className='technology-title'>
           <h4>
             인공지능
@@ -299,6 +329,6 @@ function TechnologyPage() {
       <Footer />
     </>
   );
-}
+};
 
 export default TechnologyPage;

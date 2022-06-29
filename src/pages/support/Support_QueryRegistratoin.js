@@ -1,4 +1,4 @@
-import MiddleNav from "../../components/MiddleNav";
+import MiddleNav from "../../components/MiddleNav_Intro";
 import "./Support_QueryRegistration.css";
 import upload from "../../images/upload.jpg";
 
@@ -10,8 +10,8 @@ function QueryRegistration() {
           <h2>지원/서비스</h2>
           <h6>고객님의 문의에 친절하게 답변해 드리겠습니다.</h6>
         </div>
-        <MiddleNav />
       </div>
+      <MiddleNav />
       <div className='middle-box'>
         <div id='query-registration' className='small-box'>
           <h2>문의 등록</h2>

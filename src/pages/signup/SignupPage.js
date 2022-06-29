@@ -101,6 +101,38 @@ function Terms(props) {
 function Form(props) {
   const [isPhonecertiOn, setPhoneCertiOn] = useState(false);
   const [isEmailcertiOn, setEmailcertiOn] = useState(false);
+  const [id, setId] = useState("");
+  const [password, setPassword] = useState("");
+  const [pwRepeat, setPasswordRepeat] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+
+  async function registerUser(event) {
+    event.preventDefault();
+    const resopnse = await fetch("http://localhost:3000/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id,
+        password,
+        pwRepeat,
+        name,
+        phone,
+        email,
+      }),
+    });
+
+    const data = await resopnse.json();
+    // console.log(data);
+    if (data.status === "ok") {
+      alert("Sign Up sucessful!");
+      alert("Please Log in with it");
+      props.navigate("/login");
+    }
+  }
 
   return (
     <>
@@ -108,94 +140,150 @@ function Form(props) {
         <div id='signup-middle-box' className='middle-box'>
           <h2>NeuroEars 회원가입</h2>
           <p>뉴로이어즈 서비스 이용을 위해 약관에 동의해 주세요.</p>
-          <div id='signup-small-box' className='small-box'>
-            <div className='signup-box'>
-              <div className='signup-forms'>
-                <h6>아이디</h6>
-                <div className='forms-with-btn'>
-                  <input placeholder='아이디를 입력해 주세요.'></input>
-                  <button>중복확인</button>
-                </div>
-              </div>
-              <div className='signup-forms'>
-                <h6>비밀번호</h6>
-                <div className='forms-without-btn'>
-                  <input placeholder='비밀번호를 입력해 주세요.'></input>
-                  <input placeholder='비밀번호를 한번 더 입력해 주세요.'></input>
-                  <p>
-                    <img src={warning} alt={warning} /> 8자리 이상,
-                    영문/숫자/특수문자 총 2가지 이상
-                  </p>
-                </div>
-              </div>
-
-              <div className='signup-forms'>
-                <h6>이름</h6>
-                <div className='forms-without-btn'>
-                  <input placeholder='이름을 입력해 주세요.'></input>
-                </div>
-              </div>
-
-              <div className='signup-forms'>
-                <div className='forms-2'></div>
-              </div>
-              <div className='signup-forms'>
-                <div className='forms-3'></div>
-              </div>
-              <div className='signup-forms'>
-                <h6>전화번호</h6>
-
-                {isPhonecertiOn === true ? (
-                  <Certificate
-                    isPhonecertiOn={isPhonecertiOn}
-                    setPhoneCertiOn={setPhoneCertiOn}
-                  />
-                ) : (
+          <form action='/signup' method='POST'>
+            <div id='signup-small-box' className='small-box'>
+              <div className='signup-box'>
+                <div className='signup-forms'>
+                  <h6>아이디</h6>
                   <div className='forms-with-btn'>
-                    <input placeholder='전화번호를 입력해 주세요.'></input>
-                    <button
-                      id='phone-certificatoin'
-                      onClick={() => setPhoneCertiOn(true)}
-                    >
-                      <img src={phone_certi} alt={phone_certi} />
-                      휴대폰 인증
-                    </button>
+                    <input
+                      placeholder='아이디를 입력해 주세요.'
+                      value={id}
+                      onChange={(e) => setId(e.target.value)}
+                      type='text'
+                      name='id'
+                      id='Id'
+                      autoComplete='off'
+                      required
+                    ></input>
+                    <button>중복확인</button>
                   </div>
-                )}
-              </div>
-              <div className='signup-forms'>
-                <h6> 이메일</h6>
+                </div>
+                <div className='signup-forms'>
+                  <h6>비밀번호</h6>
+                  <div className='forms-without-btn'>
+                    <input
+                      placeholder='비밀번호를 입력해 주세요.'
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      type='password'
+                      name='pw'
+                      id='pw'
+                      autoComplete='off'
+                      required
+                    ></input>
+                    <input
+                      placeholder='비밀번호를 한번 더 입력해 주세요.'
+                      value={pwRepeat}
+                      onChange={(e) => setPasswordRepeat(e.target.value)}
+                      type='password'
+                      name='passwordRepeat'
+                      id='pwRepeat'
+                      autoComplete='off'
+                      required
+                    ></input>
+                    <p>
+                      <img src={warning} alt={warning} /> 8자리 이상,
+                      영문/숫자/특수문자 총 2가지 이상
+                    </p>
+                  </div>
+                </div>
 
-                {isEmailcertiOn === true ? (
-                  <Certificate
-                    isEmailcertiOn={isEmailcertiOn}
-                    setEmailcertiOn={setEmailcertiOn}
-                  />
-                ) : (
-                  <div className='forms-with-btn'>
-                    <input placeholder='이메일을 입력해 주세요.'></input>
-                    <button
-                      id='email-certificatoin'
-                      onClick={() => setEmailcertiOn(true)}
-                    >
-                      <img src={email_certi} alt={email_certi} />
-                      이메일 인증
-                    </button>
+                <div className='signup-forms'>
+                  <h6>이름</h6>
+                  <div className='forms-without-btn'>
+                    <input
+                      placeholder='이름을 입력해 주세요.'
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      type='text'
+                      name='name'
+                      id='Name'
+                      autoComplete='off'
+                      required
+                    ></input>
                   </div>
-                )}
-              </div>
-              <div className='signup-forms'>
-                <button
-                  id='signup-btn'
-                  onClick={() => {
-                    props.setFormsOn(true);
-                  }}
-                >
-                  회원가입 하기
-                </button>
+                </div>
+
+                <div className='signup-forms'>
+                  <div className='forms-2'></div>
+                </div>
+                <div className='signup-forms'>
+                  <div className='forms-3'></div>
+                </div>
+                <div className='signup-forms'>
+                  <h6>전화번호</h6>
+
+                  {isPhonecertiOn === true ? (
+                    <Certificate
+                      isPhonecertiOn={isPhonecertiOn}
+                      setPhoneCertiOn={setPhoneCertiOn}
+                    />
+                  ) : (
+                    <div className='forms-with-btn'>
+                      <input
+                        placeholder='전화번호를 입력해 주세요.'
+                        onChange={(e) => setPhone(e.target.value)}
+                        value={phone}
+                        type='text'
+                        name='phone'
+                        id='Phone'
+                        autoComplete='off'
+                        required
+                      ></input>
+                      <button
+                        id='phone-certificatoin'
+                        onClick={() => setPhoneCertiOn(true)}
+                      >
+                        <img src={phone_certi} alt={phone_certi} />
+                        휴대폰 인증
+                      </button>
+                    </div>
+                  )}
+                </div>
+                <div className='signup-forms'>
+                  <h6> 이메일</h6>
+
+                  {isEmailcertiOn === true ? (
+                    <Certificate
+                      isEmailcertiOn={isEmailcertiOn}
+                      setEmailcertiOn={setEmailcertiOn}
+                    />
+                  ) : (
+                    <div className='forms-with-btn'>
+                      <input
+                        placeholder='이메일을 입력해 주세요.'
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        type='text'
+                        name='email'
+                        id='email'
+                        autoComplete='off'
+                        required
+                      ></input>
+                      <button
+                        id='email-certificatoin'
+                        onClick={() => setEmailcertiOn(true)}
+                      >
+                        <img src={email_certi} alt={email_certi} />
+                        이메일 인증
+                      </button>
+                    </div>
+                  )}
+                </div>
+                <div className='signup-forms'>
+                  <button
+                    id='signup-btn'
+                    onClick={() => {
+                      props.setFormsOn(true);
+                    }}
+                  >
+                    회원가입 하기
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
       <Footer />

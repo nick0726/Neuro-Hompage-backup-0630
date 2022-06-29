@@ -25,24 +25,35 @@ import QueryRegistration from "./pages/support/Support_QueryRegistratoin";
 
 function App() {
   const [landingOn, setLandingOn] = useState(true);
-  // const [myPageOn, setMyPageOn] = useState(true);
-  const [topBtnColor, setTopBtnColor] = useState(true);
+  const [isMainFold, setMainFoldOn] = useState(false);
+  const [isSubFold, setSubFoldOn] = useState(false);
+  // const [topBtnColor, setTopBtnColor] = useState(true);
 
   return (
     <>
+      {console.log(landingOn)}
       <Provider store={store}>
         <Header
           landingOn={landingOn}
           setLandingOn={setLandingOn}
-          topBtnColor={topBtnColor}
-          setTopBtnColor={setTopBtnColor}
+          style={{ display: `${landingOn ? "none" : "flex"}` }}
         />
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/company' element={<CompanyPage />} />
           <Route path='/technology' element={<TechnologyPage />} />
           <Route path='/products' element={<ProductsPage />} />
-          <Route path='/RnD' element={<RnDPage />} />
+          <Route
+            path='/RnD'
+            element={
+              <RnDPage
+                isMainFold={isMainFold}
+                setMainFoldOn={setMainFoldOn}
+                isSubFold={isSubFold}
+                setSubFoldOn={setSubFoldOn}
+              />
+            }
+          />
           <Route path='/thesis' element={<ThesisPage />} />
           <Route path='/productquery' element={<Support_Product_Query />} />
           <Route path='/queryregistratoin' element={<QueryRegistration />} />
@@ -52,12 +63,7 @@ function App() {
           <Route path='/signup' element={<SignUp />} />
           {/* 비밀번호 변경 */}
           <Route path='/inquiry' element={<Inquiry />} />
-          <Route
-            path='/mypage'
-            element={
-              <MyPage landingOn={landingOn} setLandingOn={setLandingOn} />
-            }
-          ></Route>
+          <Route path='/mypage' element={<MyPage />}></Route>
           <Route path='*' element={<div>404</div>} />
           {/* <Route path='/cart' element={<Cart />} /> */}
         </Routes>

@@ -1,6 +1,6 @@
 // import ServiceBg from '../../images/05_support/Img-Bg-Service-m.png'
 import { useState } from "react";
-import MiddleNav from "../../components/MiddleNav";
+import MiddleNav from "../../components/MiddleNav_Support";
 import "./Support_Product_Query.css";
 import ActiveBill from "../../images/05_support/Ask/Bill/Active.svg";
 import InActiveBill from "../../images/05_support/Ask/Bill/Inactive.svg";
@@ -13,6 +13,8 @@ import InActiveTools from "../../images/05_support/Ask/Tools/Inactive.svg";
 
 function SupportProductQuery() {
   const [isHoverOn, setHoverOn] = useState(false);
+  const [isMainFold, setMainFoldOn] = useState(false);
+  const [isSubFold, setSubFoldOn] = useState(false);
 
   return (
     <>
@@ -22,7 +24,12 @@ function SupportProductQuery() {
           <h6>고객님의 문의에 친절하게 답변해 드리겠습니다.</h6>
         </div>
       </div>
-      <MiddleNav />
+      <MiddleNav
+        isMainFold={isMainFold}
+        setMainFoldOn={setMainFoldOn}
+        isSubFold={isSubFold}
+        setSubFoldOn={setSubFoldOn}
+      />
       <div id='query-box' className='middle-box'>
         <div className='small-box'>
           <h2>제품문의</h2>

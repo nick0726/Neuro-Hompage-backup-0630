@@ -1,4 +1,4 @@
-let news = [
+const news = [
   {
     id: 0,
     title: "뉴로이어즈, BIO KOREA 2022서 어지럼증 진단 소프트웨어 소개 나선다",

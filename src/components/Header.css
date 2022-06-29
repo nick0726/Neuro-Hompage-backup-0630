@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   width: 100%;
   height: 85px;
@@ -6,7 +11,7 @@
   align-items: center;
   /* position: fixed; */
   /* background: transparent; */
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   color: white;
   border-width: thin;
@@ -27,8 +32,10 @@
 }
 
 .header .menu-nav ul li {
+  /* border: 1px solid red; */
   display: inline-block;
-  margin: 0 70px;
+  padding: 0 70px;
+  /* margin: 0 70px; */
   /* color: black; */
   font-size: 16px;
   cursor: pointer;
@@ -130,7 +137,7 @@
   opacity: 50%;
   position: fixed;
   display: flex;
-  margin-top: 430px;
+  margin-top: 435px;
 }
 
 .submenu-box {
@@ -139,11 +146,13 @@
 
 .submenu-logo {
   height: 350px;
+  /* width: 31.3%; */
+  width: 25.2%;
   /* width: 350px; */
   background: #293f64;
   display: flex;
   margin-top: 2px;
-  flex: 2.35;
+  /* flex: 2.35; */
 }
 
 .list-open {
@@ -167,7 +176,8 @@
 
 .list {
   /* width: 144px; */
-  width: 7.7vw;
+  /* width: 7.7vw; */
+  width: 10.5%;
   height: 30px;
   color: black;
   font-size: 14px;
@@ -192,26 +202,34 @@
 } */
 
 #intro-list {
-  width: 100px;
+  width: 6.4%;
+  /* width: 100px; */
   margin-right: 45px;
   margin-left: -5px;
 }
 
 #tech-list {
-  width: 150px;
-  margin-left: 17px;
+  width: 10.8%;
+  margin-left: 1.3%;
+  /* width: 150px; */
+  /* margin-left: 17px; */
 }
 
 #product-list {
-  margin-left: 20px;
+  width: 11%;
+  margin-left: 1.1%;
+  /* margin-left: 20px; */
 }
 
 #RnD-list {
-  margin-left: 38px;
+  width: 8%;
+  margin-left: 3.5%;
+  /* margin-left: 38px; */
 }
 
 #query-list {
-  margin-left: 90px;
+  margin-left: 8.3%;
+  /* margin-left: 90px; */
   display: flex;
   flex-direction: column;
   width: 88px;

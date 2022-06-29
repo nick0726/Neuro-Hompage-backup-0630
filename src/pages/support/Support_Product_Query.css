@@ -15,6 +15,7 @@ body {
   width: 100%;
   height: 350px;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   color: white;
@@ -22,10 +23,9 @@ body {
 
 #support-bg .bg-title {
   display: flex;
+  margin: 0 auto;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
-
 }
 
 #support-bg .bg-title h2 {

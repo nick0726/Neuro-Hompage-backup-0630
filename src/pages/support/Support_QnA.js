@@ -1,20 +1,41 @@
 import "./Support_QnA.css";
-import MiddleNav from "../../components/MiddleNav";
+import MiddleNav from "../../components/MiddleNav_Support";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function SupportQnA() {
   const navigate = useNavigate();
+  const [isMainFold, setMainFoldOn] = useState(false);
+  const [isSubFold, setSubFoldOn] = useState(false);
 
   return (
     <>
-      <div id='support-bg'>
+      <div
+        id='support-bg'
+        onClick={() => {
+          setMainFoldOn(false);
+          setSubFoldOn(false);
+        }}
+      >
         <div className='bg-title'>
           <h2>지원/서비스</h2>
           <h6>고객님의 문의에 친절하게 답변해 드리겠습니다.</h6>
         </div>
-        <MiddleNav />
       </div>
-      <div id='QnA-middle-box' className='middle-box'>
+      <MiddleNav
+        isMainFold={isMainFold}
+        setMainFoldOn={setMainFoldOn}
+        isSubFold={isSubFold}
+        setSubFoldOn={setSubFoldOn}
+      />
+      <div
+        id='QnA-middle-box'
+        className='middle-box'
+        onClick={() => {
+          setMainFoldOn(false);
+          setSubFoldOn(false);
+        }}
+      >
         <div id='search-box' className='small-box'>
           <h2>Q&A</h2>
           <div className='search'>
