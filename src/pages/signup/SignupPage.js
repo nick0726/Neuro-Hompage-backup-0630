@@ -1,37 +1,22 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
 import "./SignupPage.css";
 import warning from "../../images/06_signin/warning.svg";
 import email_certi from "../../images/email_certi.jpg";
 import phone_certi from "../../images/phone_certi.svg";
+import { useForm } from "react-hook-form";
 import axios from "axios";
+
+// axios integration test
+// axios.get("http://localhost:1337/api/movies").then((response) => {
+//   console.log(response);
+// });
 
 const SignupPage = () => {
   const navigate = useNavigate();
   const [isTermsOn, setTermsOn] = useState(false);
   const [isFormsOn, setFormsOn] = useState(false);
-
-  // useEffect(() => {
-  //   axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
-  //     console.log(response);
-  //   });
-  // }, []);
-
-  //   const postTest = () => {
-  //     axios
-  //       .post("https://reqres.in/api/register", {
-  //         "email": "eve.holt@reqres.in",
-  //         "password": "pistol",
-  //       })
-  //       .then((res) => {
-  //         console.log(res);
-  //       })
-  //       .catch((err) => {
-  //         console.log(err);
-  //       });
-  //   };
-  // }
 
   return (
     <>
@@ -122,38 +107,73 @@ function Terms(props) {
 }
 
 function Form(props) {
-  const [isPhonecertiOn, setPhoneCertiOn] = useState(false);
-  const [isEmailcertiOn, setEmailcertiOn] = useState(false);
+  // const [isPhonecertiOn, setPhoneCertiOn] = useState(false);
+  // const [isEmailcertiOn, setEmailcertiOn] = useState(false);
+  const navigate = useNavigate();
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [passwordRepeat, setPasswordRepeat] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const { register, watch } = useForm();
 
-  const register = () => {
-    // Request API.
+  const url = "http://localhost:1337";
+
+  const registeration = () => {
+    // Send Request to Server
+    // Request API 즉, axios(config).
     axios
-      .post("http://localhost:1337/api/auth/local/register", {
-        id: id,
+      .post(`${url}/api/auth/local/register`, {
+        username: id,
         password: password,
         passwordRepeat: passwordRepeat,
         name: name,
-        email: email,
         phone: phone,
+        email: email,
       })
       .then((response) => {
         // Handle success.
         console.log("Well done!");
         console.log("User profile", response.data.user);
         console.log("User token", response.data.jwt);
+        /* 회원가입 성공 후 토큰발급, 자동으로 로그인?*/
         localStorage.setItem("token", response.data.jwt);
+        navigate("/login");
       })
       .catch((error) => {
         // Handle error.
         console.log("An error occurred:", error.response);
       });
   };
+
+  // async function loginUser(event) {
+  //   fetch("https://jsonplaceholder.typicode.com/posts", {
+  //     method: "POST",
+  //     body: JSON.stringify({
+  //       id: id,
+  //       password: password,
+  //       passwordRepeat: passwordRepeat,
+  //       name: name,
+  //       phone: phone,
+  //       email: email,
+  //     }),
+  //     headers: {
+  //       "Content-type": "application/json; charset=UTF-8",
+  //     },
+  //   })
+  //     .then((response) => response.json())
+  //     .then((json) => console.log(json));
+  // }
+
+  // axios({
+  //   method: "post",
+  //   url: "/user/12345",
+  //   data: {
+  //     firstName: "Fred",
+  //     lastName: "Flintstone",
+  //   },
+  // });
 
   return (
     <>
@@ -166,7 +186,7 @@ function Form(props) {
               <div className='signup-box'>
                 <div className='signup-forms'>
                   <h6>아이디</h6>
-                  <div className='forms-with-btn'>
+                  <div className='forms-without-btn'>
                     <input
                       placeholder='아이디를 입력해 주세요.'
                       value={id}
@@ -176,9 +196,21 @@ function Form(props) {
                       id='Id'
                       autoComplete='off'
                       required
-                    ></input>
-                    <button>중복확인</button>
+                    />
                   </div>
+                  {/* <div className='forms-with-btn'>
+                    <input
+                      placeholder='아이디를 입력해 주세요.'
+                      value={id}
+                      onChange={(e) => setId(e.target.value)}
+                      type='text'
+                      name='id'
+                      id='Id'
+                      autoComplete='off'
+                      required
+                    />
+                    <button>중복확인</button>
+                  </div> */}
                 </div>
                 <div className='signup-forms'>
                   <h6>비밀번호</h6>
@@ -234,7 +266,33 @@ function Form(props) {
                 </div>
                 <div className='signup-forms'>
                   <h6>전화번호</h6>
-
+                  <div className='forms-without-btn'>
+                    <input
+                      placeholder='전화번호를 입력해 주세요.'
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      type='text'
+                      name='phone'
+                      id='Phone'
+                      autoComplete='off'
+                      required
+                    ></input>
+                  </div>
+                  {/* <div className='forms-with-btn'>
+                    <input
+                      placeholder='전화번호를 입력해 주세요.'
+                      onChange={(e) => setPhone(e.target.value)}
+                      value={phone}
+                      type='text'
+                      name='phone'
+                      id='Phone'
+                      autoComplete='off'
+                      required
+                    ></input>
+                    <button id='phone-certificatoin'>
+                      <img src={phone_certi} alt={phone_certi} />
+                      휴대폰 인증
+                    </button>            
                   {isPhonecertiOn === true ? (
                     <Certificate
                       isPhonecertiOn={isPhonecertiOn}
@@ -259,13 +317,45 @@ function Form(props) {
                         <img src={phone_certi} alt={phone_certi} />
                         휴대폰 인증
                       </button>
-                    </div>
+                      </div>
                   )}
+                  </div> */}
+
+                  {/* <div className='forms-with-btn'>
+                    <input
+                      placeholder='이메일을 입력해 주세요.'
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                      type='text'
+                      name='email'
+                      id='email'
+                      autoComplete='off'
+                      required
+                    ></input>
+                    <button
+                      id='email-certificatoin'
+                      // onClick={() => setEmailcertiOn(true)}
+                    >
+                      <img src={email_certi} alt={email_certi} />
+                      이메일 인증
+                    </button>
+                  </div> */}
                 </div>
                 <div className='signup-forms'>
                   <h6> 이메일</h6>
-
-                  {isEmailcertiOn === true ? (
+                  <div className='forms-without-btn'>
+                    <input
+                      placeholder='이메일을 입력해 주세요.'
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      type='text'
+                      name='email'
+                      id='email'
+                      autoComplete='off'
+                      required
+                    ></input>
+                  </div>
+                  {/* {isEmailcertiOn === true ? (
                     <Certificate
                       isEmailcertiOn={isEmailcertiOn}
                       setEmailcertiOn={setEmailcertiOn}
@@ -290,15 +380,11 @@ function Form(props) {
                         이메일 인증
                       </button>
                     </div>
-                  )}
+                  )} */}
                 </div>
                 <div className='signup-forms'>
-                  <button
-                    id='signup-btn'
-                    onClick={() => {
-                      props.setFormsOn(true);
-                    }}
-                  >
+                  {/* <button id='signup-btn' onClick={() => register()}> */}
+                  <button id='signup-btn' onClick={() => registeration()}>
                     회원가입 하기
                   </button>
                 </div>
@@ -312,21 +398,21 @@ function Form(props) {
   );
 }
 
-function Certificate() {
-  return (
-    <>
-      <div className='forms-with-btn'>
-        <input placeholder='전화번호를 입력해 주세요.'></input>
-        <button id='phone-certificatoin'>
-          <img src={phone_certi} alt={phone_certi} />
-          휴대폰 인증
-        </button>
-      </div>
-      <div className='forms-with-btn'>
-        <input placeholder='인증번호를 입력해 주세요.'></input>
-        <button id='resend-certification'>인증번호 재전송</button>
-      </div>
-    </>
-  );
-}
+// function Certificate() {
+//   return (
+//     <>
+//       <div className='forms-with-btn'>
+//         <input placeholder='전화번호를 입력해 주세요.'></input>
+//         <button id='phone-certificatoin'>
+//           <img src={phone_certi} alt={phone_certi} />
+//           휴대폰 인증
+//         </button>
+//       </div>
+//       <div className='forms-with-btn'>
+//         <input placeholder='인증번호를 입력해 주세요.'></input>
+//         <button id='resend-certification'>인증번호 재전송</button>
+//       </div>
+//     </>
+//   );
+// }
 export default SignupPage;
